@@ -1,0 +1,203 @@
+23/03/14 19:58:41 422 [debug]: --------------------------------------------------
+23/03/14 19:58:41 424 [debug]: |              Start Express Server              |
+23/03/14 19:58:41 425 [debug]: --------------------------------------------------
+23/03/14 19:58:41 425 [debug]: server address => http://211.222.164.95:3001
+23/03/14 19:58:41 426 [debug]: --------------------------------------------------
+23/03/14 19:58:54 421 [debug]: 클라이언트가 접속했습니다.
+23/03/14 19:58:54 422 [debug]: [GET] http://localhost:3001/book_authName/2
+23/03/14 19:58:54 423 [debug]: [client] ::1 / Windows 10.0 / Chrome (111.0.0.0) / Microsoft Windows
+23/03/14 19:58:54 426 [debug]: 클라이언트가 접속했습니다.
+23/03/14 19:58:54 427 [debug]: [GET] http://localhost:3001/book_Top5/2
+23/03/14 19:58:54 427 [debug]: [client] ::1 / Windows 10.0 / Chrome (111.0.0.0) / Microsoft Windows
+23/03/14 19:58:54 429 [debug]: 클라이언트가 접속했습니다.
+23/03/14 19:58:54 429 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=2
+23/03/14 19:58:54 429 [debug]: [client] ::1 / Windows 10.0 / Chrome (111.0.0.0) / Microsoft Windows
+23/03/14 19:58:54 480 [info]:  >> DATABASE 접속됨 [threaId=5529]
+23/03/14 19:58:54 480 [info]:  >> Connection 임대됨 [threaId=5529]
+23/03/14 19:58:54 483 [debug]: SELECT COUNT(*) AS cnt FROM review   WHERE     bookNo LIKE concat('%', '2', '%')
+23/03/14 19:58:54 483 [info]:  >> DATABASE 접속됨 [threaId=5527]
+23/03/14 19:58:54 483 [info]:  >> Connection 임대됨 [threaId=5527]
+23/03/14 19:58:54 484 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '2'
+23/03/14 19:58:54 484 [info]:  >> DATABASE 접속됨 [threaId=5528]
+23/03/14 19:58:54 485 [info]:  >> Connection 임대됨 [threaId=5528]
+23/03/14 19:58:54 485 [debug]: SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  b.bookNo,  b.bookTitle,  b.img,  b.price,  b.discount,  SUM(od.amount) AS sum_amount, ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo  JOIN (SELECT ctgNo FROM book WHERE bookNo = '2')  AS b2 ON b.ctgNo = b2.ctgNo  WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 5;
+23/03/14 19:58:54 495 [info]:  >> Connection 반납됨 [threaId=5529]
+23/03/14 19:58:54 496 [info]:  >> Connection 임대됨 [threaId=5529]
+23/03/14 19:58:54 497 [debug]: SELECT reviewNo, comment, sp, date_format(regDate, '%Y/%m/%d') as regDate, userNo, bookNo FROM review   WHERE     bookNo LIKE concat('%', '2', '%')     ORDER BY reviewNo DESC     LIMIT 0, 30
+23/03/14 19:58:54 498 [info]:  >> Connection 반납됨 [threaId=5529]
+23/03/14 19:58:54 501 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 72ms
+23/03/14 19:58:54 501 [debug]: --------------------------------------------------
+23/03/14 19:58:54 502 [info]:  >> Connection 반납됨 [threaId=5528]
+23/03/14 19:58:54 503 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 76ms
+23/03/14 19:58:54 503 [debug]: --------------------------------------------------
+23/03/14 19:58:54 529 [info]:  >> Connection 반납됨 [threaId=5527]
+23/03/14 19:58:54 530 [info]:  >> Connection 임대됨 [threaId=5527]
+23/03/14 19:58:54 531 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNO FROM book WHERE bookNo = '2') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '2'
+23/03/14 19:58:54 532 [info]:  >> Connection 반납됨 [threaId=5527]
+23/03/14 19:58:54 532 [info]:  >> Connection 임대됨 [threaId=5527]
+23/03/14 19:58:54 533 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNo FROM book WHERE bookNo = '2')  AS b2 ON b.ctgNo = b2.ctgNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '2'
+23/03/14 19:58:54 533 [info]:  >> Connection 반납됨 [threaId=5527]
+23/03/14 19:58:54 534 [info]:  >> Connection 임대됨 [threaId=5527]
+23/03/14 19:58:54 534 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc,bookIntro, bookIndex, img, content, ISBNum, page, size, discount, a.authName as authName, a.authImg as authImg ,a.authDesc as authDesc, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp   FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  WHERE bookNo= '2'
+23/03/14 19:58:54 539 [info]:  >> Connection 반납됨 [threaId=5527]
+23/03/14 19:58:54 540 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 118ms
+23/03/14 19:58:54 540 [debug]: --------------------------------------------------
+23/03/14 21:16:20 926 [debug]: --------------------------------------------------
+23/03/14 21:16:20 928 [debug]: |              Start Express Server              |
+23/03/14 21:16:20 928 [debug]: --------------------------------------------------
+23/03/14 21:16:20 929 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:16:20 929 [debug]: --------------------------------------------------
+23/03/14 21:18:51 796 [debug]: --------------------------------------------------
+23/03/14 21:18:51 799 [debug]: |              Start Express Server              |
+23/03/14 21:18:51 799 [debug]: --------------------------------------------------
+23/03/14 21:18:51 799 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:18:51 800 [debug]: --------------------------------------------------
+23/03/14 21:18:57 803 [debug]: --------------------------------------------------
+23/03/14 21:18:57 805 [debug]: |              Start Express Server              |
+23/03/14 21:18:57 805 [debug]: --------------------------------------------------
+23/03/14 21:18:57 806 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:18:57 806 [debug]: --------------------------------------------------
+23/03/14 21:19:32 143 [debug]: 클라이언트가 접속했습니다.
+23/03/14 21:19:32 144 [debug]: [GET] http://211.222.164.95:3001/
+23/03/14 21:19:32 145 [debug]: [client] ::ffff:179.43.177.242 / unknown / unknown (unknown) / unknown
+23/03/14 21:19:32 152 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/03/14 21:19:32 152 [debug]: --------------------------------------------------
+23/03/14 21:19:33 898 [debug]: --------------------------------------------------
+23/03/14 21:19:33 900 [debug]: |              Start Express Server              |
+23/03/14 21:19:33 900 [debug]: --------------------------------------------------
+23/03/14 21:19:33 901 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:19:33 901 [debug]: --------------------------------------------------
+23/03/14 21:20:33 797 [debug]: --------------------------------------------------
+23/03/14 21:20:33 799 [debug]: |              Start Express Server              |
+23/03/14 21:20:33 800 [debug]: --------------------------------------------------
+23/03/14 21:20:33 800 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:20:33 800 [debug]: --------------------------------------------------
+23/03/14 21:20:56 374 [debug]: --------------------------------------------------
+23/03/14 21:20:56 376 [debug]: |              Start Express Server              |
+23/03/14 21:20:56 377 [debug]: --------------------------------------------------
+23/03/14 21:20:56 377 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:20:56 378 [debug]: --------------------------------------------------
+23/03/14 21:20:58 102 [debug]: --------------------------------------------------
+23/03/14 21:20:58 104 [debug]: |              Start Express Server              |
+23/03/14 21:20:58 105 [debug]: --------------------------------------------------
+23/03/14 21:20:58 105 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:20:58 105 [debug]: --------------------------------------------------
+23/03/14 21:20:58 214 [debug]: 클라이언트가 접속했습니다.
+23/03/14 21:20:58 215 [debug]: [GET] http://localhost:3001/book_authName/2
+23/03/14 21:20:58 215 [debug]: [client] ::1 / Windows 10.0 / Chrome (111.0.0.0) / Microsoft Windows
+23/03/14 21:20:58 220 [debug]: 클라이언트가 접속했습니다.
+23/03/14 21:20:58 221 [debug]: [GET] http://localhost:3001/book_Top5/2
+23/03/14 21:20:58 221 [debug]: [client] ::1 / Windows 10.0 / Chrome (111.0.0.0) / Microsoft Windows
+23/03/14 21:20:58 230 [debug]: 클라이언트가 접속했습니다.
+23/03/14 21:20:58 230 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=2
+23/03/14 21:20:58 231 [debug]: [client] ::1 / Windows 10.0 / Chrome (111.0.0.0) / Microsoft Windows
+23/03/14 21:20:58 247 [info]:  >> DATABASE 접속됨 [threaId=5550]
+23/03/14 21:20:58 248 [info]:  >> Connection 임대됨 [threaId=5550]
+23/03/14 21:20:58 249 [debug]: SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  b.bookNo,  b.bookTitle,  b.img,  b.price,  b.discount,  SUM(od.amount) AS sum_amount, ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo  JOIN (SELECT ctgNo FROM book WHERE bookNo = '2')  AS b2 ON b.ctgNo = b2.ctgNo  WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 5;
+23/03/14 21:20:58 250 [info]:  >> DATABASE 접속됨 [threaId=5549]
+23/03/14 21:20:58 250 [info]:  >> Connection 임대됨 [threaId=5549]
+23/03/14 21:20:58 251 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '2'
+23/03/14 21:20:58 252 [info]:  >> DATABASE 접속됨 [threaId=5551]
+23/03/14 21:20:58 252 [info]:  >> Connection 임대됨 [threaId=5551]
+23/03/14 21:20:58 253 [debug]: SELECT COUNT(*) AS cnt FROM review   WHERE     bookNo LIKE concat('%', '2', '%')
+23/03/14 21:20:58 255 [info]:  >> Connection 반납됨 [threaId=5550]
+23/03/14 21:20:58 258 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 37ms
+23/03/14 21:20:58 258 [debug]: --------------------------------------------------
+23/03/14 21:20:58 259 [info]:  >> Connection 반납됨 [threaId=5549]
+23/03/14 21:20:58 259 [info]:  >> Connection 임대됨 [threaId=5549]
+23/03/14 21:20:58 260 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNO FROM book WHERE bookNo = '2') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '2'
+23/03/14 21:20:58 261 [info]:  >> Connection 반납됨 [threaId=5551]
+23/03/14 21:20:58 261 [info]:  >> Connection 임대됨 [threaId=5551]
+23/03/14 21:20:58 262 [debug]: SELECT reviewNo, comment, sp, date_format(regDate, '%Y/%m/%d') as regDate, userNo, bookNo FROM review   WHERE     bookNo LIKE concat('%', '2', '%')     ORDER BY reviewNo DESC     LIMIT 0, 30
+23/03/14 21:20:58 262 [info]:  >> Connection 반납됨 [threaId=5551]
+23/03/14 21:20:58 263 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+23/03/14 21:20:58 263 [debug]: --------------------------------------------------
+23/03/14 21:20:58 264 [info]:  >> Connection 반납됨 [threaId=5549]
+23/03/14 21:20:58 264 [info]:  >> Connection 임대됨 [threaId=5549]
+23/03/14 21:20:58 264 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNo FROM book WHERE bookNo = '2')  AS b2 ON b.ctgNo = b2.ctgNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '2'
+23/03/14 21:20:58 265 [info]:  >> Connection 반납됨 [threaId=5549]
+23/03/14 21:20:58 265 [info]:  >> Connection 임대됨 [threaId=5549]
+23/03/14 21:20:58 266 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc,bookIntro, bookIndex, img, content, ISBNum, page, size, discount, a.authName as authName, a.authImg as authImg ,a.authDesc as authDesc, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp   FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  WHERE bookNo= '2'
+23/03/14 21:20:58 274 [info]:  >> Connection 반납됨 [threaId=5549]
+23/03/14 21:20:58 275 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 60ms
+23/03/14 21:20:58 275 [debug]: --------------------------------------------------
+23/03/14 21:21:26 774 [debug]: --------------------------------------------------
+23/03/14 21:21:26 776 [debug]: |              Start Express Server              |
+23/03/14 21:21:26 776 [debug]: --------------------------------------------------
+23/03/14 21:21:26 777 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:21:26 777 [debug]: --------------------------------------------------
+23/03/14 21:22:01 853 [debug]: --------------------------------------------------
+23/03/14 21:22:01 855 [debug]: |              Start Express Server              |
+23/03/14 21:22:01 856 [debug]: --------------------------------------------------
+23/03/14 21:22:01 856 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:22:01 857 [debug]: --------------------------------------------------
+23/03/14 21:22:45 402 [debug]: --------------------------------------------------
+23/03/14 21:22:45 404 [debug]: |              Start Express Server              |
+23/03/14 21:22:45 404 [debug]: --------------------------------------------------
+23/03/14 21:22:45 405 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:22:45 405 [debug]: --------------------------------------------------
+23/03/14 21:22:56 897 [debug]: --------------------------------------------------
+23/03/14 21:22:56 899 [debug]: |              Start Express Server              |
+23/03/14 21:22:56 900 [debug]: --------------------------------------------------
+23/03/14 21:22:56 900 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:22:56 901 [debug]: --------------------------------------------------
+23/03/14 21:23:42 563 [debug]: --------------------------------------------------
+23/03/14 21:23:42 566 [debug]: |              Start Express Server              |
+23/03/14 21:23:42 566 [debug]: --------------------------------------------------
+23/03/14 21:23:42 566 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:23:42 567 [debug]: --------------------------------------------------
+23/03/14 21:23:58 768 [debug]: --------------------------------------------------
+23/03/14 21:23:58 770 [debug]: |              Start Express Server              |
+23/03/14 21:23:58 770 [debug]: --------------------------------------------------
+23/03/14 21:23:58 771 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:23:58 771 [debug]: --------------------------------------------------
+23/03/14 21:24:06 060 [debug]: --------------------------------------------------
+23/03/14 21:24:06 062 [debug]: |              Start Express Server              |
+23/03/14 21:24:06 063 [debug]: --------------------------------------------------
+23/03/14 21:24:06 063 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:24:06 064 [debug]: --------------------------------------------------
+23/03/14 21:25:52 570 [debug]: --------------------------------------------------
+23/03/14 21:25:52 572 [debug]: |              Start Express Server              |
+23/03/14 21:25:52 573 [debug]: --------------------------------------------------
+23/03/14 21:25:52 573 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:25:52 574 [debug]: --------------------------------------------------
+23/03/14 21:25:58 222 [debug]: --------------------------------------------------
+23/03/14 21:25:58 224 [debug]: |              Start Express Server              |
+23/03/14 21:25:58 224 [debug]: --------------------------------------------------
+23/03/14 21:25:58 225 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:25:58 225 [debug]: --------------------------------------------------
+23/03/14 21:26:12 957 [debug]: --------------------------------------------------
+23/03/14 21:26:12 959 [debug]: |              Start Express Server              |
+23/03/14 21:26:12 960 [debug]: --------------------------------------------------
+23/03/14 21:26:12 960 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:26:12 960 [debug]: --------------------------------------------------
+23/03/14 21:26:23 877 [debug]: --------------------------------------------------
+23/03/14 21:26:23 880 [debug]: |              Start Express Server              |
+23/03/14 21:26:23 880 [debug]: --------------------------------------------------
+23/03/14 21:26:23 880 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:26:23 881 [debug]: --------------------------------------------------
+23/03/14 21:26:34 368 [debug]: --------------------------------------------------
+23/03/14 21:26:34 371 [debug]: |              Start Express Server              |
+23/03/14 21:26:34 371 [debug]: --------------------------------------------------
+23/03/14 21:26:34 371 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:26:34 372 [debug]: --------------------------------------------------
+23/03/14 21:26:54 457 [debug]: --------------------------------------------------
+23/03/14 21:26:54 460 [debug]: |              Start Express Server              |
+23/03/14 21:26:54 460 [debug]: --------------------------------------------------
+23/03/14 21:26:54 461 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:26:54 461 [debug]: --------------------------------------------------
+23/03/14 21:28:31 883 [debug]: --------------------------------------------------
+23/03/14 21:28:31 885 [debug]: |              Start Express Server              |
+23/03/14 21:28:31 886 [debug]: --------------------------------------------------
+23/03/14 21:28:31 886 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:28:31 887 [debug]: --------------------------------------------------
+23/03/14 21:28:40 909 [debug]: --------------------------------------------------
+23/03/14 21:28:40 911 [debug]: |              Start Express Server              |
+23/03/14 21:28:40 911 [debug]: --------------------------------------------------
+23/03/14 21:28:40 912 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:28:40 912 [debug]: --------------------------------------------------
+23/03/14 21:28:46 192 [debug]: --------------------------------------------------
+23/03/14 21:28:46 195 [debug]: |              Start Express Server              |
+23/03/14 21:28:46 195 [debug]: --------------------------------------------------
+23/03/14 21:28:46 195 [debug]: server address => http://211.222.164.95:3001
+23/03/14 21:28:46 196 [debug]: --------------------------------------------------

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="QnaMapper">
+
+    <!-- 단일행 조회를 위한 기능 정의 -->
+    <select id="selectItem">
+        SELECT qnaTitle, qnaContent, date_format(qndDate, '%Y/%m/%d %H:%i:%s') as qndDate, qnaAnswer, userNo FROM qna WHERE qnaNo=#{qnaNo}
+    </select>
+
+    <!-- 다중행 조회를 위한 기능 정의 -->
+    <select id="selectList">
+        SELECT qnaNo, qnaTitle, qnaContent, date_format(qndDate, '%Y/%m/%d %H:%i:%s') as qndDate, qnaAnswer, userNo FROM qna
+
+        <where>
+            <if test="qnaTitle != null and qnaTitle != ''">
+                qnaTitle LIKE concat('%', #{qnaTitle}, '%')
+            </if>
+
+            <if test="qnaDate != null and qnaDate != ''">
+                OR qnaDate LIKE concat('%', #{qnaDate}, '%')
+            </if>
+        </where>
+
+        ORDER BY qndDate DESC
+
+        <!-- 페이지 구현을 위한 LIMIT절 추가 -->
+        <if test="listCount > 0">
+            LIMIT ${offset}, ${listCount}
+        </if>
+    </select>
+
+    <!-- 데이터 저장을 위한 기능 정의 -->
+    <insert id="insertItem">
+        INSERT INTO qna (qnaTitle, qnaContent, qndDate, qnaAnswer, userNo) VALUES (#{qnaTitle}, #{qnaContent}, date_format(now(), '%Y/%m/%d %H:%i:%s'), #{qnaAnswer}, #{userNo})
+    </insert>
+
+    <!-- 데이터 삭제를 위한 기능 정의 -->
+    <delete id="deleteItem">
+        DELETE FROM qna WHERE qnaNo=#{qnaNo}
+    </delete>
+
+    <!-- 데이터 갱신을 위한 기능 정의 -->
+    <update id="updateItem">
+        UPDATE qna SET qnaTitle=#{qnaTitle}, qnaContent=#{qnaContent}, qndDate=#{qndDate}, qnaAnswer=#{qnaAnswer}, userNo=#{userNo}
+        WHERE qnaNo=#{qnaNo}
+    </update>
+
+    <!-- 데이터 수 조회하기  -->
+    <select id="selectCountAll">
+        SELECT COUNT(*) AS cnt FROM qna
+
+        <where>
+            <if test="qnaTitle != null and qnaTitle != ''">
+                qnaTitle LIKE concat('%', #{qnaTitle}, '%')
+            </if>
+
+            <if test="qndDate != null and qndDate != ''">
+                OR qndDate LIKE concat('%', #{qndDate}, '%')
+            </if>
+        </where>
+    </select>
+
+
+    <!-- user 삭제 시 qna 삭제 기능 정의 -->
+    <select id="deleteQnaByUser">
+        DELETE FROM qna WHERE userNo=#{userNo}
+    </select>
+
+</mapper>

@@ -1,0 +1,154 @@
+23/03/10 00:26:33 359 [debug]: --------------------------------------------------
+23/03/10 00:26:33 361 [debug]: |              Start Express Server              |
+23/03/10 00:26:33 362 [debug]: --------------------------------------------------
+23/03/10 00:26:33 362 [debug]: server address => http://211.222.164.95:3001
+23/03/10 00:26:33 362 [debug]: --------------------------------------------------
+23/03/10 00:26:57 646 [debug]: --------------------------------------------------
+23/03/10 00:26:57 648 [debug]: |              Start Express Server              |
+23/03/10 00:26:57 648 [debug]: --------------------------------------------------
+23/03/10 00:26:57 649 [debug]: server address => http://211.222.164.95:3001
+23/03/10 00:26:57 649 [debug]: --------------------------------------------------
+23/03/10 00:27:00 949 [debug]: 클라이언트가 접속했습니다.
+23/03/10 00:27:00 950 [debug]: [GET] http://localhost:3001/book_authName/1
+23/03/10 00:27:00 951 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/10 00:27:00 975 [info]:  >> DATABASE 접속됨 [threaId=3692]
+23/03/10 00:27:00 976 [info]:  >> Connection 임대됨 [threaId=3692]
+23/03/10 00:27:00 979 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE  o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:27:00 981 [info]:  >> Connection 반납됨 [threaId=3692]
+23/03/10 00:27:00 982 [info]:  >> Connection 임대됨 [threaId=3692]
+23/03/10 00:27:00 983 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     b.ctgNo = (SELECT ctgNo FROM book WHERE bookNo = '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:27:00 984 [info]:  >> Connection 반납됨 [threaId=3692]
+23/03/10 00:27:00 984 [info]:  >> Connection 임대됨 [threaId=3692]
+23/03/10 00:27:00 985 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     ctg.ctgUp =(SELECT ctgNo - mod(ctgNo,100)  FROM book WHERE bookNo= '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:27:00 985 [info]:  >> Connection 반납됨 [threaId=3692]
+23/03/10 00:27:00 986 [info]:  >> Connection 임대됨 [threaId=3692]
+23/03/10 00:27:00 986 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc, bookIndex, img, content, ISBNum, page, size, a.authName as authName, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  WHERE bookNo= '1'
+23/03/10 00:27:00 987 [info]:  >> Connection 반납됨 [threaId=3692]
+23/03/10 00:27:00 990 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 40ms
+23/03/10 00:27:00 990 [debug]: --------------------------------------------------
+23/03/10 00:36:03 591 [debug]: 클라이언트가 접속했습니다.
+23/03/10 00:36:03 592 [debug]: [GET] http://localhost:3001/book_authName/1
+23/03/10 00:36:03 592 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/10 00:36:03 593 [info]:  >> Connection 임대됨 [threaId=3692]
+23/03/10 00:36:03 594 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE  o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:36:03 595 [info]:  >> Connection 반납됨 [threaId=3692]
+23/03/10 00:36:03 595 [info]:  >> Connection 임대됨 [threaId=3692]
+23/03/10 00:36:03 596 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     b.ctgNo = (SELECT ctgNo FROM book WHERE bookNo = '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:36:03 597 [info]:  >> Connection 반납됨 [threaId=3692]
+23/03/10 00:36:03 597 [info]:  >> Connection 임대됨 [threaId=3692]
+23/03/10 00:36:03 598 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     ctg.ctgUp =(SELECT ctgNo - mod(ctgNo,100)  FROM book WHERE bookNo= '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:36:03 598 [info]:  >> Connection 반납됨 [threaId=3692]
+23/03/10 00:36:03 598 [info]:  >> Connection 임대됨 [threaId=3692]
+23/03/10 00:36:03 599 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc, bookIndex, img, content, ISBNum, page, size, a.authName as authName, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  WHERE bookNo= '1'
+23/03/10 00:36:03 600 [info]:  >> Connection 반납됨 [threaId=3692]
+23/03/10 00:36:03 600 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/03/10 00:36:03 601 [debug]: --------------------------------------------------
+23/03/10 00:36:36 134 [debug]: --------------------------------------------------
+23/03/10 00:36:36 136 [debug]: |              Start Express Server              |
+23/03/10 00:36:36 136 [debug]: --------------------------------------------------
+23/03/10 00:36:36 136 [debug]: server address => http://211.222.164.95:3001
+23/03/10 00:36:36 137 [debug]: --------------------------------------------------
+23/03/10 00:36:40 231 [debug]: 클라이언트가 접속했습니다.
+23/03/10 00:36:40 232 [debug]: [GET] http://localhost:3001/book_authName/1
+23/03/10 00:36:40 232 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/10 00:36:40 250 [info]:  >> DATABASE 접속됨 [threaId=3695]
+23/03/10 00:36:40 251 [info]:  >> Connection 임대됨 [threaId=3695]
+23/03/10 00:36:40 253 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE  o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:36:40 255 [info]:  >> Connection 반납됨 [threaId=3695]
+23/03/10 00:36:40 256 [info]:  >> Connection 임대됨 [threaId=3695]
+23/03/10 00:36:40 257 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     ctg.ctgUp =(SELECT ctgNo - mod(ctgNo,100)  FROM book WHERE bookNo= '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:36:40 258 [info]:  >> Connection 반납됨 [threaId=3695]
+23/03/10 00:36:40 258 [info]:  >> Connection 임대됨 [threaId=3695]
+23/03/10 00:36:40 258 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     b.ctgNo = (SELECT ctgNo FROM book WHERE bookNo = '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:36:40 259 [info]:  >> Connection 반납됨 [threaId=3695]
+23/03/10 00:36:40 259 [info]:  >> Connection 임대됨 [threaId=3695]
+23/03/10 00:36:40 260 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc, bookIndex, img, content, ISBNum, page, size, a.authName as authName, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  WHERE bookNo= '1'
+23/03/10 00:36:40 261 [info]:  >> Connection 반납됨 [threaId=3695]
+23/03/10 00:36:40 264 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+23/03/10 00:36:40 264 [debug]: --------------------------------------------------
+23/03/10 00:40:19 543 [debug]: 클라이언트가 접속했습니다.
+23/03/10 00:40:19 543 [debug]: [GET] http://localhost:3001/book_authName/1
+23/03/10 00:40:19 544 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/10 00:40:19 545 [info]:  >> Connection 임대됨 [threaId=3695]
+23/03/10 00:40:19 546 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE  o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:40:19 551 [info]:  >> Connection 반납됨 [threaId=3695]
+23/03/10 00:40:19 551 [info]:  >> Connection 임대됨 [threaId=3695]
+23/03/10 00:40:19 552 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     ctg.ctgUp =(SELECT ctgNo - mod(ctgNo,100)  FROM book WHERE bookNo= '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:40:19 553 [info]:  >> Connection 반납됨 [threaId=3695]
+23/03/10 00:40:19 553 [info]:  >> Connection 임대됨 [threaId=3695]
+23/03/10 00:40:19 554 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     b.ctgNo = (SELECT ctgNo FROM book WHERE bookNo = '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:40:19 554 [info]:  >> Connection 반납됨 [threaId=3695]
+23/03/10 00:40:19 554 [info]:  >> Connection 임대됨 [threaId=3695]
+23/03/10 00:40:19 555 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc, bookIndex, img, content, ISBNum, page, size, a.authName as authName, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  WHERE bookNo= '1'
+23/03/10 00:40:19 555 [info]:  >> Connection 반납됨 [threaId=3695]
+23/03/10 00:40:19 556 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+23/03/10 00:40:19 557 [debug]: --------------------------------------------------
+23/03/10 00:41:53 741 [debug]: --------------------------------------------------
+23/03/10 00:41:53 743 [debug]: |              Start Express Server              |
+23/03/10 00:41:53 744 [debug]: --------------------------------------------------
+23/03/10 00:41:53 744 [debug]: server address => http://211.222.164.95:3001
+23/03/10 00:41:53 745 [debug]: --------------------------------------------------
+23/03/10 00:41:54 937 [debug]: 클라이언트가 접속했습니다.
+23/03/10 00:41:54 938 [debug]: [GET] http://localhost:3001/book_authName/1
+23/03/10 00:41:54 938 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/10 00:41:54 955 [info]:  >> DATABASE 접속됨 [threaId=3697]
+23/03/10 00:41:54 956 [info]:  >> Connection 임대됨 [threaId=3697]
+23/03/10 00:41:54 958 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE  o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:41:54 961 [info]:  >> Connection 반납됨 [threaId=3697]
+23/03/10 00:41:54 961 [info]:  >> Connection 임대됨 [threaId=3697]
+23/03/10 00:41:54 962 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     ctg.ctgUp =(SELECT ctgNo - mod(ctgNo,100)  FROM book WHERE bookNo= '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:41:54 963 [info]:  >> Connection 반납됨 [threaId=3697]
+23/03/10 00:41:54 963 [info]:  >> Connection 임대됨 [threaId=3697]
+23/03/10 00:41:54 964 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     b.ctgNo = (SELECT ctgNo FROM book WHERE bookNo = '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:41:54 965 [info]:  >> Connection 반납됨 [threaId=3697]
+23/03/10 00:41:54 965 [info]:  >> Connection 임대됨 [threaId=3697]
+23/03/10 00:41:54 965 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc, bookIndex, img, content, ISBNum, page, size, a.authName as authName, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  WHERE bookNo= '1'
+23/03/10 00:41:54 966 [info]:  >> Connection 반납됨 [threaId=3697]
+23/03/10 00:41:54 969 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+23/03/10 00:41:54 970 [debug]: --------------------------------------------------
+23/03/10 00:42:01 040 [debug]: --------------------------------------------------
+23/03/10 00:42:01 042 [debug]: |              Start Express Server              |
+23/03/10 00:42:01 043 [debug]: --------------------------------------------------
+23/03/10 00:42:01 043 [debug]: server address => http://211.222.164.95:3001
+23/03/10 00:42:01 043 [debug]: --------------------------------------------------
+23/03/10 00:42:01 116 [debug]: 클라이언트가 접속했습니다.
+23/03/10 00:42:01 117 [debug]: [GET] http://localhost:3001/book_authName/1
+23/03/10 00:42:01 118 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/10 00:42:01 137 [info]:  >> DATABASE 접속됨 [threaId=3699]
+23/03/10 00:42:01 137 [info]:  >> Connection 임대됨 [threaId=3699]
+23/03/10 00:42:01 139 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE  o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:42:01 143 [info]:  >> Connection 반납됨 [threaId=3699]
+23/03/10 00:42:01 143 [info]:  >> Connection 임대됨 [threaId=3699]
+23/03/10 00:42:01 144 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     ctg.ctgUp =(SELECT ctgNo - mod(ctgNo,100)  FROM book WHERE bookNo= '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:42:01 145 [info]:  >> Connection 반납됨 [threaId=3699]
+23/03/10 00:42:01 145 [info]:  >> Connection 임대됨 [threaId=3699]
+23/03/10 00:42:01 146 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     b.ctgNo = (SELECT ctgNo FROM book WHERE bookNo = '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:42:01 147 [info]:  >> Connection 반납됨 [threaId=3699]
+23/03/10 00:42:01 147 [info]:  >> Connection 임대됨 [threaId=3699]
+23/03/10 00:42:01 147 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc, bookIndex, img, content, ISBNum, page, size, a.authName as authName, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  WHERE bookNo= '1'
+23/03/10 00:42:01 148 [info]:  >> Connection 반납됨 [threaId=3699]
+23/03/10 00:42:01 151 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 34ms
+23/03/10 00:42:01 152 [debug]: --------------------------------------------------
+23/03/10 00:42:05 489 [debug]: --------------------------------------------------
+23/03/10 00:42:05 491 [debug]: |              Start Express Server              |
+23/03/10 00:42:05 491 [debug]: --------------------------------------------------
+23/03/10 00:42:05 492 [debug]: server address => http://211.222.164.95:3001
+23/03/10 00:42:05 492 [debug]: --------------------------------------------------
+23/03/10 00:42:05 538 [debug]: 클라이언트가 접속했습니다.
+23/03/10 00:42:05 539 [debug]: [GET] http://localhost:3001/book_authName/1
+23/03/10 00:42:05 540 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/10 00:42:05 557 [info]:  >> DATABASE 접속됨 [threaId=3701]
+23/03/10 00:42:05 557 [info]:  >> Connection 임대됨 [threaId=3701]
+23/03/10 00:42:05 560 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE  o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:42:05 563 [info]:  >> Connection 반납됨 [threaId=3701]
+23/03/10 00:42:05 563 [info]:  >> Connection 임대됨 [threaId=3701]
+23/03/10 00:42:05 564 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     ctg.ctgUp =(SELECT ctgNo - mod(ctgNo,100)  FROM book WHERE bookNo= '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:42:05 565 [info]:  >> Connection 반납됨 [threaId=3701]
+23/03/10 00:42:05 566 [info]:  >> Connection 임대됨 [threaId=3701]
+23/03/10 00:42:05 567 [debug]: SELECT *   FROM  (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount  FROM (select @rownum :=0) ranking,   (SELECT od.bookNo, SUM(amount) as sum_amount  FROM orderDetails as od  INNER JOIN book as b ON od.bookNo = b.bookNo  INNER JOIN orders as o On od.orderNo = o.orderNo  INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo  WHERE     b.ctgNo = (SELECT ctgNo FROM book WHERE bookNo = '1')    AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()    GROUP by od.bookNo  )A   ORDER BY sum_amount DESC Limit 40  ) B WHERE bookNo = '1'
+23/03/10 00:42:05 567 [info]:  >> Connection 반납됨 [threaId=3701]
+23/03/10 00:42:05 568 [info]:  >> Connection 임대됨 [threaId=3701]
+23/03/10 00:42:05 568 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc, bookIndex, img, content, ISBNum, page, size, a.authName as authName, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  WHERE bookNo= '1'
+23/03/10 00:42:05 569 [info]:  >> Connection 반납됨 [threaId=3701]
+23/03/10 00:42:05 572 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+23/03/10 00:42:05 573 [debug]: --------------------------------------------------

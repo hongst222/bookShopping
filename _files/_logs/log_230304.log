@@ -1,0 +1,2094 @@
+23/03/04 19:15:51 533 [debug]: --------------------------------------------------
+23/03/04 19:15:51 535 [debug]: |              Start Express Server              |
+23/03/04 19:15:51 536 [debug]: --------------------------------------------------
+23/03/04 19:15:51 537 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:15:51 537 [debug]: --------------------------------------------------
+23/03/04 19:15:54 563 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:15:54 565 [debug]: [OPTIONS] http://localhost:3001/books/15
+23/03/04 19:15:54 565 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:15:54 568 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 19:15:54 569 [debug]: --------------------------------------------------
+23/03/04 19:15:54 571 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:15:54 572 [debug]: [DELETE] http://localhost:3001/books/15
+23/03/04 19:15:54 572 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:15:54 652 [info]:  >> DATABASE 접속됨 [threaId=401]
+23/03/04 19:15:54 652 [info]:  >> Connection 임대됨 [threaId=401]
+23/03/04 19:15:54 654 [debug]: DELETE FROM books WHERE id='15'
+23/03/04 19:15:55 041 [info]:  >> Connection 반납됨 [threaId=401]
+23/03/04 19:15:55 055 [error]: RuntimeException: 삭제된 데이터가 없습니다.
+    at call (D:\최종\server\services\/BookService.js:142:23)
+    at tryCatch (D:\최종\server\services\/BookService.js:2:1)
+    at Generator._invoke (D:\최종\server\services\/BookService.js:2:1)
+    at Generator.next (D:\최종\server\services\/BookService.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\services\/BookService.js:2:1)
+    at _next (D:\최종\server\services\/BookService.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:15:55 059 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 486ms
+23/03/04 19:15:55 059 [debug]: --------------------------------------------------
+23/03/04 19:16:04 676 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:16:04 677 [debug]: [OPTIONS] http://localhost:3001/books/15
+23/03/04 19:16:04 677 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:16:04 678 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/03/04 19:16:04 678 [debug]: --------------------------------------------------
+23/03/04 19:16:04 682 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:16:04 682 [debug]: [DELETE] http://localhost:3001/books/15
+23/03/04 19:16:04 683 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:16:04 684 [info]:  >> Connection 임대됨 [threaId=401]
+23/03/04 19:16:04 686 [debug]: DELETE FROM books WHERE id='15'
+23/03/04 19:16:04 686 [info]:  >> Connection 반납됨 [threaId=401]
+23/03/04 19:16:04 687 [error]: RuntimeException: 삭제된 데이터가 없습니다.
+    at call (D:\최종\server\services\/BookService.js:142:23)
+    at tryCatch (D:\최종\server\services\/BookService.js:2:1)
+    at Generator._invoke (D:\최종\server\services\/BookService.js:2:1)
+    at Generator.next (D:\최종\server\services\/BookService.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\services\/BookService.js:2:1)
+    at _next (D:\최종\server\services\/BookService.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:16:04 689 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/03/04 19:16:04 689 [debug]: --------------------------------------------------
+23/03/04 19:16:10 612 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:16:10 613 [debug]: [OPTIONS] http://localhost:3001/books/15
+23/03/04 19:16:10 613 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:16:10 614 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/03/04 19:16:10 614 [debug]: --------------------------------------------------
+23/03/04 19:16:10 616 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:16:10 616 [debug]: [DELETE] http://localhost:3001/books/15
+23/03/04 19:16:10 616 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:16:10 617 [info]:  >> Connection 임대됨 [threaId=401]
+23/03/04 19:16:10 618 [debug]: DELETE FROM books WHERE id='15'
+23/03/04 19:16:10 619 [info]:  >> Connection 반납됨 [threaId=401]
+23/03/04 19:16:10 619 [error]: RuntimeException: 삭제된 데이터가 없습니다.
+    at call (D:\최종\server\services\/BookService.js:142:23)
+    at tryCatch (D:\최종\server\services\/BookService.js:2:1)
+    at Generator._invoke (D:\최종\server\services\/BookService.js:2:1)
+    at Generator.next (D:\최종\server\services\/BookService.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\services\/BookService.js:2:1)
+    at _next (D:\최종\server\services\/BookService.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:16:10 621 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 19:16:10 621 [debug]: --------------------------------------------------
+23/03/04 19:16:20 917 [debug]: --------------------------------------------------
+23/03/04 19:16:20 919 [debug]: |              Start Express Server              |
+23/03/04 19:16:20 919 [debug]: --------------------------------------------------
+23/03/04 19:16:20 920 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:16:20 920 [debug]: --------------------------------------------------
+23/03/04 19:16:24 670 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:16:24 671 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:16:24 671 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:16:24 691 [info]:  >> DATABASE 접속됨 [threaId=403]
+23/03/04 19:16:24 691 [info]:  >> Connection 임대됨 [threaId=403]
+23/03/04 19:16:24 694 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:16:24 704 [info]:  >> Connection 반납됨 [threaId=403]
+23/03/04 19:16:24 718 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:16:24 721 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 50ms
+23/03/04 19:16:24 722 [debug]: --------------------------------------------------
+23/03/04 19:16:24 883 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:16:24 884 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:16:24 884 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:16:24 886 [info]:  >> Connection 임대됨 [threaId=403]
+23/03/04 19:16:24 887 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:16:24 888 [info]:  >> Connection 반납됨 [threaId=403]
+23/03/04 19:16:24 888 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:16:24 890 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/03/04 19:16:24 891 [debug]: --------------------------------------------------
+23/03/04 19:30:55 629 [debug]: --------------------------------------------------
+23/03/04 19:30:55 631 [debug]: |              Start Express Server              |
+23/03/04 19:30:55 631 [debug]: --------------------------------------------------
+23/03/04 19:30:55 632 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:30:55 632 [debug]: --------------------------------------------------
+23/03/04 19:30:55 945 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:30:55 946 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:30:55 946 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:30:55 967 [info]:  >> DATABASE 접속됨 [threaId=405]
+23/03/04 19:30:55 968 [info]:  >> Connection 임대됨 [threaId=405]
+23/03/04 19:30:55 971 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:30:55 974 [info]:  >> Connection 반납됨 [threaId=405]
+23/03/04 19:30:55 975 [info]:  >> Connection 임대됨 [threaId=405]
+23/03/04 19:30:55 976 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 19:30:55 980 [info]:  >> Connection 반납됨 [threaId=405]
+23/03/04 19:31:14 494 [debug]: --------------------------------------------------
+23/03/04 19:31:14 496 [debug]: |              Start Express Server              |
+23/03/04 19:31:14 497 [debug]: --------------------------------------------------
+23/03/04 19:31:14 497 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:31:14 497 [debug]: --------------------------------------------------
+23/03/04 19:31:14 549 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:31:14 549 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:31:14 550 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:31:14 567 [info]:  >> DATABASE 접속됨 [threaId=407]
+23/03/04 19:31:14 568 [info]:  >> Connection 임대됨 [threaId=407]
+23/03/04 19:31:14 570 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:31:14 573 [info]:  >> Connection 반납됨 [threaId=407]
+23/03/04 19:31:26 033 [debug]: --------------------------------------------------
+23/03/04 19:31:26 036 [debug]: |              Start Express Server              |
+23/03/04 19:31:26 037 [debug]: --------------------------------------------------
+23/03/04 19:31:26 037 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:31:26 037 [debug]: --------------------------------------------------
+23/03/04 19:31:26 104 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:31:26 105 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:31:26 105 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:31:26 126 [info]:  >> DATABASE 접속됨 [threaId=409]
+23/03/04 19:31:26 127 [info]:  >> Connection 임대됨 [threaId=409]
+23/03/04 19:31:26 130 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:31:26 133 [info]:  >> Connection 반납됨 [threaId=409]
+23/03/04 19:31:26 139 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:31:26 143 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 37ms
+23/03/04 19:31:26 143 [debug]: --------------------------------------------------
+23/03/04 19:32:19 715 [debug]: --------------------------------------------------
+23/03/04 19:32:19 718 [debug]: |              Start Express Server              |
+23/03/04 19:32:19 718 [debug]: --------------------------------------------------
+23/03/04 19:32:19 718 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:32:19 719 [debug]: --------------------------------------------------
+23/03/04 19:32:19 844 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:32:19 845 [debug]: [GET] http://localhost:3001/books/1
+23/03/04 19:32:19 845 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:32:19 865 [info]:  >> DATABASE 접속됨 [threaId=411]
+23/03/04 19:32:19 866 [info]:  >> Connection 임대됨 [threaId=411]
+23/03/04 19:32:19 868 [debug]: SELECT * FROM books WHERE id= '1'
+23/03/04 19:32:19 871 [info]:  >> Connection 반납됨 [threaId=411]
+23/03/04 19:32:19 875 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+23/03/04 19:32:19 875 [debug]: --------------------------------------------------
+23/03/04 19:32:27 394 [debug]: --------------------------------------------------
+23/03/04 19:32:27 396 [debug]: |              Start Express Server              |
+23/03/04 19:32:27 396 [debug]: --------------------------------------------------
+23/03/04 19:32:27 397 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:32:27 397 [debug]: --------------------------------------------------
+23/03/04 19:32:27 512 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:32:27 513 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:32:27 514 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:32:27 533 [info]:  >> DATABASE 접속됨 [threaId=413]
+23/03/04 19:32:27 533 [info]:  >> Connection 임대됨 [threaId=413]
+23/03/04 19:32:27 536 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:32:27 538 [info]:  >> Connection 반납됨 [threaId=413]
+23/03/04 19:32:27 551 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:32:27 555 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 42ms
+23/03/04 19:32:27 555 [debug]: --------------------------------------------------
+23/03/04 19:34:40 396 [debug]: --------------------------------------------------
+23/03/04 19:34:40 398 [debug]: |              Start Express Server              |
+23/03/04 19:34:40 399 [debug]: --------------------------------------------------
+23/03/04 19:34:40 399 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:34:40 399 [debug]: --------------------------------------------------
+23/03/04 19:34:40 435 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:34:40 436 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:34:40 436 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:34:40 454 [info]:  >> DATABASE 접속됨 [threaId=415]
+23/03/04 19:34:40 455 [info]:  >> Connection 임대됨 [threaId=415]
+23/03/04 19:34:40 457 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:34:40 460 [info]:  >> Connection 반납됨 [threaId=415]
+23/03/04 19:34:40 466 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:34:40 470 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 35ms
+23/03/04 19:34:40 470 [debug]: --------------------------------------------------
+23/03/04 19:34:40 658 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:34:40 659 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:34:40 659 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:34:40 662 [info]:  >> Connection 임대됨 [threaId=415]
+23/03/04 19:34:40 663 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:34:40 664 [info]:  >> Connection 반납됨 [threaId=415]
+23/03/04 19:34:40 665 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:34:40 666 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/03/04 19:34:40 666 [debug]: --------------------------------------------------
+23/03/04 19:34:42 219 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:34:42 220 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:34:42 220 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:34:42 221 [info]:  >> Connection 임대됨 [threaId=415]
+23/03/04 19:34:42 222 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:34:42 223 [info]:  >> Connection 반납됨 [threaId=415]
+23/03/04 19:34:42 223 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:34:42 224 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 19:34:42 225 [debug]: --------------------------------------------------
+23/03/04 19:34:47 891 [debug]: --------------------------------------------------
+23/03/04 19:34:47 894 [debug]: |              Start Express Server              |
+23/03/04 19:34:47 894 [debug]: --------------------------------------------------
+23/03/04 19:34:47 894 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:34:47 895 [debug]: --------------------------------------------------
+23/03/04 19:34:47 901 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:34:47 901 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:34:47 902 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:34:47 922 [info]:  >> DATABASE 접속됨 [threaId=416]
+23/03/04 19:34:47 922 [info]:  >> Connection 임대됨 [threaId=416]
+23/03/04 19:34:47 925 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:34:47 929 [info]:  >> Connection 반납됨 [threaId=416]
+23/03/04 19:34:47 934 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:34:47 937 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 36ms
+23/03/04 19:34:47 938 [debug]: --------------------------------------------------
+23/03/04 19:39:21 661 [debug]: --------------------------------------------------
+23/03/04 19:39:21 663 [debug]: |              Start Express Server              |
+23/03/04 19:39:21 664 [debug]: --------------------------------------------------
+23/03/04 19:39:21 664 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:39:21 664 [debug]: --------------------------------------------------
+23/03/04 19:39:26 847 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:39:26 849 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:39:26 849 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:39:26 869 [info]:  >> DATABASE 접속됨 [threaId=419]
+23/03/04 19:39:26 870 [info]:  >> Connection 임대됨 [threaId=419]
+23/03/04 19:39:26 872 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:39:26 875 [info]:  >> Connection 반납됨 [threaId=419]
+23/03/04 19:39:26 888 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:39:26 893 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 45ms
+23/03/04 19:39:26 894 [debug]: --------------------------------------------------
+23/03/04 19:40:25 292 [debug]: --------------------------------------------------
+23/03/04 19:40:25 294 [debug]: |              Start Express Server              |
+23/03/04 19:40:25 294 [debug]: --------------------------------------------------
+23/03/04 19:40:25 295 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:40:25 295 [debug]: --------------------------------------------------
+23/03/04 19:40:25 462 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:40:25 463 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:40:25 463 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:40:25 483 [info]:  >> DATABASE 접속됨 [threaId=422]
+23/03/04 19:40:25 484 [info]:  >> Connection 임대됨 [threaId=422]
+23/03/04 19:40:25 488 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:40:25 491 [info]:  >> Connection 반납됨 [threaId=422]
+23/03/04 19:40:25 497 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:40:25 501 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 38ms
+23/03/04 19:40:25 501 [debug]: --------------------------------------------------
+23/03/04 19:40:39 316 [debug]: --------------------------------------------------
+23/03/04 19:40:39 318 [debug]: |              Start Express Server              |
+23/03/04 19:40:39 318 [debug]: --------------------------------------------------
+23/03/04 19:40:39 319 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:40:39 319 [debug]: --------------------------------------------------
+23/03/04 19:40:39 400 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:40:39 401 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:40:39 402 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:40:39 420 [info]:  >> DATABASE 접속됨 [threaId=424]
+23/03/04 19:40:39 420 [info]:  >> Connection 임대됨 [threaId=424]
+23/03/04 19:40:39 423 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:40:39 425 [info]:  >> Connection 반납됨 [threaId=424]
+23/03/04 19:41:34 721 [debug]: --------------------------------------------------
+23/03/04 19:41:34 723 [debug]: |              Start Express Server              |
+23/03/04 19:41:34 724 [debug]: --------------------------------------------------
+23/03/04 19:41:34 724 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:41:34 724 [debug]: --------------------------------------------------
+23/03/04 19:41:34 756 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:41:34 757 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:41:34 758 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:41:34 777 [info]:  >> DATABASE 접속됨 [threaId=426]
+23/03/04 19:41:34 777 [info]:  >> Connection 임대됨 [threaId=426]
+23/03/04 19:41:34 780 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:41:34 782 [info]:  >> Connection 반납됨 [threaId=426]
+23/03/04 19:41:34 788 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:41:34 791 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 34ms
+23/03/04 19:41:34 792 [debug]: --------------------------------------------------
+23/03/04 19:41:55 131 [debug]: --------------------------------------------------
+23/03/04 19:41:55 133 [debug]: |              Start Express Server              |
+23/03/04 19:41:55 134 [debug]: --------------------------------------------------
+23/03/04 19:41:55 134 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:41:55 135 [debug]: --------------------------------------------------
+23/03/04 19:41:55 341 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:41:55 342 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:41:55 343 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:41:55 361 [info]:  >> DATABASE 접속됨 [threaId=428]
+23/03/04 19:41:55 361 [info]:  >> Connection 임대됨 [threaId=428]
+23/03/04 19:41:55 363 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:41:55 366 [info]:  >> Connection 반납됨 [threaId=428]
+23/03/04 19:41:55 378 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:41:55 382 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 40ms
+23/03/04 19:41:55 382 [debug]: --------------------------------------------------
+23/03/04 19:42:00 429 [debug]: --------------------------------------------------
+23/03/04 19:42:00 431 [debug]: |              Start Express Server              |
+23/03/04 19:42:00 432 [debug]: --------------------------------------------------
+23/03/04 19:42:00 432 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:42:00 432 [debug]: --------------------------------------------------
+23/03/04 19:42:00 439 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:42:00 439 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:42:00 440 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:42:00 460 [info]:  >> DATABASE 접속됨 [threaId=429]
+23/03/04 19:42:00 461 [info]:  >> Connection 임대됨 [threaId=429]
+23/03/04 19:42:00 463 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:42:00 467 [info]:  >> Connection 반납됨 [threaId=429]
+23/03/04 19:42:00 473 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:42:00 476 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 37ms
+23/03/04 19:42:00 477 [debug]: --------------------------------------------------
+23/03/04 19:43:04 391 [debug]: --------------------------------------------------
+23/03/04 19:43:04 393 [debug]: |              Start Express Server              |
+23/03/04 19:43:04 394 [debug]: --------------------------------------------------
+23/03/04 19:43:04 394 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:43:04 394 [debug]: --------------------------------------------------
+23/03/04 19:43:04 497 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:43:04 498 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:43:04 498 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:43:04 518 [info]:  >> DATABASE 접속됨 [threaId=432]
+23/03/04 19:43:04 519 [info]:  >> Connection 임대됨 [threaId=432]
+23/03/04 19:43:04 522 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:43:04 525 [info]:  >> Connection 반납됨 [threaId=432]
+23/03/04 19:43:04 541 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:43:04 546 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 49ms
+23/03/04 19:43:04 546 [debug]: --------------------------------------------------
+23/03/04 19:43:08 299 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:43:08 299 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:43:08 300 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:43:08 301 [info]:  >> Connection 임대됨 [threaId=432]
+23/03/04 19:43:08 302 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:43:08 303 [info]:  >> Connection 반납됨 [threaId=432]
+23/03/04 19:43:08 304 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:43:08 306 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/03/04 19:43:08 307 [debug]: --------------------------------------------------
+23/03/04 19:43:09 823 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:43:09 824 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:43:09 824 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:43:09 825 [info]:  >> Connection 임대됨 [threaId=432]
+23/03/04 19:43:09 826 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:43:09 827 [info]:  >> Connection 반납됨 [threaId=432]
+23/03/04 19:43:09 828 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:43:09 829 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 19:43:09 829 [debug]: --------------------------------------------------
+23/03/04 19:43:16 109 [debug]: --------------------------------------------------
+23/03/04 19:43:16 111 [debug]: |              Start Express Server              |
+23/03/04 19:43:16 112 [debug]: --------------------------------------------------
+23/03/04 19:43:16 112 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:43:16 112 [debug]: --------------------------------------------------
+23/03/04 19:43:16 143 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:43:16 144 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:43:16 144 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:43:16 163 [info]:  >> DATABASE 접속됨 [threaId=434]
+23/03/04 19:43:16 163 [info]:  >> Connection 임대됨 [threaId=434]
+23/03/04 19:43:16 166 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:43:16 168 [info]:  >> Connection 반납됨 [threaId=434]
+23/03/04 19:43:16 180 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:43:16 184 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 41ms
+23/03/04 19:43:16 184 [debug]: --------------------------------------------------
+23/03/04 19:43:22 885 [debug]: --------------------------------------------------
+23/03/04 19:43:22 887 [debug]: |              Start Express Server              |
+23/03/04 19:43:22 888 [debug]: --------------------------------------------------
+23/03/04 19:43:22 888 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:43:22 889 [debug]: --------------------------------------------------
+23/03/04 19:43:25 390 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:43:25 391 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:43:25 391 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:43:25 410 [info]:  >> DATABASE 접속됨 [threaId=436]
+23/03/04 19:43:25 410 [info]:  >> Connection 임대됨 [threaId=436]
+23/03/04 19:43:25 413 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:43:25 415 [info]:  >> Connection 반납됨 [threaId=436]
+23/03/04 19:43:25 428 [error]: ReferenceError: pageInfo is not defined
+    at call (D:\최종\server\controllers\/BookController.js:28:21)
+    at tryCatch (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator._invoke (D:\최종\server\controllers\/BookController.js:2:1)
+    at Generator.next (D:\최종\server\controllers\/BookController.js:2:1)
+    at asyncGeneratorStep (D:\최종\server\controllers\/BookController.js:2:1)
+    at _next (D:\최종\server\controllers\/BookController.js:2:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+23/03/04 19:43:25 432 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 42ms
+23/03/04 19:43:25 433 [debug]: --------------------------------------------------
+23/03/04 19:44:30 435 [debug]: --------------------------------------------------
+23/03/04 19:44:30 437 [debug]: |              Start Express Server              |
+23/03/04 19:44:30 438 [debug]: --------------------------------------------------
+23/03/04 19:44:30 438 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:44:30 439 [debug]: --------------------------------------------------
+23/03/04 19:47:26 688 [debug]: --------------------------------------------------
+23/03/04 19:47:26 691 [debug]: |              Start Express Server              |
+23/03/04 19:47:26 691 [debug]: --------------------------------------------------
+23/03/04 19:47:26 691 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:47:26 692 [debug]: --------------------------------------------------
+23/03/04 19:47:39 148 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:47:39 150 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:47:39 150 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:47:39 208 [info]:  >> DATABASE 접속됨 [threaId=439]
+23/03/04 19:47:39 208 [info]:  >> Connection 임대됨 [threaId=439]
+23/03/04 19:47:39 211 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:47:39 214 [info]:  >> Connection 반납됨 [threaId=439]
+23/03/04 19:47:39 215 [info]:  >> Connection 임대됨 [threaId=439]
+23/03/04 19:47:39 216 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 19:47:39 218 [info]:  >> Connection 반납됨 [threaId=439]
+23/03/04 19:47:39 221 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 72ms
+23/03/04 19:47:39 221 [debug]: --------------------------------------------------
+23/03/04 19:49:56 352 [debug]: --------------------------------------------------
+23/03/04 19:49:56 354 [debug]: |              Start Express Server              |
+23/03/04 19:49:56 355 [debug]: --------------------------------------------------
+23/03/04 19:49:56 355 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:49:56 355 [debug]: --------------------------------------------------
+23/03/04 19:49:56 403 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:49:56 405 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:49:56 405 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:49:56 423 [info]:  >> DATABASE 접속됨 [threaId=441]
+23/03/04 19:49:56 423 [info]:  >> Connection 임대됨 [threaId=441]
+23/03/04 19:49:56 426 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:49:56 428 [info]:  >> Connection 반납됨 [threaId=441]
+23/03/04 19:49:56 429 [info]:  >> Connection 임대됨 [threaId=441]
+23/03/04 19:49:56 430 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 19:49:56 431 [info]:  >> Connection 반납됨 [threaId=441]
+23/03/04 19:49:56 434 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/03/04 19:49:56 435 [debug]: --------------------------------------------------
+23/03/04 19:49:58 371 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:49:58 372 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:49:58 372 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:49:58 373 [info]:  >> Connection 임대됨 [threaId=441]
+23/03/04 19:49:58 373 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:49:58 374 [info]:  >> Connection 반납됨 [threaId=441]
+23/03/04 19:49:58 375 [info]:  >> Connection 임대됨 [threaId=441]
+23/03/04 19:49:58 375 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 19:49:58 376 [info]:  >> Connection 반납됨 [threaId=441]
+23/03/04 19:49:58 377 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 19:49:58 377 [debug]: --------------------------------------------------
+23/03/04 19:52:03 825 [debug]: --------------------------------------------------
+23/03/04 19:52:03 828 [debug]: |              Start Express Server              |
+23/03/04 19:52:03 829 [debug]: --------------------------------------------------
+23/03/04 19:52:03 829 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:52:03 830 [debug]: --------------------------------------------------
+23/03/04 19:52:04 075 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:52:04 076 [debug]: [GET] http://localhost:3001/books
+23/03/04 19:52:04 076 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:52:04 093 [info]:  >> DATABASE 접속됨 [threaId=443]
+23/03/04 19:52:04 094 [info]:  >> Connection 임대됨 [threaId=443]
+23/03/04 19:52:04 096 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:52:04 098 [info]:  >> Connection 반납됨 [threaId=443]
+23/03/04 19:52:04 099 [info]:  >> Connection 임대됨 [threaId=443]
+23/03/04 19:52:04 100 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 5
+23/03/04 19:52:04 101 [info]:  >> Connection 반납됨 [threaId=443]
+23/03/04 19:52:04 104 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 19:52:04 105 [debug]: --------------------------------------------------
+23/03/04 19:52:08 426 [debug]: --------------------------------------------------
+23/03/04 19:52:08 428 [debug]: |              Start Express Server              |
+23/03/04 19:52:08 429 [debug]: --------------------------------------------------
+23/03/04 19:52:08 429 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:52:08 430 [debug]: --------------------------------------------------
+23/03/04 19:52:12 089 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:52:12 090 [debug]: [GET] http://localhost:3001/books
+23/03/04 19:52:12 090 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:52:12 109 [info]:  >> DATABASE 접속됨 [threaId=445]
+23/03/04 19:52:12 109 [info]:  >> Connection 임대됨 [threaId=445]
+23/03/04 19:52:12 112 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:52:12 114 [info]:  >> Connection 반납됨 [threaId=445]
+23/03/04 19:52:12 115 [info]:  >> Connection 임대됨 [threaId=445]
+23/03/04 19:52:12 116 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 5
+23/03/04 19:52:12 118 [info]:  >> Connection 반납됨 [threaId=445]
+23/03/04 19:52:12 121 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+23/03/04 19:52:12 121 [debug]: --------------------------------------------------
+23/03/04 19:52:38 834 [debug]: --------------------------------------------------
+23/03/04 19:52:38 836 [debug]: |              Start Express Server              |
+23/03/04 19:52:38 836 [debug]: --------------------------------------------------
+23/03/04 19:52:38 837 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:52:38 837 [debug]: --------------------------------------------------
+23/03/04 19:52:38 883 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:52:38 884 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:52:38 884 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:52:38 901 [info]:  >> DATABASE 접속됨 [threaId=447]
+23/03/04 19:52:38 902 [info]:  >> Connection 임대됨 [threaId=447]
+23/03/04 19:52:38 904 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:52:38 906 [info]:  >> Connection 반납됨 [threaId=447]
+23/03/04 19:52:38 907 [info]:  >> Connection 임대됨 [threaId=447]
+23/03/04 19:52:38 908 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 19:52:38 909 [info]:  >> Connection 반납됨 [threaId=447]
+23/03/04 19:52:38 912 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+23/03/04 19:52:38 912 [debug]: --------------------------------------------------
+23/03/04 19:53:06 239 [debug]: --------------------------------------------------
+23/03/04 19:53:06 241 [debug]: |              Start Express Server              |
+23/03/04 19:53:06 242 [debug]: --------------------------------------------------
+23/03/04 19:53:06 242 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:53:06 243 [debug]: --------------------------------------------------
+23/03/04 19:53:06 353 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:53:06 355 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:53:06 355 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:53:06 372 [info]:  >> DATABASE 접속됨 [threaId=449]
+23/03/04 19:53:06 373 [info]:  >> Connection 임대됨 [threaId=449]
+23/03/04 19:53:06 375 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:53:06 377 [info]:  >> Connection 반납됨 [threaId=449]
+23/03/04 19:53:06 378 [info]:  >> Connection 임대됨 [threaId=449]
+23/03/04 19:53:06 379 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 19:53:06 381 [info]:  >> Connection 반납됨 [threaId=449]
+23/03/04 19:53:06 384 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/03/04 19:53:06 384 [debug]: --------------------------------------------------
+23/03/04 19:53:28 611 [debug]: --------------------------------------------------
+23/03/04 19:53:28 613 [debug]: |              Start Express Server              |
+23/03/04 19:53:28 613 [debug]: --------------------------------------------------
+23/03/04 19:53:28 614 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:53:28 614 [debug]: --------------------------------------------------
+23/03/04 19:53:28 630 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:53:28 631 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:53:28 631 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:53:28 649 [info]:  >> DATABASE 접속됨 [threaId=451]
+23/03/04 19:53:28 650 [info]:  >> Connection 임대됨 [threaId=451]
+23/03/04 19:53:28 652 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:53:28 654 [info]:  >> Connection 반납됨 [threaId=451]
+23/03/04 19:53:28 655 [info]:  >> Connection 임대됨 [threaId=451]
+23/03/04 19:53:28 656 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 19:53:28 658 [info]:  >> Connection 반납됨 [threaId=451]
+23/03/04 19:53:28 661 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+23/03/04 19:53:28 661 [debug]: --------------------------------------------------
+23/03/04 19:58:53 336 [debug]: --------------------------------------------------
+23/03/04 19:58:53 339 [debug]: |              Start Express Server              |
+23/03/04 19:58:53 340 [debug]: --------------------------------------------------
+23/03/04 19:58:53 340 [debug]: server address => http://211.222.164.95:3001
+23/03/04 19:58:53 341 [debug]: --------------------------------------------------
+23/03/04 19:58:53 372 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:58:53 373 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:58:53 374 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:58:53 392 [info]:  >> DATABASE 접속됨 [threaId=453]
+23/03/04 19:58:53 392 [info]:  >> Connection 임대됨 [threaId=453]
+23/03/04 19:58:53 394 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:58:53 397 [info]:  >> Connection 반납됨 [threaId=453]
+23/03/04 19:58:53 398 [info]:  >> Connection 임대됨 [threaId=453]
+23/03/04 19:58:53 399 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 19:58:53 400 [info]:  >> Connection 반납됨 [threaId=453]
+23/03/04 19:58:53 403 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/03/04 19:58:53 404 [debug]: --------------------------------------------------
+23/03/04 19:58:57 707 [debug]: 클라이언트가 접속했습니다.
+23/03/04 19:58:57 708 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 19:58:57 708 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 19:58:57 709 [info]:  >> Connection 임대됨 [threaId=453]
+23/03/04 19:58:57 710 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 19:58:57 711 [info]:  >> Connection 반납됨 [threaId=453]
+23/03/04 19:58:57 711 [info]:  >> Connection 임대됨 [threaId=453]
+23/03/04 19:58:57 711 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 19:58:57 712 [info]:  >> Connection 반납됨 [threaId=453]
+23/03/04 19:58:57 713 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 19:58:57 713 [debug]: --------------------------------------------------
+23/03/04 20:04:10 752 [debug]: --------------------------------------------------
+23/03/04 20:04:10 754 [debug]: |              Start Express Server              |
+23/03/04 20:04:10 755 [debug]: --------------------------------------------------
+23/03/04 20:04:10 755 [debug]: server address => http://211.222.164.95:3001
+23/03/04 20:04:10 756 [debug]: --------------------------------------------------
+23/03/04 20:04:10 807 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:04:10 808 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:04:10 809 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:04:10 827 [info]:  >> DATABASE 접속됨 [threaId=455]
+23/03/04 20:04:10 828 [info]:  >> Connection 임대됨 [threaId=455]
+23/03/04 20:04:10 830 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:04:10 832 [info]:  >> Connection 반납됨 [threaId=455]
+23/03/04 20:04:10 833 [info]:  >> Connection 임대됨 [threaId=455]
+23/03/04 20:04:10 834 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:04:10 836 [info]:  >> Connection 반납됨 [threaId=455]
+23/03/04 20:04:10 839 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+23/03/04 20:04:10 839 [debug]: --------------------------------------------------
+23/03/04 20:05:28 899 [debug]: --------------------------------------------------
+23/03/04 20:05:28 903 [debug]: |              Start Express Server              |
+23/03/04 20:05:28 904 [debug]: --------------------------------------------------
+23/03/04 20:05:28 904 [debug]: server address => http://211.222.164.95:3001
+23/03/04 20:05:28 905 [debug]: --------------------------------------------------
+23/03/04 20:05:28 933 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:05:28 934 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:05:28 935 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:05:28 954 [info]:  >> DATABASE 접속됨 [threaId=457]
+23/03/04 20:05:28 954 [info]:  >> Connection 임대됨 [threaId=457]
+23/03/04 20:05:28 957 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:05:28 959 [info]:  >> Connection 반납됨 [threaId=457]
+23/03/04 20:05:28 960 [info]:  >> Connection 임대됨 [threaId=457]
+23/03/04 20:05:28 961 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:05:28 962 [info]:  >> Connection 반납됨 [threaId=457]
+23/03/04 20:05:28 965 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+23/03/04 20:05:28 966 [debug]: --------------------------------------------------
+23/03/04 20:06:02 329 [debug]: --------------------------------------------------
+23/03/04 20:06:02 331 [debug]: |              Start Express Server              |
+23/03/04 20:06:02 332 [debug]: --------------------------------------------------
+23/03/04 20:06:02 332 [debug]: server address => http://211.222.164.95:3001
+23/03/04 20:06:02 332 [debug]: --------------------------------------------------
+23/03/04 20:06:02 368 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:06:02 369 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:06:02 369 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:06:02 385 [info]:  >> DATABASE 접속됨 [threaId=459]
+23/03/04 20:06:02 386 [info]:  >> Connection 임대됨 [threaId=459]
+23/03/04 20:06:02 388 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:06:02 390 [info]:  >> Connection 반납됨 [threaId=459]
+23/03/04 20:06:02 391 [info]:  >> Connection 임대됨 [threaId=459]
+23/03/04 20:06:02 392 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:06:02 393 [info]:  >> Connection 반납됨 [threaId=459]
+23/03/04 20:06:02 397 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 20:06:02 397 [debug]: --------------------------------------------------
+23/03/04 20:06:07 048 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:06:07 048 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:06:07 049 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:06:07 050 [info]:  >> Connection 임대됨 [threaId=459]
+23/03/04 20:06:07 050 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:06:07 051 [info]:  >> Connection 반납됨 [threaId=459]
+23/03/04 20:06:07 051 [info]:  >> Connection 임대됨 [threaId=459]
+23/03/04 20:06:07 052 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:06:07 053 [info]:  >> Connection 반납됨 [threaId=459]
+23/03/04 20:06:07 053 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 20:06:07 053 [debug]: --------------------------------------------------
+23/03/04 20:12:48 453 [debug]: --------------------------------------------------
+23/03/04 20:12:48 455 [debug]: |              Start Express Server              |
+23/03/04 20:12:48 456 [debug]: --------------------------------------------------
+23/03/04 20:12:48 456 [debug]: server address => http://211.222.164.95:3001
+23/03/04 20:12:48 456 [debug]: --------------------------------------------------
+23/03/04 20:12:50 880 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:12:50 882 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:12:50 882 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:12:50 902 [info]:  >> DATABASE 접속됨 [threaId=461]
+23/03/04 20:12:50 903 [info]:  >> Connection 임대됨 [threaId=461]
+23/03/04 20:12:50 906 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:12:50 908 [info]:  >> Connection 반납됨 [threaId=461]
+23/03/04 20:12:50 909 [info]:  >> Connection 임대됨 [threaId=461]
+23/03/04 20:12:50 910 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:12:50 911 [info]:  >> Connection 반납됨 [threaId=461]
+23/03/04 20:12:50 915 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 34ms
+23/03/04 20:12:50 915 [debug]: --------------------------------------------------
+23/03/04 20:13:40 008 [debug]: --------------------------------------------------
+23/03/04 20:13:40 010 [debug]: |              Start Express Server              |
+23/03/04 20:13:40 010 [debug]: --------------------------------------------------
+23/03/04 20:13:40 011 [debug]: server address => http://211.222.164.95:3001
+23/03/04 20:13:40 011 [debug]: --------------------------------------------------
+23/03/04 20:13:40 022 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:13:40 023 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:13:40 023 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:13:40 041 [info]:  >> DATABASE 접속됨 [threaId=463]
+23/03/04 20:13:40 042 [info]:  >> Connection 임대됨 [threaId=463]
+23/03/04 20:13:40 044 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:13:40 046 [info]:  >> Connection 반납됨 [threaId=463]
+23/03/04 20:13:40 047 [info]:  >> Connection 임대됨 [threaId=463]
+23/03/04 20:13:40 048 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:13:40 049 [info]:  >> Connection 반납됨 [threaId=463]
+23/03/04 20:13:40 052 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/03/04 20:13:40 053 [debug]: --------------------------------------------------
+23/03/04 20:19:50 463 [debug]: --------------------------------------------------
+23/03/04 20:19:50 466 [debug]: |              Start Express Server              |
+23/03/04 20:19:50 466 [debug]: --------------------------------------------------
+23/03/04 20:19:50 466 [debug]: server address => http://211.222.164.95:3001
+23/03/04 20:19:50 467 [debug]: --------------------------------------------------
+23/03/04 20:19:50 701 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:19:50 702 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:19:50 702 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:19:50 719 [info]:  >> DATABASE 접속됨 [threaId=465]
+23/03/04 20:19:50 719 [info]:  >> Connection 임대됨 [threaId=465]
+23/03/04 20:19:50 721 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:19:50 724 [info]:  >> Connection 반납됨 [threaId=465]
+23/03/04 20:19:50 724 [info]:  >> Connection 임대됨 [threaId=465]
+23/03/04 20:19:50 725 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:19:50 727 [info]:  >> Connection 반납됨 [threaId=465]
+23/03/04 20:19:50 730 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+23/03/04 20:19:50 730 [debug]: --------------------------------------------------
+23/03/04 20:20:02 166 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:20:02 166 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:20:02 166 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:20:02 168 [info]:  >> Connection 임대됨 [threaId=465]
+23/03/04 20:20:02 169 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:20:02 170 [info]:  >> Connection 반납됨 [threaId=465]
+23/03/04 20:20:02 170 [info]:  >> Connection 임대됨 [threaId=465]
+23/03/04 20:20:02 171 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:20:02 172 [info]:  >> Connection 반납됨 [threaId=465]
+23/03/04 20:20:02 172 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/03/04 20:20:02 173 [debug]: --------------------------------------------------
+23/03/04 20:20:02 852 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:20:02 852 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:20:02 853 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:20:02 854 [info]:  >> Connection 임대됨 [threaId=465]
+23/03/04 20:20:02 854 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:20:02 855 [info]:  >> Connection 반납됨 [threaId=465]
+23/03/04 20:20:02 855 [info]:  >> Connection 임대됨 [threaId=465]
+23/03/04 20:20:02 856 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:20:02 856 [info]:  >> Connection 반납됨 [threaId=465]
+23/03/04 20:20:02 857 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 20:20:02 857 [debug]: --------------------------------------------------
+23/03/04 20:46:49 713 [debug]: 클라이언트가 접속했습니다.
+23/03/04 20:46:49 713 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 20:46:49 713 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 20:46:49 714 [info]:  >> Connection 임대됨 [threaId=465]
+23/03/04 20:46:49 715 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 20:46:49 716 [info]:  >> Connection 반납됨 [threaId=465]
+23/03/04 20:46:49 716 [info]:  >> Connection 임대됨 [threaId=465]
+23/03/04 20:46:49 717 [debug]: SELECT * FROM books        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 20:46:49 717 [info]:  >> Connection 반납됨 [threaId=465]
+23/03/04 20:46:49 719 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/03/04 20:46:49 719 [debug]: --------------------------------------------------
+23/03/04 21:03:49 407 [debug]: --------------------------------------------------
+23/03/04 21:03:49 409 [debug]: |              Start Express Server              |
+23/03/04 21:03:49 409 [debug]: --------------------------------------------------
+23/03/04 21:03:49 410 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:03:49 410 [debug]: --------------------------------------------------
+23/03/04 21:03:52 991 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:03:52 992 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 21:03:52 992 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:03:53 013 [error]: Access denied for user 'library123'@'localhost' to database 'mydb'
+23/03/04 21:03:53 014 [error]: Error: Access denied for user 'library123'@'localhost' to database 'mydb'
+    at Packet.asError (D:\projectlb\node_modules\mysql2\lib\packets\packet.js:728:17)
+    at ClientHandshake.execute (D:\projectlb\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (D:\projectlb\node_modules\mysql2\lib\connection.js:488:32)
+    at PacketParser.onPacket (D:\projectlb\node_modules\mysql2\lib\connection.js:94:12)
+    at PacketParser.executeStart (D:\projectlb\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (D:\projectlb\node_modules\mysql2\lib\connection.js:101:25)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Readable.push (node:internal/streams/readable:234:10)
+23/03/04 21:03:53 017 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+23/03/04 21:03:53 018 [debug]: --------------------------------------------------
+23/03/04 21:05:21 384 [debug]: --------------------------------------------------
+23/03/04 21:05:21 386 [debug]: |              Start Express Server              |
+23/03/04 21:05:21 387 [debug]: --------------------------------------------------
+23/03/04 21:05:21 387 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:05:21 387 [debug]: --------------------------------------------------
+23/03/04 21:05:25 441 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:05:25 442 [debug]: [GET] http://localhost:3001/books?page=1&rows=30&query=
+23/03/04 21:05:25 442 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:05:25 461 [info]:  >> DATABASE 접속됨 [threaId=485]
+23/03/04 21:05:25 462 [info]:  >> Connection 임대됨 [threaId=485]
+23/03/04 21:05:25 465 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 21:05:25 466 [info]:  >> Connection 반납됨 [threaId=485]
+23/03/04 21:05:25 467 [error]: Error: Table 'lbproject.books' doesn't exist
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.getCount (D:\projectlb\server\services\BookService.js:160:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:27:32
+23/03/04 21:05:25 470 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 21:05:25 471 [debug]: --------------------------------------------------
+23/03/04 21:05:45 368 [debug]: --------------------------------------------------
+23/03/04 21:05:45 370 [debug]: |              Start Express Server              |
+23/03/04 21:05:45 371 [debug]: --------------------------------------------------
+23/03/04 21:05:45 371 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:05:45 371 [debug]: --------------------------------------------------
+23/03/04 21:05:45 378 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:05:45 379 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 21:05:45 380 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:05:45 383 [error]: PageNotFoundException: 페이지를 찾을 수 없습니다.
+    at D:\projectlb\server\app.js:165:48
+    at Layer.handle [as handle_request] (D:\projectlb\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\projectlb\node_modules\express\lib\router\index.js:328:13)
+    at D:\projectlb\node_modules\express\lib\router\index.js:286:9
+    at param (D:\projectlb\node_modules\express\lib\router\index.js:365:14)
+    at param (D:\projectlb\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (D:\projectlb\node_modules\express\lib\router\index.js:421:3)
+    at next (D:\projectlb\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (D:\projectlb\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (D:\projectlb\node_modules\express\lib\router\index.js:328:13)
+23/03/04 21:05:45 387 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+23/03/04 21:05:45 388 [debug]: --------------------------------------------------
+23/03/04 21:05:55 960 [debug]: --------------------------------------------------
+23/03/04 21:05:55 963 [debug]: |              Start Express Server              |
+23/03/04 21:05:55 963 [debug]: --------------------------------------------------
+23/03/04 21:05:55 964 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:05:55 964 [debug]: --------------------------------------------------
+23/03/04 21:05:56 985 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:05:56 986 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 21:05:56 986 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:05:57 004 [info]:  >> DATABASE 접속됨 [threaId=488]
+23/03/04 21:05:57 005 [info]:  >> Connection 임대됨 [threaId=488]
+23/03/04 21:05:57 008 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 21:05:57 009 [info]:  >> Connection 반납됨 [threaId=488]
+23/03/04 21:05:57 010 [error]: Error: Table 'lbproject.books' doesn't exist
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.getCount (D:\projectlb\server\services\BookService.js:160:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:27:32
+23/03/04 21:05:57 013 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 27ms
+23/03/04 21:05:57 014 [debug]: --------------------------------------------------
+23/03/04 21:06:21 713 [debug]: --------------------------------------------------
+23/03/04 21:06:21 715 [debug]: |              Start Express Server              |
+23/03/04 21:06:21 715 [debug]: --------------------------------------------------
+23/03/04 21:06:21 715 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:06:21 716 [debug]: --------------------------------------------------
+23/03/04 21:06:22 273 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:06:22 274 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 21:06:22 274 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:06:22 293 [info]:  >> DATABASE 접속됨 [threaId=490]
+23/03/04 21:06:22 294 [info]:  >> Connection 임대됨 [threaId=490]
+23/03/04 21:06:22 297 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 21:06:22 299 [info]:  >> Connection 반납됨 [threaId=490]
+23/03/04 21:06:22 300 [error]: Error: Table 'lbproject.books' doesn't exist
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.getCount (D:\projectlb\server\services\BookService.js:160:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:27:32
+23/03/04 21:06:22 304 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/03/04 21:06:22 304 [debug]: --------------------------------------------------
+23/03/04 21:06:58 963 [debug]: --------------------------------------------------
+23/03/04 21:06:58 965 [debug]: |              Start Express Server              |
+23/03/04 21:06:58 965 [debug]: --------------------------------------------------
+23/03/04 21:06:58 966 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:06:58 966 [debug]: --------------------------------------------------
+23/03/04 21:07:02 785 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:07:02 786 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 21:07:02 787 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:07:02 803 [info]:  >> DATABASE 접속됨 [threaId=492]
+23/03/04 21:07:02 804 [info]:  >> Connection 임대됨 [threaId=492]
+23/03/04 21:07:02 806 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 21:07:02 807 [info]:  >> Connection 반납됨 [threaId=492]
+23/03/04 21:07:02 808 [error]: Error: Table 'lbproject.books' doesn't exist
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.getCount (D:\projectlb\server\services\BookService.js:160:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:27:32
+23/03/04 21:07:02 811 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+23/03/04 21:07:02 812 [debug]: --------------------------------------------------
+23/03/04 21:07:10 676 [debug]: --------------------------------------------------
+23/03/04 21:07:10 678 [debug]: |              Start Express Server              |
+23/03/04 21:07:10 679 [debug]: --------------------------------------------------
+23/03/04 21:07:10 679 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:07:10 679 [debug]: --------------------------------------------------
+23/03/04 21:07:10 833 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:07:10 834 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 21:07:10 834 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:07:10 852 [info]:  >> DATABASE 접속됨 [threaId=494]
+23/03/04 21:07:10 853 [info]:  >> Connection 임대됨 [threaId=494]
+23/03/04 21:07:10 855 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 21:07:10 855 [info]:  >> Connection 반납됨 [threaId=494]
+23/03/04 21:07:10 856 [error]: Error: Table 'lbproject.books' doesn't exist
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.getCount (D:\projectlb\server\services\BookService.js:160:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:27:32
+23/03/04 21:07:10 859 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+23/03/04 21:07:10 860 [debug]: --------------------------------------------------
+23/03/04 21:08:11 414 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:08:11 414 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 21:08:11 415 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:08:11 416 [info]:  >> Connection 임대됨 [threaId=494]
+23/03/04 21:08:11 418 [debug]: SELECT COUNT(*) AS cnt FROM books
+23/03/04 21:08:11 418 [info]:  >> Connection 반납됨 [threaId=494]
+23/03/04 21:08:11 418 [error]: Error: Table 'lbproject.books' doesn't exist
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.getCount (D:\projectlb\server\services\BookService.js:160:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:27:32
+23/03/04 21:08:11 420 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 21:08:11 420 [debug]: --------------------------------------------------
+23/03/04 21:08:17 615 [debug]: --------------------------------------------------
+23/03/04 21:08:17 618 [debug]: |              Start Express Server              |
+23/03/04 21:08:17 618 [debug]: --------------------------------------------------
+23/03/04 21:08:17 618 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:08:17 619 [debug]: --------------------------------------------------
+23/03/04 21:08:20 617 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:08:20 618 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 21:08:20 618 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:08:20 636 [info]:  >> DATABASE 접속됨 [threaId=496]
+23/03/04 21:08:20 637 [info]:  >> Connection 임대됨 [threaId=496]
+23/03/04 21:08:20 639 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 21:08:20 643 [info]:  >> Connection 반납됨 [threaId=496]
+23/03/04 21:08:20 644 [info]:  >> Connection 임대됨 [threaId=496]
+23/03/04 21:08:20 645 [debug]: SELECT * FROM book        ORDER BY id ASC     LIMIT 0, 30
+23/03/04 21:08:20 645 [info]:  >> Connection 반납됨 [threaId=496]
+23/03/04 21:08:20 646 [error]: Error: Unknown column 'id' in 'order clause'
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.getList (D:\projectlb\server\services\BookService.js:24:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:32:20
+23/03/04 21:08:20 650 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+23/03/04 21:08:20 651 [debug]: --------------------------------------------------
+23/03/04 21:13:22 917 [debug]: --------------------------------------------------
+23/03/04 21:13:22 919 [debug]: |              Start Express Server              |
+23/03/04 21:13:22 920 [debug]: --------------------------------------------------
+23/03/04 21:13:22 920 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:13:22 921 [debug]: --------------------------------------------------
+23/03/04 21:14:01 729 [debug]: --------------------------------------------------
+23/03/04 21:14:01 732 [debug]: |              Start Express Server              |
+23/03/04 21:14:01 732 [debug]: --------------------------------------------------
+23/03/04 21:14:01 732 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:14:01 733 [debug]: --------------------------------------------------
+23/03/04 21:20:36 888 [debug]: --------------------------------------------------
+23/03/04 21:20:36 890 [debug]: |              Start Express Server              |
+23/03/04 21:20:36 890 [debug]: --------------------------------------------------
+23/03/04 21:20:36 891 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:20:36 891 [debug]: --------------------------------------------------
+23/03/04 21:21:33 406 [debug]: --------------------------------------------------
+23/03/04 21:21:33 408 [debug]: |              Start Express Server              |
+23/03/04 21:21:33 409 [debug]: --------------------------------------------------
+23/03/04 21:21:33 409 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:21:33 409 [debug]: --------------------------------------------------
+23/03/04 21:21:52 848 [debug]: --------------------------------------------------
+23/03/04 21:21:52 850 [debug]: |              Start Express Server              |
+23/03/04 21:21:52 850 [debug]: --------------------------------------------------
+23/03/04 21:21:52 851 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:21:52 851 [debug]: --------------------------------------------------
+23/03/04 21:22:11 175 [debug]: --------------------------------------------------
+23/03/04 21:22:11 177 [debug]: |              Start Express Server              |
+23/03/04 21:22:11 177 [debug]: --------------------------------------------------
+23/03/04 21:22:11 178 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:22:11 178 [debug]: --------------------------------------------------
+23/03/04 21:25:34 037 [debug]: --------------------------------------------------
+23/03/04 21:25:34 039 [debug]: |              Start Express Server              |
+23/03/04 21:25:34 039 [debug]: --------------------------------------------------
+23/03/04 21:25:34 040 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:25:34 040 [debug]: --------------------------------------------------
+23/03/04 21:25:35 741 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:25:35 742 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 21:25:35 743 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:25:35 767 [info]:  >> DATABASE 접속됨 [threaId=505]
+23/03/04 21:25:35 768 [info]:  >> Connection 임대됨 [threaId=505]
+23/03/04 21:25:35 769 [info]:  >> Connection 반납됨 [threaId=505]
+23/03/04 21:25:35 769 [error]: Error: SQL ID [selectCountAll] not exists
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:88:57)
+    at BookService.getCount (D:\projectlb\server\services\BookService.js:159:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:27:32
+23/03/04 21:25:35 773 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+23/03/04 21:25:35 773 [debug]: --------------------------------------------------
+23/03/04 21:25:55 902 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:25:55 903 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 21:25:55 904 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:25:55 905 [info]:  >> Connection 임대됨 [threaId=505]
+23/03/04 21:25:55 905 [info]:  >> Connection 반납됨 [threaId=505]
+23/03/04 21:25:55 906 [error]: Error: SQL ID [selectCountAll] not exists
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:88:57)
+    at BookService.getCount (D:\projectlb\server\services\BookService.js:159:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:27:32
+23/03/04 21:25:55 907 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 21:25:55 907 [debug]: --------------------------------------------------
+23/03/04 21:29:06 998 [debug]: --------------------------------------------------
+23/03/04 21:29:07 000 [debug]: |              Start Express Server              |
+23/03/04 21:29:07 000 [debug]: --------------------------------------------------
+23/03/04 21:29:07 001 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:29:07 001 [debug]: --------------------------------------------------
+23/03/04 21:29:07 115 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:29:07 116 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:29:07 116 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:29:07 119 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 21:29:07 120 [debug]: --------------------------------------------------
+23/03/04 21:29:07 123 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:29:07 123 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:29:07 124 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:29:07 192 [info]:  >> DATABASE 접속됨 [threaId=507]
+23/03/04 21:29:07 193 [info]:  >> Connection 임대됨 [threaId=507]
+23/03/04 21:29:07 194 [info]:  >> Connection 반납됨 [threaId=507]
+23/03/04 21:29:07 194 [error]: Error: SQL ID [insertItem] not exists
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:88:57)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:73:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:29:07 197 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 74ms
+23/03/04 21:29:07 198 [debug]: --------------------------------------------------
+23/03/04 21:29:12 108 [debug]: --------------------------------------------------
+23/03/04 21:29:12 110 [debug]: |              Start Express Server              |
+23/03/04 21:29:12 111 [debug]: --------------------------------------------------
+23/03/04 21:29:12 111 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:29:12 112 [debug]: --------------------------------------------------
+23/03/04 21:29:15 860 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:29:15 861 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:29:15 861 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:29:15 864 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 21:29:15 865 [debug]: --------------------------------------------------
+23/03/04 21:29:15 867 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:29:15 868 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:29:15 868 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:29:15 892 [info]:  >> DATABASE 접속됨 [threaId=509]
+23/03/04 21:29:15 893 [info]:  >> Connection 임대됨 [threaId=509]
+23/03/04 21:29:15 894 [info]:  >> Connection 반납됨 [threaId=509]
+23/03/04 21:29:15 894 [error]: Error: SQL ID [insertItem] not exists
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:88:57)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:73:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:29:15 896 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+23/03/04 21:29:15 897 [debug]: --------------------------------------------------
+23/03/04 21:32:08 622 [debug]: --------------------------------------------------
+23/03/04 21:32:08 625 [debug]: |              Start Express Server              |
+23/03/04 21:32:08 625 [debug]: --------------------------------------------------
+23/03/04 21:32:08 626 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:32:08 626 [debug]: --------------------------------------------------
+23/03/04 21:32:11 615 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:32:11 616 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:32:11 616 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:32:11 619 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 21:32:11 619 [debug]: --------------------------------------------------
+23/03/04 21:32:11 622 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:32:11 622 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:32:11 622 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:32:11 647 [info]:  >> DATABASE 접속됨 [threaId=511]
+23/03/04 21:32:11 647 [info]:  >> Connection 임대됨 [threaId=511]
+23/03/04 21:32:11 648 [info]:  >> Connection 반납됨 [threaId=511]
+23/03/04 21:32:11 649 [error]: Error: SQL ID [insertItem] not exists
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:88:57)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:73:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:32:11 651 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 21:32:11 651 [debug]: --------------------------------------------------
+23/03/04 21:33:07 114 [debug]: --------------------------------------------------
+23/03/04 21:33:07 116 [debug]: |              Start Express Server              |
+23/03/04 21:33:07 116 [debug]: --------------------------------------------------
+23/03/04 21:33:07 117 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:33:07 117 [debug]: --------------------------------------------------
+23/03/04 21:33:10 078 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:33:10 079 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:33:10 080 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:33:10 082 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 21:33:10 083 [debug]: --------------------------------------------------
+23/03/04 21:33:10 085 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:33:10 085 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:33:10 086 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:33:10 110 [info]:  >> DATABASE 접속됨 [threaId=513]
+23/03/04 21:33:10 110 [info]:  >> Connection 임대됨 [threaId=513]
+23/03/04 21:33:10 112 [info]:  >> Connection 반납됨 [threaId=513]
+23/03/04 21:33:10 112 [error]: Error: Parameter #{img} is not converted.
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:103:15)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:73:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:33:10 115 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/03/04 21:33:10 115 [debug]: --------------------------------------------------
+23/03/04 21:33:46 130 [debug]: --------------------------------------------------
+23/03/04 21:33:46 132 [debug]: |              Start Express Server              |
+23/03/04 21:33:46 133 [debug]: --------------------------------------------------
+23/03/04 21:33:46 133 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:33:46 133 [debug]: --------------------------------------------------
+23/03/04 21:33:49 064 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:33:49 065 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:33:49 065 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:33:49 068 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 21:33:49 069 [debug]: --------------------------------------------------
+23/03/04 21:33:49 071 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:33:49 071 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:33:49 072 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:33:49 096 [info]:  >> DATABASE 접속됨 [threaId=515]
+23/03/04 21:33:49 096 [info]:  >> Connection 임대됨 [threaId=515]
+23/03/04 21:33:49 098 [info]:  >> Connection 반납됨 [threaId=515]
+23/03/04 21:33:49 098 [error]: Error: Parameter #{img} is not converted.
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:103:15)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:73:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:33:49 100 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 21:33:49 101 [debug]: --------------------------------------------------
+23/03/04 21:34:18 312 [debug]: --------------------------------------------------
+23/03/04 21:34:18 314 [debug]: |              Start Express Server              |
+23/03/04 21:34:18 314 [debug]: --------------------------------------------------
+23/03/04 21:34:18 315 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:34:18 315 [debug]: --------------------------------------------------
+23/03/04 21:34:18 954 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:34:18 956 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:34:18 956 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:34:18 958 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 21:34:18 959 [debug]: --------------------------------------------------
+23/03/04 21:34:18 962 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:34:18 962 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:34:18 962 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:34:18 989 [info]:  >> DATABASE 접속됨 [threaId=517]
+23/03/04 21:34:18 990 [info]:  >> Connection 임대됨 [threaId=517]
+23/03/04 21:34:18 991 [info]:  >> Connection 반납됨 [threaId=517]
+23/03/04 21:34:18 992 [error]: Error: Parameter #{img} is not converted.
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:103:15)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:73:37)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:34:18 994 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+23/03/04 21:34:18 995 [debug]: --------------------------------------------------
+23/03/04 21:34:37 567 [debug]: --------------------------------------------------
+23/03/04 21:34:37 570 [debug]: |              Start Express Server              |
+23/03/04 21:34:37 570 [debug]: --------------------------------------------------
+23/03/04 21:34:37 571 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:34:37 571 [debug]: --------------------------------------------------
+23/03/04 21:34:38 922 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:34:38 923 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:34:38 924 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:34:38 927 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 21:34:38 927 [debug]: --------------------------------------------------
+23/03/04 21:34:38 929 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:34:38 930 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:34:38 930 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:34:38 955 [info]:  >> DATABASE 접속됨 [threaId=519]
+23/03/04 21:34:38 956 [info]:  >> Connection 임대됨 [threaId=519]
+23/03/04 21:34:38 957 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', 'pubDate', 'authNo', 'price', 'count', 'selling', 'bookDesc', 'bookIndex', 'ctgNo',   'img', 'content', 'ISBNum', 'page', 'size');
+23/03/04 21:34:38 958 [info]:  >> Connection 반납됨 [threaId=519]
+23/03/04 21:34:38 959 [error]: Error: Incorrect date value: 'pubDate' for column 'pubDate' at row 1
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:74:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:34:38 961 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+23/03/04 21:34:38 961 [debug]: --------------------------------------------------
+23/03/04 21:34:57 129 [debug]: --------------------------------------------------
+23/03/04 21:34:57 131 [debug]: |              Start Express Server              |
+23/03/04 21:34:57 131 [debug]: --------------------------------------------------
+23/03/04 21:34:57 132 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:34:57 132 [debug]: --------------------------------------------------
+23/03/04 21:34:57 252 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:34:57 253 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:34:57 253 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:34:57 256 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 21:34:57 256 [debug]: --------------------------------------------------
+23/03/04 21:34:57 258 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:34:57 258 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:34:57 259 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:34:57 281 [info]:  >> DATABASE 접속됨 [threaId=521]
+23/03/04 21:34:57 282 [info]:  >> Connection 임대됨 [threaId=521]
+23/03/04 21:34:57 284 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', 'authNo', 'price', 'count', 'selling', 'bookDesc', 'bookIndex', 'ctgNo',   'img', 'content', 'ISBNum', 'page', 'size');
+23/03/04 21:34:57 285 [info]:  >> Connection 반납됨 [threaId=521]
+23/03/04 21:34:57 285 [error]: Error: Incorrect integer value: 'authNo' for column 'authNo' at row 1
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:74:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:34:57 287 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 21:34:57 287 [debug]: --------------------------------------------------
+23/03/04 21:35:18 740 [debug]: --------------------------------------------------
+23/03/04 21:35:18 743 [debug]: |              Start Express Server              |
+23/03/04 21:35:18 743 [debug]: --------------------------------------------------
+23/03/04 21:35:18 743 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:35:18 744 [debug]: --------------------------------------------------
+23/03/04 21:35:18 839 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:18 840 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:35:18 840 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:18 843 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 21:35:18 843 [debug]: --------------------------------------------------
+23/03/04 21:35:18 845 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:18 846 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:35:18 846 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:18 870 [info]:  >> DATABASE 접속됨 [threaId=523]
+23/03/04 21:35:18 870 [info]:  >> Connection 임대됨 [threaId=523]
+23/03/04 21:35:18 872 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', 'price', 'count', 'selling', 'bookDesc', 'bookIndex', '1000',   'img', 'content', 'ISBNum', 'page', 'size');
+23/03/04 21:35:18 873 [info]:  >> Connection 반납됨 [threaId=523]
+23/03/04 21:35:18 873 [error]: Error: Incorrect integer value: 'price' for column 'price' at row 1
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:74:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:35:18 876 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/03/04 21:35:18 876 [debug]: --------------------------------------------------
+23/03/04 21:35:31 623 [debug]: --------------------------------------------------
+23/03/04 21:35:31 625 [debug]: |              Start Express Server              |
+23/03/04 21:35:31 626 [debug]: --------------------------------------------------
+23/03/04 21:35:31 626 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:35:31 626 [debug]: --------------------------------------------------
+23/03/04 21:35:31 790 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:31 791 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:35:31 792 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:31 794 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 21:35:31 795 [debug]: --------------------------------------------------
+23/03/04 21:35:31 797 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:31 797 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:35:31 797 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:31 820 [info]:  >> DATABASE 접속됨 [threaId=525]
+23/03/04 21:35:31 821 [info]:  >> Connection 임대됨 [threaId=525]
+23/03/04 21:35:31 823 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', 'selling', 'bookDesc', 'bookIndex', '1000',   'img', 'content', 'ISBNum', 'page', 'size');
+23/03/04 21:35:31 823 [info]:  >> Connection 반납됨 [threaId=525]
+23/03/04 21:35:31 824 [error]: Error: Incorrect integer value: 'selling' for column 'selling' at row 1
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:74:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:35:31 826 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 21:35:31 827 [debug]: --------------------------------------------------
+23/03/04 21:35:38 448 [debug]: --------------------------------------------------
+23/03/04 21:35:38 450 [debug]: |              Start Express Server              |
+23/03/04 21:35:38 451 [debug]: --------------------------------------------------
+23/03/04 21:35:38 451 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:35:38 451 [debug]: --------------------------------------------------
+23/03/04 21:35:38 480 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:38 481 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:35:38 481 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:38 483 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 21:35:38 484 [debug]: --------------------------------------------------
+23/03/04 21:35:38 486 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:38 487 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:35:38 487 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:38 510 [info]:  >> DATABASE 접속됨 [threaId=527]
+23/03/04 21:35:38 510 [info]:  >> Connection 임대됨 [threaId=527]
+23/03/04 21:35:38 512 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '1000',   'img', 'content', 'ISBNum', 'page', 'size');
+23/03/04 21:35:38 513 [info]:  >> Connection 반납됨 [threaId=527]
+23/03/04 21:35:38 513 [error]: Error: Incorrect integer value: 'ISBNum' for column 'ISBNum' at row 1
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:74:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:35:38 515 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 21:35:38 515 [debug]: --------------------------------------------------
+23/03/04 21:35:47 480 [debug]: --------------------------------------------------
+23/03/04 21:35:47 483 [debug]: |              Start Express Server              |
+23/03/04 21:35:47 483 [debug]: --------------------------------------------------
+23/03/04 21:35:47 483 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:35:47 484 [debug]: --------------------------------------------------
+23/03/04 21:35:47 536 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:47 537 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:35:47 538 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:47 540 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 21:35:47 541 [debug]: --------------------------------------------------
+23/03/04 21:35:47 543 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:47 543 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:35:47 543 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:47 567 [info]:  >> DATABASE 접속됨 [threaId=529]
+23/03/04 21:35:47 567 [info]:  >> Connection 임대됨 [threaId=529]
+23/03/04 21:35:47 569 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '1000',   'img', 'content', '9423230', 'page', 'size');
+23/03/04 21:35:47 570 [info]:  >> Connection 반납됨 [threaId=529]
+23/03/04 21:35:47 570 [error]: Error: Incorrect integer value: 'page' for column 'page' at row 1
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:74:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:35:47 572 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 21:35:47 572 [debug]: --------------------------------------------------
+23/03/04 21:35:54 317 [debug]: --------------------------------------------------
+23/03/04 21:35:54 319 [debug]: |              Start Express Server              |
+23/03/04 21:35:54 319 [debug]: --------------------------------------------------
+23/03/04 21:35:54 319 [debug]: server address => http://211.222.164.95:3001
+23/03/04 21:35:54 320 [debug]: --------------------------------------------------
+23/03/04 21:35:54 333 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:54 334 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 21:35:54 335 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:54 337 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 21:35:54 338 [debug]: --------------------------------------------------
+23/03/04 21:35:54 340 [debug]: 클라이언트가 접속했습니다.
+23/03/04 21:35:54 340 [debug]: [POST] http://localhost:3001/book
+23/03/04 21:35:54 340 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 21:35:54 364 [info]:  >> DATABASE 접속됨 [threaId=531]
+23/03/04 21:35:54 364 [info]:  >> Connection 임대됨 [threaId=531]
+23/03/04 21:35:54 366 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '1000',   'img', 'content', '9423230', '1', 'size');
+23/03/04 21:35:54 368 [info]:  >> Connection 반납됨 [threaId=531]
+23/03/04 21:35:54 369 [error]: Error: Cannot add or update a child row: a foreign key constraint fails (`lbproject`.`book`, CONSTRAINT `fk_book_author1` FOREIGN KEY (`authNo`) REFERENCES `author` (`authNo`))
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:74:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 21:35:54 372 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+23/03/04 21:35:54 372 [debug]: --------------------------------------------------
+23/03/04 22:00:26 126 [debug]: --------------------------------------------------
+23/03/04 22:00:26 128 [debug]: |              Start Express Server              |
+23/03/04 22:00:26 128 [debug]: --------------------------------------------------
+23/03/04 22:00:26 128 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:00:26 129 [debug]: --------------------------------------------------
+23/03/04 22:00:26 749 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:00:26 751 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:00:26 751 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:00:26 767 [info]:  >> DATABASE 접속됨 [threaId=535]
+23/03/04 22:00:26 768 [info]:  >> Connection 임대됨 [threaId=535]
+23/03/04 22:00:26 770 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:00:26 772 [info]:  >> Connection 반납됨 [threaId=535]
+23/03/04 22:00:26 773 [info]:  >> Connection 임대됨 [threaId=535]
+23/03/04 22:00:26 774 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:00:26 775 [info]:  >> Connection 반납됨 [threaId=535]
+23/03/04 22:00:26 778 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+23/03/04 22:00:26 778 [debug]: --------------------------------------------------
+23/03/04 22:00:32 279 [debug]: --------------------------------------------------
+23/03/04 22:00:32 281 [debug]: |              Start Express Server              |
+23/03/04 22:00:32 281 [debug]: --------------------------------------------------
+23/03/04 22:00:32 282 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:00:32 282 [debug]: --------------------------------------------------
+23/03/04 22:00:35 974 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:00:35 975 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:00:35 975 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:00:35 993 [info]:  >> DATABASE 접속됨 [threaId=537]
+23/03/04 22:00:35 993 [info]:  >> Connection 임대됨 [threaId=537]
+23/03/04 22:00:35 995 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:00:35 998 [info]:  >> Connection 반납됨 [threaId=537]
+23/03/04 22:00:35 998 [info]:  >> Connection 임대됨 [threaId=537]
+23/03/04 22:00:35 999 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:00:36 001 [info]:  >> Connection 반납됨 [threaId=537]
+23/03/04 22:00:36 004 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 22:00:36 005 [debug]: --------------------------------------------------
+23/03/04 22:00:55 792 [debug]: --------------------------------------------------
+23/03/04 22:00:55 794 [debug]: |              Start Express Server              |
+23/03/04 22:00:55 795 [debug]: --------------------------------------------------
+23/03/04 22:00:55 795 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:00:55 795 [debug]: --------------------------------------------------
+23/03/04 22:00:55 985 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:00:55 986 [debug]: [GET] http://localhost:3001/book/1
+23/03/04 22:00:55 986 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:00:56 003 [info]:  >> DATABASE 접속됨 [threaId=539]
+23/03/04 22:00:56 004 [info]:  >> Connection 임대됨 [threaId=539]
+23/03/04 22:00:56 005 [debug]: SELECT * FROM book WHERE bookNo= '1'
+23/03/04 22:00:56 008 [info]:  >> Connection 반납됨 [threaId=539]
+23/03/04 22:00:56 011 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+23/03/04 22:00:56 012 [debug]: --------------------------------------------------
+23/03/04 22:03:47 098 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:03:47 099 [debug]: [GET] http://localhost:3001/book/1
+23/03/04 22:03:47 099 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:03:47 100 [info]:  >> Connection 임대됨 [threaId=539]
+23/03/04 22:03:47 101 [debug]: SELECT * FROM book WHERE bookNo= '1'
+23/03/04 22:03:47 102 [info]:  >> Connection 반납됨 [threaId=539]
+23/03/04 22:03:47 103 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 22:03:47 103 [debug]: --------------------------------------------------
+23/03/04 22:04:12 955 [debug]: --------------------------------------------------
+23/03/04 22:04:12 957 [debug]: |              Start Express Server              |
+23/03/04 22:04:12 957 [debug]: --------------------------------------------------
+23/03/04 22:04:12 958 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:04:12 958 [debug]: --------------------------------------------------
+23/03/04 22:04:13 130 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:04:13 131 [debug]: [GET] http://localhost:3001/book/undefined
+23/03/04 22:04:13 131 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:04:13 148 [info]:  >> DATABASE 접속됨 [threaId=541]
+23/03/04 22:04:13 149 [info]:  >> Connection 임대됨 [threaId=541]
+23/03/04 22:04:13 151 [debug]: SELECT * FROM book WHERE bookNo= 'undefined'
+23/03/04 22:04:13 155 [info]:  >> Connection 반납됨 [threaId=541]
+23/03/04 22:04:13 156 [error]: RuntimeException: 조회된 데이터가 없습니다.
+    at BookService.getItem (D:\projectlb\server\services\BookService.js:52:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:54:20
+23/03/04 22:04:13 159 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+23/03/04 22:04:13 160 [debug]: --------------------------------------------------
+23/03/04 22:04:25 517 [debug]: --------------------------------------------------
+23/03/04 22:04:25 519 [debug]: |              Start Express Server              |
+23/03/04 22:04:25 519 [debug]: --------------------------------------------------
+23/03/04 22:04:25 519 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:04:25 520 [debug]: --------------------------------------------------
+23/03/04 22:04:25 625 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:04:25 626 [debug]: [GET] http://localhost:3001/book/1
+23/03/04 22:04:25 627 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:04:25 643 [info]:  >> DATABASE 접속됨 [threaId=543]
+23/03/04 22:04:25 643 [info]:  >> Connection 임대됨 [threaId=543]
+23/03/04 22:04:25 645 [debug]: SELECT * FROM book WHERE bookNo= '1'
+23/03/04 22:04:25 648 [info]:  >> Connection 반납됨 [threaId=543]
+23/03/04 22:04:25 651 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+23/03/04 22:04:25 651 [debug]: --------------------------------------------------
+23/03/04 22:05:54 127 [debug]: --------------------------------------------------
+23/03/04 22:05:54 129 [debug]: |              Start Express Server              |
+23/03/04 22:05:54 130 [debug]: --------------------------------------------------
+23/03/04 22:05:54 130 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:05:54 131 [debug]: --------------------------------------------------
+23/03/04 22:05:54 248 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:05:54 249 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 22:05:54 250 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:05:54 252 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 22:05:54 252 [debug]: --------------------------------------------------
+23/03/04 22:05:54 255 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:05:54 255 [debug]: [POST] http://localhost:3001/book
+23/03/04 22:05:54 255 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:05:54 278 [info]:  >> DATABASE 접속됨 [threaId=545]
+23/03/04 22:05:54 279 [info]:  >> Connection 임대됨 [threaId=545]
+23/03/04 22:05:54 281 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '1000',   'img', 'content', '9423230123124', '1123', 'size');
+23/03/04 22:05:54 284 [info]:  >> Connection 반납됨 [threaId=545]
+23/03/04 22:05:54 284 [error]: Error: Cannot add or update a child row: a foreign key constraint fails (`lbproject`.`book`, CONSTRAINT `fk_book_category1` FOREIGN KEY (`ctgNo`) REFERENCES `category` (`ctgNo`))
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:74:58)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 22:05:54 287 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+23/03/04 22:05:54 287 [debug]: --------------------------------------------------
+23/03/04 22:06:31 196 [debug]: --------------------------------------------------
+23/03/04 22:06:31 198 [debug]: |              Start Express Server              |
+23/03/04 22:06:31 199 [debug]: --------------------------------------------------
+23/03/04 22:06:31 199 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:06:31 199 [debug]: --------------------------------------------------
+23/03/04 22:06:31 255 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:06:31 256 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 22:06:31 256 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:06:31 259 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 22:06:31 259 [debug]: --------------------------------------------------
+23/03/04 22:06:31 261 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:06:31 262 [debug]: [POST] http://localhost:3001/book
+23/03/04 22:06:31 262 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:06:31 285 [info]:  >> DATABASE 접속됨 [threaId=547]
+23/03/04 22:06:31 285 [info]:  >> Connection 임대됨 [threaId=547]
+23/03/04 22:06:31 287 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '101',   'img', 'content', '9423230123124', '1123', 'size');
+23/03/04 22:06:31 292 [info]:  >> Connection 반납됨 [threaId=547]
+23/03/04 22:06:31 292 [error]: Error: Parameter #{bookNo} is not converted.
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:103:15)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:81:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 22:06:31 295 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+23/03/04 22:06:31 295 [debug]: --------------------------------------------------
+23/03/04 22:07:26 107 [debug]: --------------------------------------------------
+23/03/04 22:07:26 109 [debug]: |              Start Express Server              |
+23/03/04 22:07:26 110 [debug]: --------------------------------------------------
+23/03/04 22:07:26 110 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:07:26 111 [debug]: --------------------------------------------------
+23/03/04 22:07:28 784 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:07:28 785 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 22:07:28 785 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:07:28 789 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 22:07:28 789 [debug]: --------------------------------------------------
+23/03/04 22:07:28 792 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:07:28 792 [debug]: [POST] http://localhost:3001/book
+23/03/04 22:07:28 792 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:07:28 816 [info]:  >> DATABASE 접속됨 [threaId=549]
+23/03/04 22:07:28 816 [info]:  >> Connection 임대됨 [threaId=549]
+23/03/04 22:07:28 818 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '101',   'img', 'content', '9423230123124', '1123', 'size');
+23/03/04 22:07:28 822 [info]:  >> Connection 반납됨 [threaId=549]
+23/03/04 22:07:28 823 [error]: Error: Parameter #{bookNo} is not converted.
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:103:15)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:81:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 22:07:28 825 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+23/03/04 22:07:28 825 [debug]: --------------------------------------------------
+23/03/04 22:07:46 740 [debug]: --------------------------------------------------
+23/03/04 22:07:46 742 [debug]: |              Start Express Server              |
+23/03/04 22:07:46 743 [debug]: --------------------------------------------------
+23/03/04 22:07:46 743 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:07:46 743 [debug]: --------------------------------------------------
+23/03/04 22:07:46 766 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:07:46 767 [debug]: [GET] http://localhost:3001/book/1
+23/03/04 22:07:46 767 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:07:46 784 [info]:  >> DATABASE 접속됨 [threaId=551]
+23/03/04 22:07:46 784 [info]:  >> Connection 임대됨 [threaId=551]
+23/03/04 22:07:46 786 [debug]: SELECT * FROM book WHERE bookNo= '1'
+23/03/04 22:07:46 788 [info]:  >> Connection 반납됨 [threaId=551]
+23/03/04 22:07:46 791 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+23/03/04 22:07:46 792 [debug]: --------------------------------------------------
+23/03/04 22:07:51 577 [debug]: --------------------------------------------------
+23/03/04 22:07:51 580 [debug]: |              Start Express Server              |
+23/03/04 22:07:51 580 [debug]: --------------------------------------------------
+23/03/04 22:07:51 580 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:07:51 581 [debug]: --------------------------------------------------
+23/03/04 22:07:51 592 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:07:51 593 [debug]: [GET] http://localhost:3001/book/undefined
+23/03/04 22:07:51 593 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:07:51 610 [info]:  >> DATABASE 접속됨 [threaId=553]
+23/03/04 22:07:51 611 [info]:  >> Connection 임대됨 [threaId=553]
+23/03/04 22:07:51 612 [debug]: SELECT * FROM book WHERE bookNo= 'undefined'
+23/03/04 22:07:51 615 [info]:  >> Connection 반납됨 [threaId=553]
+23/03/04 22:07:51 615 [error]: RuntimeException: 조회된 데이터가 없습니다.
+    at BookService.getItem (D:\projectlb\server\services\BookService.js:52:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:54:20
+23/03/04 22:07:51 618 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+23/03/04 22:07:51 619 [debug]: --------------------------------------------------
+23/03/04 22:07:56 551 [debug]: --------------------------------------------------
+23/03/04 22:07:56 553 [debug]: |              Start Express Server              |
+23/03/04 22:07:56 554 [debug]: --------------------------------------------------
+23/03/04 22:07:56 554 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:07:56 554 [debug]: --------------------------------------------------
+23/03/04 22:07:56 591 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:07:56 592 [debug]: [GET] http://localhost:3001/book/undefined
+23/03/04 22:07:56 592 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:07:56 608 [info]:  >> DATABASE 접속됨 [threaId=555]
+23/03/04 22:07:56 609 [info]:  >> Connection 임대됨 [threaId=555]
+23/03/04 22:07:56 610 [debug]: SELECT * FROM book WHERE bookNo= 'undefined'
+23/03/04 22:07:56 613 [info]:  >> Connection 반납됨 [threaId=555]
+23/03/04 22:07:56 613 [error]: RuntimeException: 조회된 데이터가 없습니다.
+    at BookService.getItem (D:\projectlb\server\services\BookService.js:52:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:54:20
+23/03/04 22:07:56 617 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
+23/03/04 22:07:56 617 [debug]: --------------------------------------------------
+23/03/04 22:07:58 881 [debug]: --------------------------------------------------
+23/03/04 22:07:58 883 [debug]: |              Start Express Server              |
+23/03/04 22:07:58 883 [debug]: --------------------------------------------------
+23/03/04 22:07:58 883 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:07:58 884 [debug]: --------------------------------------------------
+23/03/04 22:07:59 069 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:07:59 070 [debug]: [GET] http://localhost:3001/book/1
+23/03/04 22:07:59 070 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:07:59 087 [info]:  >> DATABASE 접속됨 [threaId=557]
+23/03/04 22:07:59 088 [info]:  >> Connection 임대됨 [threaId=557]
+23/03/04 22:07:59 089 [debug]: SELECT * FROM book WHERE bookNo= '1'
+23/03/04 22:07:59 092 [info]:  >> Connection 반납됨 [threaId=557]
+23/03/04 22:07:59 096 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 27ms
+23/03/04 22:07:59 096 [debug]: --------------------------------------------------
+23/03/04 22:08:05 488 [debug]: --------------------------------------------------
+23/03/04 22:08:05 490 [debug]: |              Start Express Server              |
+23/03/04 22:08:05 490 [debug]: --------------------------------------------------
+23/03/04 22:08:05 491 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:08:05 491 [debug]: --------------------------------------------------
+23/03/04 22:08:07 005 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:08:07 006 [debug]: [GET] http://localhost:3001/book/1
+23/03/04 22:08:07 007 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:08:07 025 [info]:  >> DATABASE 접속됨 [threaId=559]
+23/03/04 22:08:07 026 [info]:  >> Connection 임대됨 [threaId=559]
+23/03/04 22:08:07 028 [debug]: SELECT * FROM book WHERE bookNo= '1'
+23/03/04 22:08:07 031 [info]:  >> Connection 반납됨 [threaId=559]
+23/03/04 22:08:07 034 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+23/03/04 22:08:07 035 [debug]: --------------------------------------------------
+23/03/04 22:08:25 251 [debug]: --------------------------------------------------
+23/03/04 22:08:25 253 [debug]: |              Start Express Server              |
+23/03/04 22:08:25 254 [debug]: --------------------------------------------------
+23/03/04 22:08:25 254 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:08:25 254 [debug]: --------------------------------------------------
+23/03/04 22:08:42 144 [debug]: --------------------------------------------------
+23/03/04 22:08:42 146 [debug]: |              Start Express Server              |
+23/03/04 22:08:42 147 [debug]: --------------------------------------------------
+23/03/04 22:08:42 147 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:08:42 147 [debug]: --------------------------------------------------
+23/03/04 22:08:53 070 [debug]: --------------------------------------------------
+23/03/04 22:08:53 072 [debug]: |              Start Express Server              |
+23/03/04 22:08:53 073 [debug]: --------------------------------------------------
+23/03/04 22:08:53 073 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:08:53 073 [debug]: --------------------------------------------------
+23/03/04 22:09:04 350 [debug]: --------------------------------------------------
+23/03/04 22:09:04 352 [debug]: |              Start Express Server              |
+23/03/04 22:09:04 352 [debug]: --------------------------------------------------
+23/03/04 22:09:04 353 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:09:04 353 [debug]: --------------------------------------------------
+23/03/04 22:09:07 358 [debug]: --------------------------------------------------
+23/03/04 22:09:07 360 [debug]: |              Start Express Server              |
+23/03/04 22:09:07 361 [debug]: --------------------------------------------------
+23/03/04 22:09:07 361 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:09:07 361 [debug]: --------------------------------------------------
+23/03/04 22:09:12 224 [debug]: --------------------------------------------------
+23/03/04 22:09:12 226 [debug]: |              Start Express Server              |
+23/03/04 22:09:12 226 [debug]: --------------------------------------------------
+23/03/04 22:09:12 227 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:09:12 227 [debug]: --------------------------------------------------
+23/03/04 22:09:12 422 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:09:12 423 [debug]: [GET] http://localhost:3001/book/1
+23/03/04 22:09:12 423 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:09:12 439 [info]:  >> DATABASE 접속됨 [threaId=566]
+23/03/04 22:09:12 440 [info]:  >> Connection 임대됨 [threaId=566]
+23/03/04 22:09:12 441 [debug]: SELECT * FROM book WHERE bookNo= '1'
+23/03/04 22:09:12 444 [info]:  >> Connection 반납됨 [threaId=566]
+23/03/04 22:09:12 447 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+23/03/04 22:09:12 448 [debug]: --------------------------------------------------
+23/03/04 22:09:18 213 [debug]: --------------------------------------------------
+23/03/04 22:09:18 215 [debug]: |              Start Express Server              |
+23/03/04 22:09:18 215 [debug]: --------------------------------------------------
+23/03/04 22:09:18 216 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:09:18 216 [debug]: --------------------------------------------------
+23/03/04 22:09:18 414 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:09:18 416 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 22:09:18 416 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:09:18 418 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 22:09:18 419 [debug]: --------------------------------------------------
+23/03/04 22:09:18 421 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:09:18 421 [debug]: [POST] http://localhost:3001/book
+23/03/04 22:09:18 422 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:09:18 446 [info]:  >> DATABASE 접속됨 [threaId=568]
+23/03/04 22:09:18 447 [info]:  >> Connection 임대됨 [threaId=568]
+23/03/04 22:09:18 449 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '101',   'img', 'content', '9423230123124', '1123', 'size');
+23/03/04 22:09:18 452 [info]:  >> Connection 반납됨 [threaId=568]
+23/03/04 22:09:18 452 [error]: Error: Parameter #{bookNo} is not converted.
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:103:15)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:81:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 22:09:18 454 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 33ms
+23/03/04 22:09:18 455 [debug]: --------------------------------------------------
+23/03/04 22:09:34 071 [debug]: --------------------------------------------------
+23/03/04 22:09:34 073 [debug]: |              Start Express Server              |
+23/03/04 22:09:34 073 [debug]: --------------------------------------------------
+23/03/04 22:09:34 073 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:09:34 074 [debug]: --------------------------------------------------
+23/03/04 22:09:36 609 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:09:36 610 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 22:09:36 611 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:09:36 614 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 22:09:36 615 [debug]: --------------------------------------------------
+23/03/04 22:09:36 617 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:09:36 618 [debug]: [POST] http://localhost:3001/book
+23/03/04 22:09:36 618 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:09:36 629 [error]: ReferenceError: bookNo is not defined
+    at D:\projectlb\server\controllers\BookController.js:81:25
+    at Layer.handle [as handle_request] (D:\projectlb\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\projectlb\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\projectlb\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\projectlb\node_modules\express\lib\router\layer.js:95:5)
+    at D:\projectlb\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\projectlb\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\projectlb\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\projectlb\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\projectlb\node_modules\express\lib\router\index.js:47:12)
+23/03/04 22:09:36 632 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 14ms
+23/03/04 22:09:36 633 [debug]: --------------------------------------------------
+23/03/04 22:10:00 403 [debug]: --------------------------------------------------
+23/03/04 22:10:00 405 [debug]: |              Start Express Server              |
+23/03/04 22:10:00 406 [debug]: --------------------------------------------------
+23/03/04 22:10:00 406 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:10:00 406 [debug]: --------------------------------------------------
+23/03/04 22:10:01 565 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:10:01 566 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 22:10:01 567 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:10:01 569 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 22:10:01 570 [debug]: --------------------------------------------------
+23/03/04 22:10:01 572 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:10:01 572 [debug]: [POST] http://localhost:3001/book
+23/03/04 22:10:01 573 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:10:01 600 [info]:  >> DATABASE 접속됨 [threaId=571]
+23/03/04 22:10:01 601 [info]:  >> Connection 임대됨 [threaId=571]
+23/03/04 22:10:01 603 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '101',   'img', 'content', '9423230123124', '1123', 'size');
+23/03/04 22:10:01 607 [info]:  >> Connection 반납됨 [threaId=571]
+23/03/04 22:10:01 608 [error]: Error: Parameter #{bookNo} is not converted.
+    at MybatisMapper.getStatement (D:\projectlb\node_modules\mybatis-mapper\index.js:103:15)
+    at BookService.addItem (D:\projectlb\server\services\BookService.js:81:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:80:20
+23/03/04 22:10:01 611 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 39ms
+23/03/04 22:10:01 611 [debug]: --------------------------------------------------
+23/03/04 22:14:35 921 [debug]: --------------------------------------------------
+23/03/04 22:14:35 923 [debug]: |              Start Express Server              |
+23/03/04 22:14:35 923 [debug]: --------------------------------------------------
+23/03/04 22:14:35 923 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:14:35 924 [debug]: --------------------------------------------------
+23/03/04 22:14:38 435 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:14:38 436 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 22:14:38 436 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:14:38 439 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 22:14:38 439 [debug]: --------------------------------------------------
+23/03/04 22:14:38 442 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:14:38 442 [debug]: [POST] http://localhost:3001/book
+23/03/04 22:14:38 442 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:14:38 472 [info]:  >> DATABASE 접속됨 [threaId=573]
+23/03/04 22:14:38 473 [info]:  >> Connection 임대됨 [threaId=573]
+23/03/04 22:14:38 475 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '101',   'img', 'content', '9423230123124', '1123', 'size');
+23/03/04 22:14:38 480 [debug]: SELECT * FROM book WHERE bookNo= '9'
+23/03/04 22:14:38 483 [info]:  >> Connection 반납됨 [threaId=573]
+23/03/04 22:14:38 485 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 43ms
+23/03/04 22:14:38 485 [debug]: --------------------------------------------------
+23/03/04 22:14:44 344 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:14:44 345 [debug]: [OPTIONS] http://localhost:3001/book
+23/03/04 22:14:44 345 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:14:44 346 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/03/04 22:14:44 346 [debug]: --------------------------------------------------
+23/03/04 22:14:44 348 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:14:44 348 [debug]: [POST] http://localhost:3001/book
+23/03/04 22:14:44 349 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:14:44 350 [info]:  >> Connection 임대됨 [threaId=573]
+23/03/04 22:14:44 351 [debug]: INSERT INTO book   (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size)  VALUES   ('bookTitle', 'pubName', '2022-02-22', '1', '1000', '99', '3242', 'bookDesc', 'bookIndex', '101',   'img', 'content', '9423230123124', '1123', 'size');
+23/03/04 22:14:44 355 [debug]: SELECT * FROM book WHERE bookNo= '10'
+23/03/04 22:14:44 356 [info]:  >> Connection 반납됨 [threaId=573]
+23/03/04 22:14:44 357 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/03/04 22:14:44 357 [debug]: --------------------------------------------------
+23/03/04 22:15:07 363 [debug]: --------------------------------------------------
+23/03/04 22:15:07 365 [debug]: |              Start Express Server              |
+23/03/04 22:15:07 366 [debug]: --------------------------------------------------
+23/03/04 22:15:07 366 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:15:07 366 [debug]: --------------------------------------------------
+23/03/04 22:15:48 863 [debug]: --------------------------------------------------
+23/03/04 22:15:48 865 [debug]: |              Start Express Server              |
+23/03/04 22:15:48 866 [debug]: --------------------------------------------------
+23/03/04 22:15:48 866 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:15:48 866 [debug]: --------------------------------------------------
+23/03/04 22:15:48 967 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:15:48 968 [debug]: [OPTIONS] http://localhost:3001/book/undefined
+23/03/04 22:15:48 969 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:15:48 971 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 22:15:48 971 [debug]: --------------------------------------------------
+23/03/04 22:15:48 973 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:15:48 974 [debug]: [PUT] http://localhost:3001/book/undefined
+23/03/04 22:15:48 974 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:15:48 997 [info]:  >> DATABASE 접속됨 [threaId=576]
+23/03/04 22:15:48 998 [info]:  >> Connection 임대됨 [threaId=576]
+23/03/04 22:15:49 000 [debug]: UPDATE book SET   bookTitle = 'bo',  pubName = 'pubN',  pubDate = '2022-02-22',  authNo = '1',  price = '1000',  count= '99',  selling = '3242',   bookDesc = 'bookD',  bookIndex = 'bookIx',  ctgNo = '101',  img = 'img',  content = 'contt',  ISBNum = '9',  page = '13',  size = se  WHERE bookNo='undefined'
+23/03/04 22:15:49 001 [info]:  >> Connection 반납됨 [threaId=576]
+23/03/04 22:15:49 001 [error]: Error: Unknown column 'se' in 'field list'
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.editItem (D:\projectlb\server\services\BookService.js:107:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:114:20
+23/03/04 22:15:49 003 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 22:15:49 003 [debug]: --------------------------------------------------
+23/03/04 22:15:58 708 [debug]: --------------------------------------------------
+23/03/04 22:15:58 710 [debug]: |              Start Express Server              |
+23/03/04 22:15:58 710 [debug]: --------------------------------------------------
+23/03/04 22:15:58 711 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:15:58 711 [debug]: --------------------------------------------------
+23/03/04 22:15:58 893 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:15:58 894 [debug]: [OPTIONS] http://localhost:3001/book/undefined
+23/03/04 22:15:58 894 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:15:58 897 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 22:15:58 897 [debug]: --------------------------------------------------
+23/03/04 22:15:58 899 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:15:58 900 [debug]: [PUT] http://localhost:3001/book/undefined
+23/03/04 22:15:58 900 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:15:58 923 [info]:  >> DATABASE 접속됨 [threaId=578]
+23/03/04 22:15:58 923 [info]:  >> Connection 임대됨 [threaId=578]
+23/03/04 22:15:58 925 [debug]: UPDATE book SET   bookTitle = 'bo',  pubName = 'pubN',  pubDate = '2022-02-22',  authNo = '1',  price = '1000',  count= '99',  selling = '3242',   bookDesc = 'bookD',  bookIndex = 'bookIx',  ctgNo = '101',  img = 'img',  content = 'contt',  ISBNum = '9',  page = '13',  size = size  WHERE bookNo='undefined'
+23/03/04 22:15:58 926 [info]:  >> Connection 반납됨 [threaId=578]
+23/03/04 22:15:58 926 [error]: Error: Truncated incorrect DOUBLE value: 'undefined'
+    at PromisePoolConnection.query (D:\projectlb\node_modules\mysql2\promise.js:93:22)
+    at BookService.editItem (D:\projectlb\server\services\BookService.js:107:48)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:114:20
+23/03/04 22:15:58 928 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+23/03/04 22:15:58 928 [debug]: --------------------------------------------------
+23/03/04 22:17:23 687 [debug]: --------------------------------------------------
+23/03/04 22:17:23 689 [debug]: |              Start Express Server              |
+23/03/04 22:17:23 690 [debug]: --------------------------------------------------
+23/03/04 22:17:23 690 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:17:23 690 [debug]: --------------------------------------------------
+23/03/04 22:17:23 901 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:17:23 902 [debug]: [OPTIONS] http://localhost:3001/book/10
+23/03/04 22:17:23 903 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:17:23 905 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 22:17:23 906 [debug]: --------------------------------------------------
+23/03/04 22:17:23 908 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:17:23 908 [debug]: [PUT] http://localhost:3001/book/10
+23/03/04 22:17:23 908 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:17:23 932 [info]:  >> DATABASE 접속됨 [threaId=582]
+23/03/04 22:17:23 933 [info]:  >> Connection 임대됨 [threaId=582]
+23/03/04 22:17:23 935 [debug]: UPDATE book SET   bookTitle = 'bo',  pubName = 'pubN',  pubDate = '2022-02-22',  authNo = '1',  price = '1000',  count= '99',  selling = '3242',   bookDesc = 'bookD',  bookIndex = 'bookIx',  ctgNo = '101',  img = 'img',  content = 'contt',  ISBNum = '9',  page = '13',  size = size  WHERE bookNo='10'
+23/03/04 22:17:23 939 [debug]: SELECT * FROM book WHERE bookNo= '10'
+23/03/04 22:17:23 942 [info]:  >> Connection 반납됨 [threaId=582]
+23/03/04 22:17:23 943 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 35ms
+23/03/04 22:17:23 944 [debug]: --------------------------------------------------
+23/03/04 22:17:30 323 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:17:30 324 [debug]: [OPTIONS] http://localhost:3001/book/10
+23/03/04 22:17:30 324 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:17:30 325 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/03/04 22:17:30 325 [debug]: --------------------------------------------------
+23/03/04 22:17:30 327 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:17:30 327 [debug]: [PUT] http://localhost:3001/book/10
+23/03/04 22:17:30 327 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:17:30 329 [info]:  >> Connection 임대됨 [threaId=582]
+23/03/04 22:17:30 329 [debug]: UPDATE book SET   bookTitle = 'bo',  pubName = 'pubN',  pubDate = '2022-02-22',  authNo = '1',  price = '1000',  count= '99',  selling = '3242',   bookDesc = 'bookD',  bookIndex = 'bookIx',  ctgNo = '101',  img = 'img',  content = 'contt',  ISBNum = '9',  page = '13',  size = size  WHERE bookNo='10'
+23/03/04 22:17:30 330 [debug]: SELECT * FROM book WHERE bookNo= '10'
+23/03/04 22:17:30 331 [info]:  >> Connection 반납됨 [threaId=582]
+23/03/04 22:17:30 331 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 22:17:30 332 [debug]: --------------------------------------------------
+23/03/04 22:17:51 649 [debug]: --------------------------------------------------
+23/03/04 22:17:51 651 [debug]: |              Start Express Server              |
+23/03/04 22:17:51 652 [debug]: --------------------------------------------------
+23/03/04 22:17:51 652 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:17:51 652 [debug]: --------------------------------------------------
+23/03/04 22:17:51 689 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:17:51 690 [debug]: [OPTIONS] http://localhost:3001/book/10
+23/03/04 22:17:51 690 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:17:51 693 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/03/04 22:17:51 693 [debug]: --------------------------------------------------
+23/03/04 22:17:51 695 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:17:51 696 [debug]: [DELETE] http://localhost:3001/book/10
+23/03/04 22:17:51 696 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:17:51 712 [info]:  >> DATABASE 접속됨 [threaId=584]
+23/03/04 22:17:51 712 [info]:  >> Connection 임대됨 [threaId=584]
+23/03/04 22:17:51 714 [debug]: DELETE FROM book WHERE bookNo='10'
+23/03/04 22:17:51 718 [info]:  >> Connection 반납됨 [threaId=584]
+23/03/04 22:17:51 720 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 24ms
+23/03/04 22:17:51 720 [debug]: --------------------------------------------------
+23/03/04 22:17:54 275 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:17:54 275 [debug]: [DELETE] http://localhost:3001/book/10
+23/03/04 22:17:54 276 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:17:54 277 [info]:  >> Connection 임대됨 [threaId=584]
+23/03/04 22:17:54 278 [debug]: DELETE FROM book WHERE bookNo='10'
+23/03/04 22:17:54 278 [info]:  >> Connection 반납됨 [threaId=584]
+23/03/04 22:17:54 279 [error]: RuntimeException: 삭제된 데이터가 없습니다.
+    at BookService.deleteItem (D:\projectlb\server\services\BookService.js:142:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\projectlb\server\controllers\BookController.js:152:13
+23/03/04 22:17:54 280 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/03/04 22:17:54 280 [debug]: --------------------------------------------------
+23/03/04 22:17:58 876 [debug]: --------------------------------------------------
+23/03/04 22:17:58 879 [debug]: |              Start Express Server              |
+23/03/04 22:17:58 879 [debug]: --------------------------------------------------
+23/03/04 22:17:58 879 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:17:58 880 [debug]: --------------------------------------------------
+23/03/04 22:17:58 887 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:17:58 888 [debug]: [OPTIONS] http://localhost:3001/book/9
+23/03/04 22:17:58 889 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:17:58 892 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 22:17:58 893 [debug]: --------------------------------------------------
+23/03/04 22:17:58 897 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:17:58 897 [debug]: [DELETE] http://localhost:3001/book/9
+23/03/04 22:17:58 897 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:17:58 915 [info]:  >> DATABASE 접속됨 [threaId=586]
+23/03/04 22:17:58 916 [info]:  >> Connection 임대됨 [threaId=586]
+23/03/04 22:17:58 917 [debug]: DELETE FROM book WHERE bookNo='9'
+23/03/04 22:17:58 920 [info]:  >> Connection 반납됨 [threaId=586]
+23/03/04 22:17:58 922 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 25ms
+23/03/04 22:17:58 922 [debug]: --------------------------------------------------
+23/03/04 22:18:07 985 [debug]: --------------------------------------------------
+23/03/04 22:18:07 987 [debug]: |              Start Express Server              |
+23/03/04 22:18:07 987 [debug]: --------------------------------------------------
+23/03/04 22:18:07 988 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:18:07 988 [debug]: --------------------------------------------------
+23/03/04 22:18:08 009 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:18:08 010 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:18:08 010 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:18:08 026 [info]:  >> DATABASE 접속됨 [threaId=588]
+23/03/04 22:18:08 027 [info]:  >> Connection 임대됨 [threaId=588]
+23/03/04 22:18:08 029 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:18:08 031 [info]:  >> Connection 반납됨 [threaId=588]
+23/03/04 22:18:08 032 [info]:  >> Connection 임대됨 [threaId=588]
+23/03/04 22:18:08 033 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:18:08 034 [info]:  >> Connection 반납됨 [threaId=588]
+23/03/04 22:18:08 037 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 28ms
+23/03/04 22:18:08 038 [debug]: --------------------------------------------------
+23/03/04 22:18:32 082 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:18:32 083 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:18:32 083 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:18:32 085 [info]:  >> Connection 임대됨 [threaId=588]
+23/03/04 22:18:32 086 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:18:32 087 [info]:  >> Connection 반납됨 [threaId=588]
+23/03/04 22:18:32 087 [info]:  >> Connection 임대됨 [threaId=588]
+23/03/04 22:18:32 088 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:18:32 089 [info]:  >> Connection 반납됨 [threaId=588]
+23/03/04 22:18:32 090 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/03/04 22:18:32 091 [debug]: --------------------------------------------------
+23/03/04 22:19:10 877 [debug]: --------------------------------------------------
+23/03/04 22:19:10 879 [debug]: |              Start Express Server              |
+23/03/04 22:19:10 880 [debug]: --------------------------------------------------
+23/03/04 22:19:10 880 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:19:10 880 [debug]: --------------------------------------------------
+23/03/04 22:19:14 432 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:19:14 433 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:19:14 433 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:19:14 451 [info]:  >> DATABASE 접속됨 [threaId=590]
+23/03/04 22:19:14 451 [info]:  >> Connection 임대됨 [threaId=590]
+23/03/04 22:19:14 454 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:19:14 456 [info]:  >> Connection 반납됨 [threaId=590]
+23/03/04 22:19:14 457 [info]:  >> Connection 임대됨 [threaId=590]
+23/03/04 22:19:14 458 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:19:14 459 [info]:  >> Connection 반납됨 [threaId=590]
+23/03/04 22:19:14 462 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/03/04 22:19:14 463 [debug]: --------------------------------------------------
+23/03/04 22:19:33 496 [debug]: --------------------------------------------------
+23/03/04 22:19:33 498 [debug]: |              Start Express Server              |
+23/03/04 22:19:33 499 [debug]: --------------------------------------------------
+23/03/04 22:19:33 499 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:19:33 499 [debug]: --------------------------------------------------
+23/03/04 22:19:34 278 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:19:34 279 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:19:34 279 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:19:34 296 [info]:  >> DATABASE 접속됨 [threaId=592]
+23/03/04 22:19:34 296 [info]:  >> Connection 임대됨 [threaId=592]
+23/03/04 22:19:34 298 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:19:34 301 [info]:  >> Connection 반납됨 [threaId=592]
+23/03/04 22:19:34 301 [info]:  >> Connection 임대됨 [threaId=592]
+23/03/04 22:19:34 302 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:19:34 304 [info]:  >> Connection 반납됨 [threaId=592]
+23/03/04 22:19:34 307 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 22:19:34 307 [debug]: --------------------------------------------------
+23/03/04 22:19:34 582 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:19:34 583 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:19:34 583 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:19:34 585 [info]:  >> Connection 임대됨 [threaId=592]
+23/03/04 22:19:34 585 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:19:34 587 [info]:  >> Connection 반납됨 [threaId=592]
+23/03/04 22:19:34 587 [info]:  >> Connection 임대됨 [threaId=592]
+23/03/04 22:19:34 588 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:19:34 589 [info]:  >> Connection 반납됨 [threaId=592]
+23/03/04 22:19:34 590 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+23/03/04 22:19:34 591 [debug]: --------------------------------------------------
+23/03/04 22:22:26 798 [debug]: --------------------------------------------------
+23/03/04 22:22:26 800 [debug]: |              Start Express Server              |
+23/03/04 22:22:26 800 [debug]: --------------------------------------------------
+23/03/04 22:22:26 801 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:22:26 801 [debug]: --------------------------------------------------
+23/03/04 22:22:26 830 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:22:26 832 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:22:26 832 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:22:26 851 [info]:  >> DATABASE 접속됨 [threaId=594]
+23/03/04 22:22:26 851 [info]:  >> Connection 임대됨 [threaId=594]
+23/03/04 22:22:26 853 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:22:26 856 [info]:  >> Connection 반납됨 [threaId=594]
+23/03/04 22:22:26 857 [info]:  >> Connection 임대됨 [threaId=594]
+23/03/04 22:22:26 858 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:22:26 860 [info]:  >> Connection 반납됨 [threaId=594]
+23/03/04 22:22:26 863 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+23/03/04 22:22:26 863 [debug]: --------------------------------------------------
+23/03/04 22:22:28 599 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:22:28 600 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:22:28 600 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:22:28 601 [info]:  >> Connection 임대됨 [threaId=594]
+23/03/04 22:22:28 602 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:22:28 603 [info]:  >> Connection 반납됨 [threaId=594]
+23/03/04 22:22:28 603 [info]:  >> Connection 임대됨 [threaId=594]
+23/03/04 22:22:28 604 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:22:28 604 [info]:  >> Connection 반납됨 [threaId=594]
+23/03/04 22:22:28 605 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/03/04 22:22:28 606 [debug]: --------------------------------------------------
+23/03/04 22:22:32 184 [debug]: --------------------------------------------------
+23/03/04 22:22:32 186 [debug]: |              Start Express Server              |
+23/03/04 22:22:32 186 [debug]: --------------------------------------------------
+23/03/04 22:22:32 186 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:22:32 187 [debug]: --------------------------------------------------
+23/03/04 22:22:32 269 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:22:32 270 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:22:32 270 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:22:32 287 [info]:  >> DATABASE 접속됨 [threaId=596]
+23/03/04 22:22:32 288 [info]:  >> Connection 임대됨 [threaId=596]
+23/03/04 22:22:32 290 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:22:32 292 [info]:  >> Connection 반납됨 [threaId=596]
+23/03/04 22:22:32 293 [info]:  >> Connection 임대됨 [threaId=596]
+23/03/04 22:22:32 294 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:22:32 295 [info]:  >> Connection 반납됨 [threaId=596]
+23/03/04 22:22:32 299 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 22:22:32 299 [debug]: --------------------------------------------------
+23/03/04 22:24:19 303 [debug]: --------------------------------------------------
+23/03/04 22:24:19 305 [debug]: |              Start Express Server              |
+23/03/04 22:24:19 306 [debug]: --------------------------------------------------
+23/03/04 22:24:19 306 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:24:19 307 [debug]: --------------------------------------------------
+23/03/04 22:24:19 396 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:24:19 397 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:24:19 397 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:24:19 414 [info]:  >> DATABASE 접속됨 [threaId=598]
+23/03/04 22:24:19 414 [info]:  >> Connection 임대됨 [threaId=598]
+23/03/04 22:24:19 416 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:24:19 419 [info]:  >> Connection 반납됨 [threaId=598]
+23/03/04 22:24:19 420 [info]:  >> Connection 임대됨 [threaId=598]
+23/03/04 22:24:19 421 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:24:19 423 [info]:  >> Connection 반납됨 [threaId=598]
+23/03/04 22:24:19 425 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 22:24:19 426 [debug]: --------------------------------------------------
+23/03/04 22:24:24 051 [debug]: --------------------------------------------------
+23/03/04 22:24:24 053 [debug]: |              Start Express Server              |
+23/03/04 22:24:24 054 [debug]: --------------------------------------------------
+23/03/04 22:24:24 054 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:24:24 054 [debug]: --------------------------------------------------
+23/03/04 22:24:24 252 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:24:24 254 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=노인과바다
+23/03/04 22:24:24 254 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:24:24 271 [info]:  >> DATABASE 접속됨 [threaId=600]
+23/03/04 22:24:24 271 [info]:  >> Connection 임대됨 [threaId=600]
+23/03/04 22:24:24 274 [debug]: SELECT COUNT(*) AS cnt FROM book   WHERE     bookTitle LIKE concat('%', '노인과바다', '%')
+23/03/04 22:24:24 277 [info]:  >> Connection 반납됨 [threaId=600]
+23/03/04 22:24:24 278 [info]:  >> Connection 임대됨 [threaId=600]
+23/03/04 22:24:24 279 [debug]: SELECT * FROM book   WHERE     bookTitle LIKE concat('%', '노인과바다', '%')     ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:24:24 281 [info]:  >> Connection 반납됨 [threaId=600]
+23/03/04 22:24:24 283 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/03/04 22:24:24 284 [debug]: --------------------------------------------------
+23/03/04 22:25:01 326 [debug]: --------------------------------------------------
+23/03/04 22:25:01 328 [debug]: |              Start Express Server              |
+23/03/04 22:25:01 329 [debug]: --------------------------------------------------
+23/03/04 22:25:01 329 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:25:01 329 [debug]: --------------------------------------------------
+23/03/04 22:25:01 390 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:25:01 392 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:25:01 392 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:25:01 408 [info]:  >> DATABASE 접속됨 [threaId=602]
+23/03/04 22:25:01 409 [info]:  >> Connection 임대됨 [threaId=602]
+23/03/04 22:25:01 411 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:25:01 414 [info]:  >> Connection 반납됨 [threaId=602]
+23/03/04 22:25:01 414 [info]:  >> Connection 임대됨 [threaId=602]
+23/03/04 22:25:01 415 [debug]: SELECT * FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:25:01 417 [info]:  >> Connection 반납됨 [threaId=602]
+23/03/04 22:25:01 420 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/03/04 22:25:01 420 [debug]: --------------------------------------------------
+23/03/04 22:28:26 528 [debug]: --------------------------------------------------
+23/03/04 22:28:26 530 [debug]: |              Start Express Server              |
+23/03/04 22:28:26 530 [debug]: --------------------------------------------------
+23/03/04 22:28:26 531 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:28:26 531 [debug]: --------------------------------------------------
+23/03/04 22:28:29 548 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:28:29 549 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:28:29 550 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:28:29 568 [info]:  >> DATABASE 접속됨 [threaId=604]
+23/03/04 22:28:29 568 [info]:  >> Connection 임대됨 [threaId=604]
+23/03/04 22:28:29 570 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:28:29 572 [info]:  >> Connection 반납됨 [threaId=604]
+23/03/04 22:28:29 573 [info]:  >> Connection 임대됨 [threaId=604]
+23/03/04 22:28:29 574 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y %M %d') as pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:28:29 577 [info]:  >> Connection 반납됨 [threaId=604]
+23/03/04 22:28:29 581 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+23/03/04 22:28:29 582 [debug]: --------------------------------------------------
+23/03/04 22:28:51 568 [debug]: --------------------------------------------------
+23/03/04 22:28:51 570 [debug]: |              Start Express Server              |
+23/03/04 22:28:51 571 [debug]: --------------------------------------------------
+23/03/04 22:28:51 571 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:28:51 571 [debug]: --------------------------------------------------
+23/03/04 22:28:54 505 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:28:54 507 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:28:54 507 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:28:54 526 [info]:  >> DATABASE 접속됨 [threaId=606]
+23/03/04 22:28:54 526 [info]:  >> Connection 임대됨 [threaId=606]
+23/03/04 22:28:54 529 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:28:54 532 [info]:  >> Connection 반납됨 [threaId=606]
+23/03/04 22:28:54 532 [info]:  >> Connection 임대됨 [threaId=606]
+23/03/04 22:28:54 533 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y %m %d') as pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:28:54 535 [info]:  >> Connection 반납됨 [threaId=606]
+23/03/04 22:28:54 538 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 32ms
+23/03/04 22:28:54 538 [debug]: --------------------------------------------------
+23/03/04 22:29:09 722 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:29:09 723 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:29:09 723 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:29:09 725 [info]:  >> Connection 임대됨 [threaId=606]
+23/03/04 22:29:09 727 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:29:09 728 [info]:  >> Connection 반납됨 [threaId=606]
+23/03/04 22:29:09 728 [info]:  >> Connection 임대됨 [threaId=606]
+23/03/04 22:29:09 729 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y %m %d') as pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:29:09 731 [info]:  >> Connection 반납됨 [threaId=606]
+23/03/04 22:29:09 732 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/03/04 22:29:09 732 [debug]: --------------------------------------------------
+23/03/04 22:29:14 290 [debug]: --------------------------------------------------
+23/03/04 22:29:14 293 [debug]: |              Start Express Server              |
+23/03/04 22:29:14 293 [debug]: --------------------------------------------------
+23/03/04 22:29:14 293 [debug]: server address => http://211.222.164.95:3001
+23/03/04 22:29:14 294 [debug]: --------------------------------------------------
+23/03/04 22:29:17 249 [debug]: 클라이언트가 접속했습니다.
+23/03/04 22:29:17 251 [debug]: [GET] http://localhost:3001/book?page=1&rows=30&query=
+23/03/04 22:29:17 252 [debug]: [client] ::1 / Windows 10.0 / Chrome (110.0.0.0) / Microsoft Windows
+23/03/04 22:29:17 270 [info]:  >> DATABASE 접속됨 [threaId=608]
+23/03/04 22:29:17 271 [info]:  >> Connection 임대됨 [threaId=608]
+23/03/04 22:29:17 272 [debug]: SELECT COUNT(*) AS cnt FROM book
+23/03/04 22:29:17 275 [info]:  >> Connection 반납됨 [threaId=608]
+23/03/04 22:29:17 275 [info]:  >> Connection 임대됨 [threaId=608]
+23/03/04 22:29:17 276 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size FROM book        ORDER BY bookNo ASC     LIMIT 0, 30
+23/03/04 22:29:17 278 [info]:  >> Connection 반납됨 [threaId=608]
+23/03/04 22:29:17 281 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 31ms
+23/03/04 22:29:17 281 [debug]: --------------------------------------------------
+23/03/04 23:52:19 784 [debug]: 클라이언트가 접속했습니다.
+23/03/04 23:52:19 785 [debug]: [GET] http://211.222.164.95:3001/
+23/03/04 23:52:19 786 [debug]: [client] ::ffff:179.43.177.242 / unknown / unknown (unknown) / unknown
+23/03/04 23:52:19 789 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/03/04 23:52:19 789 [debug]: --------------------------------------------------

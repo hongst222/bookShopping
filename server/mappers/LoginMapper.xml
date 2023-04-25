@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="LoginMapper">
+    <select id="selectIdPw">
+        SELECT loginId, pwd, userNo FROM user WHERE loginId=#{loginId}
+    </select>
+
+    <!-- 데이터 수 조회하기  -->
+    <select id="selectCountAll">
+        SELECT COUNT(*) AS cnt FROM user
+
+        <where>
+            <if test="userName != null and userName != ''">
+                userName LIKE concat('%', #{userName}, '%')
+            </if>
+
+            <if test="loginId != null and loginId != ''">
+                OR loginId LIKE concat('%', #{loginId}, '%')
+            </if>
+        </where>
+    </select>
+
+</mapper>

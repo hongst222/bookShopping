@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="AuthorMapper">
+
+    <!-- 단일행 조회를 위한 기능 정의 -->
+    <select id="selectItem">
+        SELECT authName, authDesc FROM author WHERE authNo= #{authNo}
+    </select>
+
+    <!-- 다중행 조회를 위한 기능 정의 -->
+    <select id="selectList">
+        SELECT authName, authDesc FROM author 
+        <where>
+            <if test="authName != null and authName != ''">
+                authName LIKE concat('%', #{authName}, '%')
+            </if>
+        </where>
+
+        ORDER BY authNo ASC
+
+        <!-- 페이지 구현을 위한 LIMIT절 추가 -->
+        <if test="listCount > 0">
+            LIMIT ${offset}, ${listCount}
+        </if>
+    </select>
+
+    <!-- 데이터 저장을 위한 기능 정의 -->
+    <insert id="insertItem">
+        INSERT INTO author
+            ( authName, authDesc)
+        VALUES 
+            ( #{authName}, #{authDesc});
+    </insert>
+
+    <!-- 데이터 삭제를 위한 기능 정의 -->
+    <delete id="deleteItem">
+        DELETE FROM author WHERE authNo=#{authNo}
+    </delete>
+
+    <!-- 데이터 갱신을 위한 기능 정의 -->
+    <update id="updateItem">
+        UPDATE author SET 
+        authName = #{authName},
+        authDesc = #{authDesc}
+        WHERE authNo = #{authNo}
+    </update>
+
+    <!-- 데이터 수 조회하기  -->
+    <select id="selectCountAll">
+        SELECT COUNT(*) AS cnt FROM author
+
+        <where>
+            <if test="authName != null and authName != ''">
+                authName LIKE concat('%', #{authName}, '%')
+            </if>
+        </where>
+    </select>
+
+</mapper>

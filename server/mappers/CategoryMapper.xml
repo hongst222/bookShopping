@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="CategoryMapper">
+
+    <!-- 단일행 조회를 위한 기능 정의 -->
+    <select id="selectItem">
+        SELECT ctgName, ctgUp FROM category WHERE ctgNo= #{ctgNo}
+    </select>
+
+    <!-- 다중행 조회를 위한 기능 정의 -->
+    <select id="selectList">
+        SELECT ctgName, ctgUp FROM category
+        <where>
+            <if test="ctgName != null and ctgName != ''">
+                ctgName LIKE concat('%', #{ctgName}, '%')
+            </if>
+        </where>
+
+        ORDER BY ctgNo ASC
+
+        <!-- 페이지 구현을 위한 LIMIT절 추가 -->
+        <if test="listCount > 0">
+            LIMIT ${offset}, ${listCount}
+        </if>
+    </select>
+
+    <!-- 데이터 저장을 위한 기능 정의 -->
+    <insert id="insertItem">
+        INSERT INTO category
+            (ctgNo, ctgName, ctgUp)
+        VALUES 
+            (#{ctgNo}, #{ctgName}, #{ctgUp});
+    </insert>
+
+    <!-- 데이터 삭제를 위한 기능 정의 -->
+    <delete id="deleteItem">
+        DELETE FROM category WHERE ctgNo=#{ctgNo}
+    </delete>
+
+    <!-- 데이터 갱신을 위한 기능 정의 -->
+    <update id="updateItem">
+        UPDATE category SET 
+        ctgName = #{ctgName},
+        ctgUp = #{ctgUp}
+        WHERE ctgNo = #{ctgNo}
+    </update>
+
+    <!-- 데이터 수 조회하기  -->
+    <select id="selectCountAll">
+        SELECT COUNT(*) AS cnt FROM category
+
+        <where>
+            <if test="ctgName != null and ctgName != ''">
+                ctgName LIKE concat('%', #{ctgName}, '%')
+            </if>
+        </where>
+    </select>
+
+    
+
+</mapper>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="SellingRankMapper">
+
+    <!-- 순위를 구하기 위한 기능 정의 -->
+    
+    <select id="selectItemRank">
+     SELECT B.ranking
+        FROM 
+        (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,
+        od.bookNo,
+        SUM(od.amount) AS sum_amount,
+        ctg.ctgName
+        FROM orderDetails AS od
+        JOIN book AS b ON od.bookNo = b.bookNo
+        JOIN category AS ctg ON b.ctgNo = ctg.ctgNo
+        JOIN orders AS o ON od.orderNo = o.orderNo
+        <if test="ranktype != null and ranktype == 'small'">
+            JOIN (SELECT ctgNo FROM book WHERE bookNo = #{bookNo})  AS b2 ON b.ctgNo = b2.ctgNo
+        </if>
+        <if test="ranktype != null and ranktype == 'big'">
+            JOIN (SELECT ctgNO FROM book WHERE bookNo = #{bookNo}) AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)
+        </if>
+        WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()
+        GROUP BY od.bookNo
+        ORDER BY sum_amount DESC
+        LIMIT 100
+        ) AS B
+     WHERE B.bookNo = #{bookNo}
+        
+    </select>
+
+
+    <!-- 순위 구하기 초기 코드 -->
+    <!-- <select id="selectItemRank">
+     SELECT * 
+       FROM
+            (SELECT @rownum := @rownum +1 as ranking, bookNo, sum_amount
+                FROM (select @rownum :=0) ranking, 
+                (SELECT od.bookNo, SUM(amount) as sum_amount
+                    FROM orderDetails as od
+                    INNER JOIN book as b ON od.bookNo = b.bookNo
+                    INNER JOIN orders as o On od.orderNo = o.orderNo
+                    INNER JOIN category as ctg ON b.ctgNo = ctg.ctgNo
+                    <where>
+                            <if test="ranktype != null and ranktype == 'small'">
+                                b.ctgNo = (SELECT ctgNo FROM book WHERE bookNo = #{bookNo})
+                            </if>
+                            <if test="ranktype != null and ranktype == 'big'">
+                                ctg.ctgUp =(SELECT ctgNo - mod(ctgNo,100)  FROM book WHERE bookNo= #{bookNo})
+                            </if>
+                            AND o.orderDate BETWEEN date_add(NOW(), INTERVAL -1 WEEK) AND NOW()
+                    </where>
+                    GROUP by od.bookNo
+                )A 
+                    ORDER BY sum_amount DESC Limit 40
+                    ) B WHERE bookNo = #{bookNo}
+        
+    </select> -->
+
+</mapper>y
+

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BookMapper">
+
+    <!-- 단일행 조회를 위한 기능 정의 -->
+    <select id="selectItem">
+        SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size, discount FROM book WHERE bookNo= #{bookNo}
+    </select>
+
+    <!-- 다중행 조회를 위한 기능 정의 -->
+    <select id="selectList">
+        SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size, discount FROM book
+
+        <where>
+            <if test="bookTitle != null and bookTitle != ''">
+                bookTitle LIKE concat('%', #{bookTitle}, '%')
+            </if>
+        </where>
+
+        ORDER BY bookNo ASC
+
+        <!-- 페이지 구현을 위한 LIMIT절 추가 -->
+        <if test="listCount > 0">
+            LIMIT ${offset}, ${listCount}
+        </if>
+    </select>
+
+    <!-- 화제의 신상 다중행 조회를 위한 기능 정의 -->
+    <select id="selectListHotPotato">
+        SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,
+        b.bookNo,
+        b.bookTitle,
+        b.pubName,
+        b.pubDate,
+        b.price,
+        SUM(COALESCE(od.amount,0)) AS sum_amount,
+        ctg.ctgName
+        FROM book AS b
+        LEFT JOIN orderDetails AS od ON od.bookNo = b.bookNo
+        LEFT JOIN orders AS o ON od.orderNo = o.orderNo
+        JOIN category AS ctg ON b.ctgNo = ctg.ctgNo
+        WHERE b.pubDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()
+        GROUP BY b.bookNo
+        ORDER BY sum_amount DESC
+        LIMIT 10;
+    </select>
+
+    <!-- 전체 주간 TOP 10 (주문 내역이 없는 경우 10개가 안나올 수도 있음)-->
+    <select id="selectListTop10">
+     SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,
+        b.bookNo,
+        b.bookTitle,
+        b.pubName,
+        b.price,
+        SUM(COALESCE(od.amount,0)) AS sum_amount,
+        ctg.ctgName
+        FROM book AS b
+        JOIN orderDetails AS od ON od.bookNo = b.bookNo
+        JOIN orders AS o ON od.orderNo = o.orderNo
+        JOIN category AS ctg ON b.ctgNo = ctg.ctgNo
+        WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()
+        GROUP BY b.bookNo
+        ORDER BY sum_amount DESC
+        LIMIT 10;
+    </select>
+
+    <!-- 관련분야 주간 TOP5 구하기 -->
+    <select id="selectListTop5">
+     SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,
+        b.bookNo,
+        a.authName,
+        b.bookTitle,
+        b.img,
+        b.price,
+        b.discount,
+        SUM(od.amount) AS sum_amount, ctg.ctgName
+        FROM orderDetails AS od
+        JOIN book AS b ON od.bookNo = b.bookNo
+        JOIN author AS a ON b.authNo = a.authNo
+        JOIN category AS ctg ON b.ctgNo = ctg.ctgNo
+        JOIN orders AS o ON od.orderNo = o.orderNo
+        JOIN (SELECT ctgNo FROM book WHERE bookNo = #{bookNo})  AS b2 ON b.ctgNo = b2.ctgNo
+        WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()
+        GROUP BY od.bookNo
+        ORDER BY sum_amount DESC
+        LIMIT 5;
+    </select>
+
+    <!-- 관련분야 신작 5개 구하기 -->
+    <select id="selectListNew5">
+     SELECT
+        bookNo,
+        authName,
+        bookTitle,
+        img,
+        price,
+        discount
+        FROM book AS b
+        JOIN author AS a ON b.authNo = a.authNo
+        JOIN category AS ctg ON b.ctgNo = ctg.ctgNo
+        JOIN (SELECT ctgNO FROM book WHERE bookNo = #{bookNo}) AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)
+        WHERE pubDate BETWEEN DATE_SUB(NOW(), INTERVAL 4 WEEK) AND NOW()
+        ORDER BY pubDate DESC
+        LIMIT 5;
+    </select>
+
+
+    <!-- 데이터 저장을 위한 기능 정의 -->
+    <insert id="insertItem">
+        INSERT INTO book 
+            (bookTitle, pubName, pubDate, authNo, price, count, selling, bookDesc, bookIndex, ctgNo, img, content, ISBNum, page, size, discount)
+        VALUES 
+            (#{bookTitle}, #{pubName}, #{pubDate}, #{authNo}, #{price}, #{count}, #{selling}, #{bookDesc}, #{bookIndex}, #{ctgNo}, 
+            #{img}, #{content}, #{ISBNum}, #{page}, #{size}, #{discount});
+    </insert>
+
+    <!-- 데이터 삭제를 위한 기능 정의 -->
+    <delete id="deleteItem">
+        DELETE FROM book WHERE bookNo=#{bookNo}
+    </delete>
+
+    <!-- 데이터 갱신을 위한 기능 정의 -->
+    <update id="updateItem">
+        UPDATE book SET 
+        bookTitle = #{bookTitle},
+        pubName = #{pubName},
+        pubDate = #{pubDate},
+        authNo = #{authNo},
+        price = #{price},
+        count= #{count},
+        selling = #{selling}, 
+        bookDesc = #{bookDesc},
+        bookIndex = #{bookIndex},
+        ctgNo = #{ctgNo},
+        img = #{img},
+        content = #{content},
+        ISBNum = #{ISBNum},
+        page = #{page},
+        size = #{size},
+        discount = #{discount}
+        WHERE bookNo=#{bookNo}
+    </update>
+
+    <!-- 데이터 수 조회하기  -->
+    <select id="selectCountAll">
+        SELECT COUNT(*) AS cnt FROM book
+
+        <where>
+            <if test="bookTitle != null and bookTitle != ''">
+                bookTitle LIKE concat('%', #{bookTitle}, '%')
+            </if>
+        </where>
+    </select>
+
+
+
+
+
+    <!-- ________________     INNER JOIN  ______________-->
+    <!-- 단일행 조회를 위한 기능 정의 -->
+    <select id="selectItemAuthName">
+        SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc,bookIntro, bookIndex, img, content, ISBNum, page, size, discount, a.authName as authName, a.authImg as authImg ,a.authDesc as authDesc, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp,
+        SUM(COALESCE(rv.sp,0)) AS totalSp
+        FROM book
+        INNER JOIN author as a ON book.authNo = a.authNo
+        INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo
+        INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo
+        LEFT OUTER JOIN review AS rv ON rv.bookNo = book.bookNo
+        WHERE book.bookNo= #{bookNo}
+    </select>
+
+    <!-- 다중행 조회를 위한 기능 정의 -->
+    <select id="selectListAuthName">
+        SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc, bookIntro, bookIndex, img, content, ISBNum, page, size, discount, a.authName as authName, a.authImg as authImg ,a.authDesc as authDesc, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp 
+        FROM book
+        INNER JOIN author as a ON book.authNo = a.authNo
+        INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo
+        INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo
+        <where>
+            <if test="bookTitle != null and bookTitle != ''">
+                bookTitle LIKE concat('%', #{bookTitle}, '%')
+            </if>
+        </where>
+
+        ORDER BY bookNo ASC
+        <!-- 페이지 구현을 위한 LIMIT절 추가 -->
+        <if test="listCount > 0">
+            LIMIT ${offset}, ${listCount}
+        </if>
+    </select>
+
+</mapper>
