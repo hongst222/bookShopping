@@ -16,7 +16,6 @@ class LoginService {
     async getLoginInfo(params) {
         let dbcon = null;
         let data = null;
-
         try {
             dbcon = await DBPool.getConnection();
 
@@ -30,6 +29,26 @@ class LoginService {
         }
         return data;
     }
+
+    async getTokenUserInfo(params) {
+        let dbcon = null;
+        let data = null;
+        try {
+            dbcon = await DBPool.getConnection();
+
+            let sql = mybatisMapper.getStatement('LoginMapper', 'getTokenInfo', params);
+            let [result] = await dbcon.query(sql);
+            data = result[0];
+        } catch (err) {
+            throw err;
+        } finally {
+            if (dbcon) { dbcon.release(); }
+        }
+        return data;
+    }
+
+    /** accessToken을 통해 유저를 식별하기 위한 userNo 조회 */
+
 
 
     /** 전체 데이터 수 조회 */

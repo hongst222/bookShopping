@@ -113,8 +113,8 @@ app.use(process.env.THUMB_URL, serveStatic(process.env.THUMB_DIR));
 app.use(serveFavicon(process.env.FAVICON_PATH));
 
 app.use(cors({
-    origin: true,
-    credentials: true // 사용자 인증이 필요한 리소스 접근
+    origin: "http://localhost:3000",
+    credentials: true, // 사용자 인증이 필요한 리소스 접근
 }));
 
 app.use(WebHelper());
@@ -147,86 +147,6 @@ const router = express.Router();
 app.use("/", router);
 
 
-/*----------------------------------------------------------
- | 5) 각 URL별 백엔드 기능 정의
- -----------------------------------------------------------*/
-// 이미지 업로드 및 썸네일 제작 관련 기능 
-// app.use(require(`./ResizingImage`));
-// const FileHelper = require("./helper/FileHelper");
-// router.route('/upload/single').post((req, res, next) => {
-//     const upload = FileHelper.initMulter().single('myphoto');
-
-//     upload(req, res, async (err) => {
-//         console.group('request');
-//         console.debug(req.file);
-//         console.groupEnd();
-
-//         try {
-//             FileHelper.checkUploadError(err);
-//         } catch (err) {
-//             console.error(err);
-//             res.status(500).send({
-//                 rt: err.code,
-//                 rtmsg: err.message
-//             });
-
-//             return;
-//         }
-
-//         // 썸네일을 생성
-//         try {
-//             await FileHelper.createThumbnail(req.file);
-//         } catch (err) {
-//             console.error(err);
-//             res.status(500).send({
-//                 rt: err.code,
-//                 rtmsg: err.message
-//             });
-//             return;
-//         }
-
-//         res.status(200).send(req.file);
-//     });
-// });
-
-// router.route('/upload/multiple').post((req, res, next) => {
-//     req.file = [];
-
-//     const upload = FileHelper.initMulter().array('myphoto');
-
-//     upload(req, res, async (err) => {
-//         console.group('request');
-//         console.debug(req.file);
-//         console.groupEnd();
-
-//         try {
-//             FileHelper.checkUploadError(err);
-//         } catch (err) {
-//             console.error(err);
-//             res.status(500).send({
-//                 rt: err.code,
-//                 rtmsg: err.message
-//             });
-//             return;
-//         }
-
-//         // 썸네일을 생성
-//         try {
-//             await FileHelper.createThumbnailMultiple(req.file);
-//         } catch (err) {
-//             console.error(err);
-//             res.status(500).send({
-//                 rt: err.code,
-//                 rtmsg: err.message
-//             });
-//             return;
-//         }
-
-//         res.status(200).send(req.file);
-//     });
-// });
-// 컨트롤러 연결
-
 const controllers = [
     "Author",
     "Book",
@@ -246,6 +166,15 @@ const controllers = [
 controllers.forEach((controller) => {
     app.use(require(`./controllers/${controller}Controller`));
 });
+const {
+    login,
+    accessToken,
+    refreshToken,
+    loginSuccess,
+    logout
+} = require('./controllers/AAController');
+
+
 app.use((err, req, res, next) => res.sendError(err));
 app.use("*", (req, res, next) => res.sendError(new PageNotFoundException()));
 

@@ -18,7 +18,7 @@ import BookAboutNewSlice from "./slices/BookAboutNewSlice";
 import OrdersSlice from "./slices/OrdersSlice";
 
 import StateSlice from "./slices/StateSlice";
-import LoginSlice from "./slices/LoginSlice";
+
 
 const store = configureStore({
   reducer: {
@@ -39,9 +39,7 @@ const store = configureStore({
       QnaSlice : QnaSlice,
       OutuserSlice : OutuserSlice,
       EventSlice : EventSlice,
-      
-      // 로그인에 사용하는 상태변수들
-      LoginSlice : LoginSlice,
+
       // 따로 사용하는 상태변수
       StateSlice : StateSlice,
 

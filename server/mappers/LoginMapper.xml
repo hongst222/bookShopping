@@ -4,9 +4,12 @@
 
 <mapper namespace="LoginMapper">
     <select id="selectIdPw">
-        SELECT loginId, pwd, userNo FROM user WHERE loginId=#{loginId}
+        SELECT loginId, pwd, userNo, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE loginId=#{loginId}
     </select>
 
+    <select id="getTokenInfo">
+        SELECT userNo, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo=#{userNo}
+    </select>
     <!-- 데이터 수 조회하기  -->
     <select id="selectCountAll">
         SELECT COUNT(*) AS cnt FROM user

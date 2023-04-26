@@ -8765,3 +8765,97 @@
 23/04/25 21:21:13 743 [debug]: --------------------------------------------------
 23/04/25 21:21:13 743 [debug]: server address => http://211.222.164.181:3001
 23/04/25 21:21:13 743 [debug]: --------------------------------------------------
+23/04/25 21:21:43 787 [debug]: --------------------------------------------------
+23/04/25 21:21:43 788 [debug]: |              Start Express Server              |
+23/04/25 21:21:43 789 [debug]: --------------------------------------------------
+23/04/25 21:21:43 789 [debug]: server address => http://211.222.164.181:3001
+23/04/25 21:21:43 789 [debug]: --------------------------------------------------
+23/04/25 21:21:47 643 [debug]: 클라이언트가 접속했습니다.
+23/04/25 21:21:47 644 [debug]: [GET] http://localhost:3001/book_authName/1
+23/04/25 21:21:47 645 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/25 21:21:47 648 [debug]: 클라이언트가 접속했습니다.
+23/04/25 21:21:47 648 [debug]: [GET] http://localhost:3001/book_Top5/1
+23/04/25 21:21:47 649 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/25 21:21:47 656 [debug]: 클라이언트가 접속했습니다.
+23/04/25 21:21:47 657 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=1&odby=&point=
+23/04/25 21:21:47 657 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/25 21:21:47 658 [debug]: 클라이언트가 접속했습니다.
+23/04/25 21:21:47 659 [debug]: [GET] http://localhost:3001/book_new5/1
+23/04/25 21:21:47 659 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/25 21:21:47 723 [info]:  >> DATABASE 접속됨 [threaId=1354]
+23/04/25 21:21:47 724 [info]:  >> Connection 임대됨 [threaId=1354]
+23/04/25 21:21:47 726 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/25 21:21:47 727 [info]:  >> DATABASE 접속됨 [threaId=1355]
+23/04/25 21:21:47 727 [info]:  >> Connection 임대됨 [threaId=1355]
+23/04/25 21:21:47 728 [debug]: SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  b.bookNo,  a.authName,  b.bookTitle,  b.img,  b.price,  b.discount,  SUM(od.amount) AS sum_amount, ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN author AS a ON b.authNo = a.authNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo  JOIN (SELECT ctgNo FROM book WHERE bookNo = '1')  AS b2 ON b.ctgNo = b2.ctgNo  WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 5;
+23/04/25 21:21:47 728 [info]:  >> DATABASE 접속됨 [threaId=1357]
+23/04/25 21:21:47 728 [info]:  >> Connection 임대됨 [threaId=1357]
+23/04/25 21:21:47 729 [debug]: SELECT  bookNo,  authName,  bookTitle,  img,  price,  discount  FROM book AS b  JOIN author AS a ON b.authNo = a.authNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN (SELECT ctgNO FROM book WHERE bookNo = '1') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)  WHERE pubDate BETWEEN DATE_SUB(NOW(), INTERVAL 4 WEEK) AND NOW()  ORDER BY pubDate DESC  LIMIT 5;
+23/04/25 21:21:47 730 [info]:  >> DATABASE 접속됨 [threaId=1356]
+23/04/25 21:21:47 730 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 731 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')
+23/04/25 21:21:47 733 [info]:  >> Connection 반납됨 [threaId=1355]
+23/04/25 21:21:47 737 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 89ms
+23/04/25 21:21:47 737 [debug]: --------------------------------------------------
+23/04/25 21:21:47 738 [info]:  >> Connection 반납됨 [threaId=1357]
+23/04/25 21:21:47 739 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 80ms
+23/04/25 21:21:47 739 [debug]: --------------------------------------------------
+23/04/25 21:21:47 740 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 740 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 741 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '1' and ('1'+0.5)
+23/04/25 21:21:47 741 [info]:  >> Connection 반납됨 [threaId=1354]
+23/04/25 21:21:47 741 [info]:  >> Connection 임대됨 [threaId=1354]
+23/04/25 21:21:47 742 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNO FROM book WHERE bookNo = '1') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/25 21:21:47 743 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 743 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 743 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '2' and ('2'+0.5)
+23/04/25 21:21:47 744 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 744 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 744 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '3' and ('3'+0.5)
+23/04/25 21:21:47 745 [info]:  >> Connection 반납됨 [threaId=1354]
+23/04/25 21:21:47 745 [info]:  >> Connection 임대됨 [threaId=1354]
+23/04/25 21:21:47 745 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNo FROM book WHERE bookNo = '1')  AS b2 ON b.ctgNo = b2.ctgNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/25 21:21:47 746 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 746 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 747 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '4' and ('4'+0.5)
+23/04/25 21:21:47 747 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 747 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 748 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '5' and ('5'+0.5)
+23/04/25 21:21:47 748 [info]:  >> Connection 반납됨 [threaId=1354]
+23/04/25 21:21:47 748 [info]:  >> Connection 임대됨 [threaId=1354]
+23/04/25 21:21:47 749 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc,bookIntro, bookIndex, img, content, ISBNum, page, size, discount, a.authName as authName, a.authImg as authImg ,a.authDesc as authDesc, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp,  SUM(COALESCE(rv.sp,0)) AS totalSp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  LEFT OUTER JOIN review AS rv ON rv.bookNo = book.bookNo  WHERE book.bookNo= '1'
+23/04/25 21:21:47 749 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 750 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 751 [debug]: SELECT reviewNo, comment, sp, date_format(r.regDate, '%Y/%m/%d') as regDate, u.loginId, bookNo FROM review as r  INNER JOIN user as u ON r.userNo = u.userNo   WHERE  bookNo LIKE concat('%', '1', '%')    ORDER BY regDate DESC    LIMIT 0, 30
+23/04/25 21:21:47 752 [info]:  >> Connection 반납됨 [threaId=1354]
+23/04/25 21:21:47 753 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 109ms
+23/04/25 21:21:47 753 [debug]: --------------------------------------------------
+23/04/25 21:21:47 754 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 754 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 97ms
+23/04/25 21:21:47 755 [debug]: --------------------------------------------------
+23/04/25 21:21:47 755 [debug]: 클라이언트가 접속했습니다.
+23/04/25 21:21:47 756 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=1&odby=&point=
+23/04/25 21:21:47 756 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/25 21:21:47 757 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 758 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')
+23/04/25 21:21:47 759 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 759 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 759 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '1' and ('1'+0.5)
+23/04/25 21:21:47 760 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 760 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 760 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '2' and ('2'+0.5)
+23/04/25 21:21:47 761 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 761 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 761 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '3' and ('3'+0.5)
+23/04/25 21:21:47 762 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 762 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 762 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '4' and ('4'+0.5)
+23/04/25 21:21:47 763 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 763 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 764 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '5' and ('5'+0.5)
+23/04/25 21:21:47 764 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 764 [info]:  >> Connection 임대됨 [threaId=1356]
+23/04/25 21:21:47 765 [debug]: SELECT reviewNo, comment, sp, date_format(r.regDate, '%Y/%m/%d') as regDate, u.loginId, bookNo FROM review as r  INNER JOIN user as u ON r.userNo = u.userNo   WHERE  bookNo LIKE concat('%', '1', '%')    ORDER BY regDate DESC    LIMIT 0, 30
+23/04/25 21:21:47 765 [info]:  >> Connection 반납됨 [threaId=1356]
+23/04/25 21:21:47 766 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/04/25 21:21:47 766 [debug]: --------------------------------------------------
