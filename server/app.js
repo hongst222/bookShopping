@@ -148,6 +148,7 @@ app.use("/", router);
 
 
 const controllers = [
+    // 데이터 처리 관련
     "Author",
     "Book",
     "Cart",
@@ -160,20 +161,14 @@ const controllers = [
     "Review",
     "User",
     "Orders",
+
+    // 로그인 관련
     "Login",
 ];
 
 controllers.forEach((controller) => {
     app.use(require(`./controllers/${controller}Controller`));
 });
-const {
-    login,
-    accessToken,
-    refreshToken,
-    loginSuccess,
-    logout
-} = require('./controllers/AAController');
-
 
 app.use((err, req, res, next) => res.sendError(err));
 app.use("*", (req, res, next) => res.sendError(new PageNotFoundException()));

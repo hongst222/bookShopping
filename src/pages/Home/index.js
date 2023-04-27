@@ -1,9 +1,20 @@
 import React, { memo } from 'react';
+import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+
 
 const index = memo(() => {
+    const {user: user,userNo: userNo, islogin: islogin} = useSelector((state) => state.StateSlice);
+    useEffect(()=>{
+        console.log(user, islogin, userNo);    
+    },[])
+    const test = (e) => {
+        console.log(user, userNo, islogin);
+    }
     return (
         <div>
             <h1>임시 메인 페이지</h1>
+            <button onClick={test}></button>
         </div>
     );
 });

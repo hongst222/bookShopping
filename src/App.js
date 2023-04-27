@@ -13,18 +13,21 @@ import Header from './components/common/Header';
 import AppRouter from './routes';
 
 import { HambugerContext } from './context/HamburgerContext';
+import { useEffect } from 'react';
 // page
 
 const App = () => {
-    const [isHambuger, setIsHambuger] = useState(false);
+    useEffect(() => {
 
+    }, []);
+
+    const [isHambuger, setIsHambuger] = useState(false);
     return (
         <>
 
             <Reset />
             <GlobalStyle />
             
-
             <br />
             <nav style={{
                 "width": "1200px",
