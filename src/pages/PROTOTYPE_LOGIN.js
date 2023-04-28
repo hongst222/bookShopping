@@ -4,11 +4,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 // slice
-import { setIslogin, setUser, setUserNo } from '../slices/StateSlice';
+import { setIslogin, setUser, setUserNo } from '../slices/LoginSlice';
 import { useEffect } from 'react';
 const PROTOTYPE_LOGIN = memo(() => {
     const dispatch = useDispatch();
-    const { islogin: islogin, user: user} = useSelector((state) => state.StateSlice);
+    const { islogin: islogin, user: user } = useSelector((state) => state.LoginSlice);
 
     const navigate = useNavigate();
     /** 로그인 성공 시 발생하는 함수 */
@@ -22,7 +22,6 @@ const PROTOTYPE_LOGIN = memo(() => {
                 dispatch(setUser(result.data.userName));
                 dispatch(setUserNo(result.data.userNo));
                 console.log("sda");
-                // navigate('/')
             } else {
                 console.log("로그인 실패");
             }
@@ -36,7 +35,7 @@ const PROTOTYPE_LOGIN = memo(() => {
             const response = await axios.post(`http://localhost:3001/logout`, {}, {
                 withCredentials: true
             });
-            if(response.status == 200){
+            if (response.status == 200) {
                 dispatch(setIslogin(false));
                 dispatch(setUser(null));
                 dispatch(setUserNo(null));
@@ -50,6 +49,7 @@ const PROTOTYPE_LOGIN = memo(() => {
 
     useEffect(() => {
         LoginSuccess();
+       
     }, []);
 
     // 로그인 시도 시 사용되는 이벤트.

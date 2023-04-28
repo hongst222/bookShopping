@@ -16,11 +16,7 @@ const ReviewSlice = createSlice({
             ihw: "https://github.com/hyunwoomemo",
             hst: "https://www.google.com",
         },
-
-        /**  로그인 관련 ( for use LoginFunc.js) */
-        islogin: false,
-        user: null,
-        userNo: null,
+       
     },
     reducers: {
         setRv: (state, action) => {
@@ -36,18 +32,9 @@ const ReviewSlice = createSlice({
             state.pm = action.payload;
         },
 
-        /** 로그인 관련 (LoginFunc.js) */
-        setIslogin : (state, action) => {
-            state.islogin = action.payload;
-        },
-        setUser: (state, action) => {
-            state.user = action.payload;
-        },
-        setUserNo: (state, action) => {
-            state.userNo = action.payload;
-        }
+        
     },
 });
 
-export const { setRv, setWriteReviewTrue, setWriteReviewFalse, setPm, setIslogin, setUser, setUserNo } = ReviewSlice.actions;
+export const { setRv, setWriteReviewTrue, setWriteReviewFalse, setPm, } = ReviewSlice.actions;
 export default ReviewSlice.reducer;

@@ -14,6 +14,17 @@ export const login = async (payload) => {
         });
         console.log(payload.loginId);
         console.log("로그인성공?");
+
+        // "/"로 이동
+        // window.location.replace("/"); 을 사용하면 아예 새로운 페이지로 교체하기때문에 브라우저 히스토리에 남는 게 없어 뒤로가기가 안된다.
+        
+        /** 아래와 같은 코드는 loginSuccess를 씹어버린다. */
+        // window.history.pushState({}, "", "/");
+        // window.location.reload();
+
+        window.location.reload();
+
+
     } catch (err) {
         console.log(err);
     }
