@@ -1,0 +1,966 @@
+23/04/29 19:32:21 772 [debug]: --------------------------------------------------
+23/04/29 19:32:21 775 [debug]: |              Start Express Server              |
+23/04/29 19:32:21 775 [debug]: --------------------------------------------------
+23/04/29 19:32:21 776 [debug]: server address => http://211.222.164.181:3001
+23/04/29 19:32:21 776 [debug]: --------------------------------------------------
+23/04/29 19:37:43 027 [debug]: --------------------------------------------------
+23/04/29 19:37:43 030 [debug]: |              Start Express Server              |
+23/04/29 19:37:43 030 [debug]: --------------------------------------------------
+23/04/29 19:37:43 030 [debug]: server address => http://211.222.164.181:3001
+23/04/29 19:37:43 030 [debug]: --------------------------------------------------
+23/04/29 19:38:50 273 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:38:50 274 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:38:50 274 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:38:50 282 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+23/04/29 19:38:50 283 [debug]: --------------------------------------------------
+23/04/29 19:38:54 741 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:38:54 741 [debug]: [OPTIONS] http://localhost:3001/login
+23/04/29 19:38:54 742 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:38:54 743 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:38:54 743 [debug]: --------------------------------------------------
+23/04/29 19:38:54 744 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:38:54 744 [debug]: [POST] http://localhost:3001/login
+23/04/29 19:38:54 744 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:38:54 814 [info]:  >> DATABASE 접속됨 [threaId=2070]
+23/04/29 19:38:54 814 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:38:54 816 [debug]: SELECT loginId, pwd, userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE loginId='sengtaek'
+23/04/29 19:38:54 818 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:38:55 019 [debug]: --------------------------------------------------
+23/04/29 19:38:55 019 [debug]: |         2번 유저가 로그인 하였습니다.
+23/04/29 19:38:55 019 [debug]: --------------------------------------------------
+23/04/29 19:38:55 020 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 276ms
+23/04/29 19:38:55 020 [debug]: --------------------------------------------------
+23/04/29 19:38:55 707 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:38:55 707 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:38:55 707 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:38:55 711 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:38:55 712 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:38:55 713 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:38:55 714 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/04/29 19:38:55 714 [debug]: --------------------------------------------------
+23/04/29 19:39:00 280 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:00 280 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:00 281 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:00 283 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:00 283 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:00 284 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:00 284 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:00 285 [debug]: --------------------------------------------------
+23/04/29 19:39:01 082 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:01 083 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:01 083 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:01 085 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:01 085 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:01 086 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:01 087 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:01 087 [debug]: --------------------------------------------------
+23/04/29 19:39:36 693 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:36 694 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:36 694 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:36 696 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:36 696 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:36 697 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:36 698 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:36 698 [debug]: --------------------------------------------------
+23/04/29 19:39:49 902 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:49 903 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:49 903 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:49 905 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:49 905 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:49 906 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:49 906 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:39:49 906 [debug]: --------------------------------------------------
+23/04/29 19:39:50 628 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:50 629 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:50 629 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:50 631 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:50 631 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:50 632 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:50 632 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:39:50 633 [debug]: --------------------------------------------------
+23/04/29 19:39:51 250 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:51 250 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:51 250 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:51 252 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:51 253 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:51 253 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:51 254 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:51 254 [debug]: --------------------------------------------------
+23/04/29 19:39:51 993 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:51 993 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:51 993 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:51 995 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:51 996 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:51 997 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:51 998 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/04/29 19:39:51 998 [debug]: --------------------------------------------------
+23/04/29 19:39:52 376 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:52 376 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:52 376 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:52 378 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:52 379 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:52 379 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:52 380 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:52 380 [debug]: --------------------------------------------------
+23/04/29 19:39:52 618 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:52 619 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:52 619 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:52 621 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:52 621 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:52 622 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:52 623 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:52 623 [debug]: --------------------------------------------------
+23/04/29 19:39:52 862 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:52 862 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:52 862 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:52 864 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:52 864 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:52 865 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:52 866 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:52 866 [debug]: --------------------------------------------------
+23/04/29 19:39:53 094 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:53 094 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:53 095 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:53 097 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:53 097 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:53 098 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:53 099 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/04/29 19:39:53 099 [debug]: --------------------------------------------------
+23/04/29 19:39:53 337 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:53 337 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:53 338 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:53 339 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:53 340 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:53 340 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:53 341 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:53 341 [debug]: --------------------------------------------------
+23/04/29 19:39:53 579 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:53 579 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:53 579 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:53 581 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:53 581 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:53 582 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:53 582 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:39:53 583 [debug]: --------------------------------------------------
+23/04/29 19:39:53 781 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:53 781 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:53 781 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:53 783 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:53 784 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:53 784 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:53 785 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:53 785 [debug]: --------------------------------------------------
+23/04/29 19:39:54 002 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:54 003 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:54 003 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:54 005 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:54 006 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:54 006 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:54 007 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:54 007 [debug]: --------------------------------------------------
+23/04/29 19:39:54 186 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:54 186 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:54 187 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:54 188 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:54 188 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:54 189 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:54 190 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:54 190 [debug]: --------------------------------------------------
+23/04/29 19:39:54 367 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:54 368 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:54 368 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:54 370 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:54 370 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:54 371 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:54 371 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:39:54 371 [debug]: --------------------------------------------------
+23/04/29 19:39:54 560 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:54 560 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:54 560 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:54 562 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:54 562 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:54 563 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:54 563 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:39:54 564 [debug]: --------------------------------------------------
+23/04/29 19:39:54 771 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:54 772 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:54 772 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:54 774 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:54 775 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:54 775 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:54 776 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:39:54 776 [debug]: --------------------------------------------------
+23/04/29 19:39:54 963 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:54 964 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:54 964 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:54 966 [info]:  >> Connection 임대됨 [threaId=2070]
+23/04/29 19:39:54 966 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:39:54 966 [info]:  >> Connection 반납됨 [threaId=2070]
+23/04/29 19:39:54 967 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:39:54 967 [debug]: --------------------------------------------------
+23/04/29 19:39:55 166 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:55 167 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:55 167 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:55 169 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:39:55 169 [debug]: --------------------------------------------------
+23/04/29 19:39:55 379 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:55 380 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:55 380 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:55 382 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:39:55 382 [debug]: --------------------------------------------------
+23/04/29 19:39:55 601 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:55 601 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:55 601 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:55 603 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:39:55 604 [debug]: --------------------------------------------------
+23/04/29 19:39:57 414 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:39:57 414 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:39:57 414 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:39:57 417 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:39:57 417 [debug]: --------------------------------------------------
+23/04/29 19:40:15 122 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:40:15 123 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:40:15 123 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:40:15 125 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:40:15 125 [debug]: --------------------------------------------------
+23/04/29 19:40:17 179 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:40:17 180 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:40:17 180 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:40:17 183 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:40:17 183 [debug]: --------------------------------------------------
+23/04/29 19:41:32 802 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:41:32 803 [debug]: [OPTIONS] http://localhost:3001/logout
+23/04/29 19:41:32 803 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:41:32 803 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/04/29 19:41:32 804 [debug]: --------------------------------------------------
+23/04/29 19:41:32 805 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:41:32 805 [debug]: [POST] http://localhost:3001/logout
+23/04/29 19:41:32 805 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:41:32 807 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:41:32 807 [debug]: --------------------------------------------------
+23/04/29 19:41:37 079 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:41:37 079 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:41:37 080 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:41:37 081 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:41:37 082 [debug]: --------------------------------------------------
+23/04/29 19:41:49 263 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:41:49 263 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:41:49 263 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:41:49 265 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:41:49 265 [debug]: --------------------------------------------------
+23/04/29 19:41:49 930 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:41:49 930 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:41:49 931 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:41:49 932 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:41:49 932 [debug]: --------------------------------------------------
+23/04/29 19:41:57 299 [debug]: --------------------------------------------------
+23/04/29 19:41:57 301 [debug]: |              Start Express Server              |
+23/04/29 19:41:57 302 [debug]: --------------------------------------------------
+23/04/29 19:41:57 302 [debug]: server address => http://211.222.164.181:3001
+23/04/29 19:41:57 302 [debug]: --------------------------------------------------
+23/04/29 19:41:57 469 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:41:57 470 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:41:57 470 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:41:57 478 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+23/04/29 19:41:57 479 [debug]: --------------------------------------------------
+23/04/29 19:42:04 800 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:04 801 [debug]: [OPTIONS] http://localhost:3001/login
+23/04/29 19:42:04 801 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:04 802 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/04/29 19:42:04 803 [debug]: --------------------------------------------------
+23/04/29 19:42:04 804 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:04 804 [debug]: [POST] http://localhost:3001/login
+23/04/29 19:42:04 804 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:04 827 [info]:  >> DATABASE 접속됨 [threaId=2072]
+23/04/29 19:42:04 827 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:04 829 [debug]: SELECT loginId, pwd, userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE loginId='sengtaek'
+23/04/29 19:42:04 831 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:05 033 [debug]: --------------------------------------------------
+23/04/29 19:42:05 033 [debug]: |         2번 유저가 로그인 하였습니다.
+23/04/29 19:42:05 033 [debug]: --------------------------------------------------
+23/04/29 19:42:05 034 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 230ms
+23/04/29 19:42:05 034 [debug]: --------------------------------------------------
+23/04/29 19:42:05 964 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:05 965 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:42:05 965 [debug]: [client] ::ffff:127.0.0.1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:05 968 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:05 969 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:05 970 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:05 971 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/04/29 19:42:05 971 [debug]: --------------------------------------------------
+23/04/29 19:42:12 167 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:12 167 [debug]: [GET] http://localhost:3001/book_authName/1
+23/04/29 19:42:12 168 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:12 169 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:12 171 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/29 19:42:12 172 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:12 172 [debug]: [GET] http://localhost:3001/book_Top5/1
+23/04/29 19:42:12 173 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:12 174 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:12 175 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=1&odby=&point=
+23/04/29 19:42:12 175 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:12 175 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:12 176 [debug]: [GET] http://localhost:3001/book_new5/1
+23/04/29 19:42:12 176 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:12 185 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:12 186 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:12 187 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNO FROM book WHERE bookNo = '1') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/29 19:42:12 189 [info]:  >> DATABASE 접속됨 [threaId=2074]
+23/04/29 19:42:12 190 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 191 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')
+23/04/29 19:42:12 192 [info]:  >> DATABASE 접속됨 [threaId=2075]
+23/04/29 19:42:12 192 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:12 192 [debug]: SELECT  bookNo,  authName,  bookTitle,  img,  price,  discount  FROM book AS b  JOIN author AS a ON b.authNo = a.authNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN (SELECT ctgNO FROM book WHERE bookNo = '1') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)  WHERE pubDate BETWEEN DATE_SUB(NOW(), INTERVAL 4 WEEK) AND NOW()  ORDER BY pubDate DESC  LIMIT 5;
+23/04/29 19:42:12 193 [info]:  >> DATABASE 접속됨 [threaId=2073]
+23/04/29 19:42:12 193 [info]:  >> Connection 임대됨 [threaId=2073]
+23/04/29 19:42:12 194 [debug]: SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  b.bookNo,  a.authName,  b.bookTitle,  b.img,  b.price,  b.discount,  SUM(od.amount) AS sum_amount, ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN author AS a ON b.authNo = a.authNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo  JOIN (SELECT ctgNo FROM book WHERE bookNo = '1')  AS b2 ON b.ctgNo = b2.ctgNo  WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 5;
+23/04/29 19:42:12 194 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:12 195 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:12 196 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNo FROM book WHERE bookNo = '1')  AS b2 ON b.ctgNo = b2.ctgNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/29 19:42:12 197 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 198 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 199 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '1' and ('1'+0.5)
+23/04/29 19:42:12 200 [info]:  >> Connection 반납됨 [threaId=2073]
+23/04/29 19:42:12 201 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 29ms
+23/04/29 19:42:12 201 [debug]: --------------------------------------------------
+23/04/29 19:42:12 202 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:12 202 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:12 203 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc,bookIntro, bookIndex, img, content, ISBNum, page, size, discount, a.authName as authName, a.authImg as authImg ,a.authDesc as authDesc, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp,  SUM(COALESCE(rv.sp,0)) AS totalSp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  LEFT OUTER JOIN review AS rv ON rv.bookNo = book.bookNo  WHERE book.bookNo= '1'
+23/04/29 19:42:12 203 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 203 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 204 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '2' and ('2'+0.5)
+23/04/29 19:42:12 205 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:12 206 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 30ms
+23/04/29 19:42:12 206 [debug]: --------------------------------------------------
+23/04/29 19:42:12 206 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 207 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 207 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '3' and ('3'+0.5)
+23/04/29 19:42:12 208 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:12 209 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 42ms
+23/04/29 19:42:12 209 [debug]: --------------------------------------------------
+23/04/29 19:42:12 210 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 210 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 210 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '4' and ('4'+0.5)
+23/04/29 19:42:12 211 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 211 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 211 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '5' and ('5'+0.5)
+23/04/29 19:42:12 212 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 213 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 214 [debug]: SELECT reviewNo, comment, sp, date_format(r.regDate, '%Y/%m/%d') as regDate, u.loginId, bookNo FROM review as r  INNER JOIN user as u ON r.userNo = u.userNo   WHERE  bookNo LIKE concat('%', '1', '%')    ORDER BY regDate DESC    LIMIT 0, 30
+23/04/29 19:42:12 216 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 217 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 42ms
+23/04/29 19:42:12 217 [debug]: --------------------------------------------------
+23/04/29 19:42:12 218 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:12 218 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=1&odby=&point=
+23/04/29 19:42:12 218 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:12 219 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 220 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')
+23/04/29 19:42:12 220 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 220 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 221 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '1' and ('1'+0.5)
+23/04/29 19:42:12 221 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 221 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 222 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '2' and ('2'+0.5)
+23/04/29 19:42:12 222 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 222 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 223 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '3' and ('3'+0.5)
+23/04/29 19:42:12 223 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 223 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 224 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '4' and ('4'+0.5)
+23/04/29 19:42:12 224 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 224 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 225 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '5' and ('5'+0.5)
+23/04/29 19:42:12 225 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 225 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:12 226 [debug]: SELECT reviewNo, comment, sp, date_format(r.regDate, '%Y/%m/%d') as regDate, u.loginId, bookNo FROM review as r  INNER JOIN user as u ON r.userNo = u.userNo   WHERE  bookNo LIKE concat('%', '1', '%')    ORDER BY regDate DESC    LIMIT 0, 30
+23/04/29 19:42:12 226 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:12 227 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+23/04/29 19:42:12 227 [debug]: --------------------------------------------------
+23/04/29 19:42:36 316 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:36 317 [debug]: [GET] http://localhost:3001/book_authName/1
+23/04/29 19:42:36 317 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:36 318 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:36 319 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/29 19:42:36 320 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:36 320 [debug]: [GET] http://localhost:3001/book_Top5/1
+23/04/29 19:42:36 321 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:36 322 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:36 323 [debug]: SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  b.bookNo,  a.authName,  b.bookTitle,  b.img,  b.price,  b.discount,  SUM(od.amount) AS sum_amount, ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN author AS a ON b.authNo = a.authNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo  JOIN (SELECT ctgNo FROM book WHERE bookNo = '1')  AS b2 ON b.ctgNo = b2.ctgNo  WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 5;
+23/04/29 19:42:36 324 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:36 324 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=1&odby=&point=
+23/04/29 19:42:36 324 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:36 325 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:36 325 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:36 326 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNO FROM book WHERE bookNo = '1') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/29 19:42:36 327 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 327 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')
+23/04/29 19:42:36 328 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:36 328 [debug]: [GET] http://localhost:3001/book_new5/1
+23/04/29 19:42:36 328 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:36 329 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:36 330 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/04/29 19:42:36 330 [debug]: --------------------------------------------------
+23/04/29 19:42:36 332 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:36 332 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:36 333 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNo FROM book WHERE bookNo = '1')  AS b2 ON b.ctgNo = b2.ctgNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/29 19:42:36 333 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:36 334 [debug]: SELECT  bookNo,  authName,  bookTitle,  img,  price,  discount  FROM book AS b  JOIN author AS a ON b.authNo = a.authNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN (SELECT ctgNO FROM book WHERE bookNo = '1') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)  WHERE pubDate BETWEEN DATE_SUB(NOW(), INTERVAL 4 WEEK) AND NOW()  ORDER BY pubDate DESC  LIMIT 5;
+23/04/29 19:42:36 335 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 335 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 335 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '1' and ('1'+0.5)
+23/04/29 19:42:36 336 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 336 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 337 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '2' and ('2'+0.5)
+23/04/29 19:42:36 337 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:36 337 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:36 338 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc,bookIntro, bookIndex, img, content, ISBNum, page, size, discount, a.authName as authName, a.authImg as authImg ,a.authDesc as authDesc, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp,  SUM(COALESCE(rv.sp,0)) AS totalSp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  LEFT OUTER JOIN review AS rv ON rv.bookNo = book.bookNo  WHERE book.bookNo= '1'
+23/04/29 19:42:36 339 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:36 339 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/04/29 19:42:36 340 [debug]: --------------------------------------------------
+23/04/29 19:42:36 340 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 340 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 341 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '3' and ('3'+0.5)
+23/04/29 19:42:36 341 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:36 342 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 26ms
+23/04/29 19:42:36 342 [debug]: --------------------------------------------------
+23/04/29 19:42:36 343 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 343 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 343 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '4' and ('4'+0.5)
+23/04/29 19:42:36 344 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 344 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 345 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '5' and ('5'+0.5)
+23/04/29 19:42:36 345 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 345 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 346 [debug]: SELECT reviewNo, comment, sp, date_format(r.regDate, '%Y/%m/%d') as regDate, u.loginId, bookNo FROM review as r  INNER JOIN user as u ON r.userNo = u.userNo   WHERE  bookNo LIKE concat('%', '1', '%')    ORDER BY regDate DESC    LIMIT 0, 30
+23/04/29 19:42:36 346 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 347 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 23ms
+23/04/29 19:42:36 347 [debug]: --------------------------------------------------
+23/04/29 19:42:36 348 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:36 348 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=1&odby=&point=
+23/04/29 19:42:36 349 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:36 350 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 350 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')
+23/04/29 19:42:36 350 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 351 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 351 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '1' and ('1'+0.5)
+23/04/29 19:42:36 352 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 352 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 352 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '2' and ('2'+0.5)
+23/04/29 19:42:36 353 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 353 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 354 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '3' and ('3'+0.5)
+23/04/29 19:42:36 354 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 355 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 355 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '4' and ('4'+0.5)
+23/04/29 19:42:36 356 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 356 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 356 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '5' and ('5'+0.5)
+23/04/29 19:42:36 357 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 357 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:36 357 [debug]: SELECT reviewNo, comment, sp, date_format(r.regDate, '%Y/%m/%d') as regDate, u.loginId, bookNo FROM review as r  INNER JOIN user as u ON r.userNo = u.userNo   WHERE  bookNo LIKE concat('%', '1', '%')    ORDER BY regDate DESC    LIMIT 0, 30
+23/04/29 19:42:36 358 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:36 359 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/04/29 19:42:36 359 [debug]: --------------------------------------------------
+23/04/29 19:42:37 013 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:37 014 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:42:37 014 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:37 016 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:37 017 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:37 017 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:37 018 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:42:37 018 [debug]: --------------------------------------------------
+23/04/29 19:42:40 165 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:40 166 [debug]: [GET] http://localhost:3001/book_authName/1
+23/04/29 19:42:40 166 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:40 167 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:40 167 [debug]: [GET] http://localhost:3001/book_Top5/1
+23/04/29 19:42:40 167 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:40 168 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:40 168 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=1&odby=&point=
+23/04/29 19:42:40 168 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:40 169 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:40 170 [debug]: [GET] http://localhost:3001/book_new5/1
+23/04/29 19:42:40 170 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:40 170 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:40 171 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/29 19:42:40 172 [info]:  >> Connection 임대됨 [threaId=2074]
+23/04/29 19:42:40 172 [debug]: SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  b.bookNo,  a.authName,  b.bookTitle,  b.img,  b.price,  b.discount,  SUM(od.amount) AS sum_amount, ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN author AS a ON b.authNo = a.authNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo  JOIN (SELECT ctgNo FROM book WHERE bookNo = '1')  AS b2 ON b.ctgNo = b2.ctgNo  WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 5;
+23/04/29 19:42:40 173 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 173 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')
+23/04/29 19:42:40 174 [info]:  >> Connection 임대됨 [threaId=2073]
+23/04/29 19:42:40 174 [debug]: SELECT  bookNo,  authName,  bookTitle,  img,  price,  discount  FROM book AS b  JOIN author AS a ON b.authNo = a.authNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN (SELECT ctgNO FROM book WHERE bookNo = '1') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)  WHERE pubDate BETWEEN DATE_SUB(NOW(), INTERVAL 4 WEEK) AND NOW()  ORDER BY pubDate DESC  LIMIT 5;
+23/04/29 19:42:40 175 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:40 175 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:40 175 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNO FROM book WHERE bookNo = '1') AS b2 ON ctg.ctgUp = b2.ctgNo - mod(b2.ctgNo, 100)    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/29 19:42:40 176 [info]:  >> Connection 반납됨 [threaId=2074]
+23/04/29 19:42:40 177 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/04/29 19:42:40 177 [debug]: --------------------------------------------------
+23/04/29 19:42:40 177 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 178 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 178 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '1' and ('1'+0.5)
+23/04/29 19:42:40 179 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:40 179 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:40 179 [debug]: SELECT B.ranking  FROM   (SELECT ROW_NUMBER() OVER (ORDER BY SUM(od.amount) DESC) AS ranking,  od.bookNo,  SUM(od.amount) AS sum_amount,  ctg.ctgName  FROM orderDetails AS od  JOIN book AS b ON od.bookNo = b.bookNo  JOIN category AS ctg ON b.ctgNo = ctg.ctgNo  JOIN orders AS o ON od.orderNo = o.orderNo    JOIN (SELECT ctgNo FROM book WHERE bookNo = '1')  AS b2 ON b.ctgNo = b2.ctgNo    WHERE o.orderDate BETWEEN DATE_SUB(NOW(), INTERVAL 3 WEEK) AND NOW()  GROUP BY od.bookNo  ORDER BY sum_amount DESC  LIMIT 100  ) AS B  WHERE B.bookNo = '1'
+23/04/29 19:42:40 180 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 180 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 180 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '2' and ('2'+0.5)
+23/04/29 19:42:40 181 [info]:  >> Connection 반납됨 [threaId=2073]
+23/04/29 19:42:40 182 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+23/04/29 19:42:40 182 [debug]: --------------------------------------------------
+23/04/29 19:42:40 182 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 182 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 183 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '3' and ('3'+0.5)
+23/04/29 19:42:40 184 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:40 184 [info]:  >> Connection 임대됨 [threaId=2075]
+23/04/29 19:42:40 184 [debug]: SELECT bookTitle, pubName, DATE_FORMAT(pubDate,'%Y-%m-%d') as pubDate,  price, count, selling, bookDesc,bookIntro, bookIndex, img, content, ISBNum, page, size, discount, a.authName as authName, a.authImg as authImg ,a.authDesc as authDesc, ctg.ctgName as ctgName , ctgu.ctgName as ctgUp,  SUM(COALESCE(rv.sp,0)) AS totalSp  FROM book  INNER JOIN author as a ON book.authNo = a.authNo  INNER JOIN category as ctg ON book.ctgNo = ctg.ctgNo  INNER JOIN category as ctgu ON ctg.ctgUp = ctgu.ctgNo  LEFT OUTER JOIN review AS rv ON rv.bookNo = book.bookNo  WHERE book.bookNo= '1'
+23/04/29 19:42:40 185 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 185 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 186 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '4' and ('4'+0.5)
+23/04/29 19:42:40 187 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 187 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 187 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '5' and ('5'+0.5)
+23/04/29 19:42:40 188 [info]:  >> Connection 반납됨 [threaId=2075]
+23/04/29 19:42:40 189 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 23ms
+23/04/29 19:42:40 189 [debug]: --------------------------------------------------
+23/04/29 19:42:40 190 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 190 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 191 [debug]: SELECT reviewNo, comment, sp, date_format(r.regDate, '%Y/%m/%d') as regDate, u.loginId, bookNo FROM review as r  INNER JOIN user as u ON r.userNo = u.userNo   WHERE  bookNo LIKE concat('%', '1', '%')    ORDER BY regDate DESC    LIMIT 0, 30
+23/04/29 19:42:40 191 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 192 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 24ms
+23/04/29 19:42:40 192 [debug]: --------------------------------------------------
+23/04/29 19:42:40 193 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:40 193 [debug]: [GET] http://localhost:3001/review?page=1&rows=30&query=1&odby=&point=
+23/04/29 19:42:40 194 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:40 196 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 196 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')
+23/04/29 19:42:40 197 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 197 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 198 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '1' and ('1'+0.5)
+23/04/29 19:42:40 198 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 198 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 199 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '2' and ('2'+0.5)
+23/04/29 19:42:40 199 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 199 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 200 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '3' and ('3'+0.5)
+23/04/29 19:42:40 200 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 200 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 200 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '4' and ('4'+0.5)
+23/04/29 19:42:40 201 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 201 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 202 [debug]: SELECT COUNT(*) AS cnt FROM review  WHERE     bookNo LIKE concat('%', '1', '%')    AND sp BETWEEN '5' and ('5'+0.5)
+23/04/29 19:42:40 202 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 202 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 202 [debug]: SELECT reviewNo, comment, sp, date_format(r.regDate, '%Y/%m/%d') as regDate, u.loginId, bookNo FROM review as r  INNER JOIN user as u ON r.userNo = u.userNo   WHERE  bookNo LIKE concat('%', '1', '%')    ORDER BY regDate DESC    LIMIT 0, 30
+23/04/29 19:42:40 203 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 204 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/04/29 19:42:40 204 [debug]: --------------------------------------------------
+23/04/29 19:42:40 679 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:40 679 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:42:40 679 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:40 681 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:40 682 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:40 682 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:40 683 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:42:40 683 [debug]: --------------------------------------------------
+23/04/29 19:42:47 977 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:47 977 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:42:47 977 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:47 979 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:47 979 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:47 980 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:47 981 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:42:47 981 [debug]: --------------------------------------------------
+23/04/29 19:42:51 052 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:51 053 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:42:51 053 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:51 055 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:51 055 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:51 056 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:51 056 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:42:51 057 [debug]: --------------------------------------------------
+23/04/29 19:42:54 152 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:54 153 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:42:54 153 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:54 155 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:54 155 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:54 156 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:54 157 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/04/29 19:42:54 157 [debug]: --------------------------------------------------
+23/04/29 19:42:55 845 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:55 846 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:42:55 846 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:55 848 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:55 849 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:55 849 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:55 850 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/04/29 19:42:55 850 [debug]: --------------------------------------------------
+23/04/29 19:42:57 790 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:57 791 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:42:57 791 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:57 792 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:57 793 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:57 793 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:57 794 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:42:57 794 [debug]: --------------------------------------------------
+23/04/29 19:42:58 547 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:58 547 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:42:58 548 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:58 550 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:58 550 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:58 551 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:58 552 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/04/29 19:42:58 552 [debug]: --------------------------------------------------
+23/04/29 19:42:59 078 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:59 078 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:42:59 079 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:59 081 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:59 081 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:59 082 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:59 082 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:42:59 082 [debug]: --------------------------------------------------
+23/04/29 19:42:59 540 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:59 540 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:42:59 541 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:59 542 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:59 543 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:59 543 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:59 544 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:42:59 544 [debug]: --------------------------------------------------
+23/04/29 19:42:59 742 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:59 742 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:42:59 743 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:59 744 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:59 745 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:59 745 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:59 746 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:42:59 746 [debug]: --------------------------------------------------
+23/04/29 19:42:59 934 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:42:59 935 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:42:59 935 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:42:59 936 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:42:59 937 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:42:59 937 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:42:59 938 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:42:59 938 [debug]: --------------------------------------------------
+23/04/29 19:43:00 097 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:00 097 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:00 098 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:00 099 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:00 100 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:00 100 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:00 101 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:00 101 [debug]: --------------------------------------------------
+23/04/29 19:43:00 289 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:00 289 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:00 290 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:00 291 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:00 292 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:00 292 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:00 293 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:00 293 [debug]: --------------------------------------------------
+23/04/29 19:43:00 673 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:00 674 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:00 674 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:00 675 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:00 676 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:00 676 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:00 677 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:00 677 [debug]: --------------------------------------------------
+23/04/29 19:43:00 985 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:00 985 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:00 986 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:00 987 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:00 987 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:00 988 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:00 989 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:00 989 [debug]: --------------------------------------------------
+23/04/29 19:43:01 187 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:01 188 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:01 188 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:01 190 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:01 190 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:01 191 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:01 191 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:01 191 [debug]: --------------------------------------------------
+23/04/29 19:43:01 429 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:01 429 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:01 430 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:01 431 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:01 432 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:01 432 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:01 432 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:01 433 [debug]: --------------------------------------------------
+23/04/29 19:43:01 621 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:01 622 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:01 622 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:01 623 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:01 624 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:01 624 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:01 624 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:01 625 [debug]: --------------------------------------------------
+23/04/29 19:43:01 823 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:01 823 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:01 824 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:01 825 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:01 826 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:01 826 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:01 827 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:01 827 [debug]: --------------------------------------------------
+23/04/29 19:43:02 015 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:02 015 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:02 016 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:02 018 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:02 018 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:02 019 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:02 019 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:02 019 [debug]: --------------------------------------------------
+23/04/29 19:43:02 208 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:02 208 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:02 209 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:02 210 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:02 211 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:02 211 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:02 212 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:02 212 [debug]: --------------------------------------------------
+23/04/29 19:43:02 411 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:02 411 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:02 412 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:02 413 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:02 414 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:02 414 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:02 415 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:02 415 [debug]: --------------------------------------------------
+23/04/29 19:43:02 583 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:02 583 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:02 583 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:02 585 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:02 586 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:02 586 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:02 586 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:02 587 [debug]: --------------------------------------------------
+23/04/29 19:43:02 765 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:02 765 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:02 766 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:02 768 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:02 768 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:02 768 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:02 769 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:02 769 [debug]: --------------------------------------------------
+23/04/29 19:43:02 968 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:02 968 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:02 969 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:02 970 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:02 971 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:02 971 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:02 971 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:02 972 [debug]: --------------------------------------------------
+23/04/29 19:43:03 310 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:03 310 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:03 311 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:03 312 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:03 313 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:03 313 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:03 314 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:03 314 [debug]: --------------------------------------------------
+23/04/29 19:43:03 613 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:03 614 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:03 614 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:03 615 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:03 616 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:03 616 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:03 617 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:03 617 [debug]: --------------------------------------------------
+23/04/29 19:43:03 966 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:03 967 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:03 967 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:03 969 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:03 969 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:03 970 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:03 970 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:43:03 970 [debug]: --------------------------------------------------
+23/04/29 19:43:04 298 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:04 298 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:04 299 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:04 300 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:04 300 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:04 301 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:04 301 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:04 302 [debug]: --------------------------------------------------
+23/04/29 19:43:04 651 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:04 651 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:04 651 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:04 653 [info]:  >> Connection 임대됨 [threaId=2072]
+23/04/29 19:43:04 654 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:43:04 654 [info]:  >> Connection 반납됨 [threaId=2072]
+23/04/29 19:43:04 654 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:04 655 [debug]: --------------------------------------------------
+23/04/29 19:43:05 043 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:05 043 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:05 044 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:05 046 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:05 046 [debug]: --------------------------------------------------
+23/04/29 19:43:05 465 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:05 465 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:05 466 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:05 468 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:05 468 [debug]: --------------------------------------------------
+23/04/29 19:43:06 187 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:06 187 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:06 188 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:06 190 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:06 190 [debug]: --------------------------------------------------
+23/04/29 19:43:06 918 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:06 918 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:43:06 919 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:06 921 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:06 921 [debug]: --------------------------------------------------
+23/04/29 19:43:07 433 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:07 433 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:07 433 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:07 435 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:43:07 436 [debug]: --------------------------------------------------
+23/04/29 19:43:08 304 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:08 305 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 19:43:08 305 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:08 307 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:43:08 307 [debug]: --------------------------------------------------
+23/04/29 19:43:22 583 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:22 583 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:43:22 584 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:22 586 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:43:22 586 [debug]: --------------------------------------------------
+23/04/29 19:43:44 740 [debug]: --------------------------------------------------
+23/04/29 19:43:44 742 [debug]: |              Start Express Server              |
+23/04/29 19:43:44 743 [debug]: --------------------------------------------------
+23/04/29 19:43:44 743 [debug]: server address => http://211.222.164.181:3001
+23/04/29 19:43:44 743 [debug]: --------------------------------------------------
+23/04/29 19:43:44 908 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:44 909 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:43:44 909 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:44 919 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/04/29 19:43:44 920 [debug]: --------------------------------------------------
+23/04/29 19:43:46 836 [debug]: --------------------------------------------------
+23/04/29 19:43:46 838 [debug]: |              Start Express Server              |
+23/04/29 19:43:46 839 [debug]: --------------------------------------------------
+23/04/29 19:43:46 839 [debug]: server address => http://211.222.164.181:3001
+23/04/29 19:43:46 839 [debug]: --------------------------------------------------
+23/04/29 19:43:46 847 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:43:46 847 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:43:46 848 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:43:46 858 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/04/29 19:43:46 858 [debug]: --------------------------------------------------
+23/04/29 19:45:06 458 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:45:06 459 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:45:06 459 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:45:06 463 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:45:06 463 [debug]: --------------------------------------------------
+23/04/29 19:45:47 592 [debug]: --------------------------------------------------
+23/04/29 19:45:47 595 [debug]: |              Start Express Server              |
+23/04/29 19:45:47 595 [debug]: --------------------------------------------------
+23/04/29 19:45:47 595 [debug]: server address => http://211.222.164.181:3001
+23/04/29 19:45:47 596 [debug]: --------------------------------------------------
+23/04/29 19:45:47 769 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:45:47 770 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:45:47 770 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:45:47 779 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+23/04/29 19:45:47 780 [debug]: --------------------------------------------------
+23/04/29 19:45:47 787 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:45:47 788 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:45:47 788 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:45:47 792 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 19:45:47 793 [debug]: --------------------------------------------------
+23/04/29 19:46:33 435 [debug]: --------------------------------------------------
+23/04/29 19:46:33 437 [debug]: |              Start Express Server              |
+23/04/29 19:46:33 437 [debug]: --------------------------------------------------
+23/04/29 19:46:33 438 [debug]: server address => http://211.222.164.181:3001
+23/04/29 19:46:33 438 [debug]: --------------------------------------------------
+23/04/29 19:46:37 587 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:46:37 588 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:46:37 588 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:46:37 600 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 13ms
+23/04/29 19:46:37 601 [debug]: --------------------------------------------------
+23/04/29 19:46:43 572 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:46:43 573 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:46:43 573 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:46:43 575 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 19:46:43 576 [debug]: --------------------------------------------------
+23/04/29 19:46:47 340 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:46:47 341 [debug]: [OPTIONS] http://localhost:3001/login
+23/04/29 19:46:47 341 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:46:47 342 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 19:46:47 342 [debug]: --------------------------------------------------
+23/04/29 19:46:47 343 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:46:47 343 [debug]: [POST] http://localhost:3001/login
+23/04/29 19:46:47 343 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:46:47 370 [info]:  >> DATABASE 접속됨 [threaId=2080]
+23/04/29 19:46:47 370 [info]:  >> Connection 임대됨 [threaId=2080]
+23/04/29 19:46:47 372 [debug]: SELECT loginId, pwd, userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE loginId='sengtaek'
+23/04/29 19:46:47 375 [info]:  >> Connection 반납됨 [threaId=2080]
+23/04/29 19:46:47 578 [debug]: --------------------------------------------------
+23/04/29 19:46:47 579 [debug]: |         2번 유저가 로그인 하였습니다.
+23/04/29 19:46:47 579 [debug]: --------------------------------------------------
+23/04/29 19:46:47 580 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 237ms
+23/04/29 19:46:47 580 [debug]: --------------------------------------------------
+23/04/29 19:46:47 765 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:46:47 765 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:46:47 765 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:46:47 767 [info]:  >> Connection 임대됨 [threaId=2080]
+23/04/29 19:46:47 768 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:46:47 769 [info]:  >> Connection 반납됨 [threaId=2080]
+23/04/29 19:46:47 770 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/04/29 19:46:47 770 [debug]: --------------------------------------------------
+23/04/29 19:46:47 789 [debug]: 클라이언트가 접속했습니다.
+23/04/29 19:46:47 790 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 19:46:47 790 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 19:46:47 793 [info]:  >> Connection 임대됨 [threaId=2080]
+23/04/29 19:46:47 794 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 19:46:47 795 [info]:  >> Connection 반납됨 [threaId=2080]
+23/04/29 19:46:47 796 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/04/29 19:46:47 796 [debug]: --------------------------------------------------
+23/04/29 20:51:15 454 [debug]: 클라이언트가 접속했습니다.
+23/04/29 20:51:15 455 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 20:51:15 455 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 20:51:15 458 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 20:51:15 458 [debug]: --------------------------------------------------
+23/04/29 20:51:15 477 [debug]: 클라이언트가 접속했습니다.
+23/04/29 20:51:15 478 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 20:51:15 478 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 20:51:15 480 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 20:51:15 480 [debug]: --------------------------------------------------
+23/04/29 20:51:28 639 [debug]: 클라이언트가 접속했습니다.
+23/04/29 20:51:28 640 [debug]: [OPTIONS] http://localhost:3001/login
+23/04/29 20:51:28 640 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 20:51:28 641 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/04/29 20:51:28 641 [debug]: --------------------------------------------------
+23/04/29 20:51:28 642 [debug]: 클라이언트가 접속했습니다.
+23/04/29 20:51:28 642 [debug]: [POST] http://localhost:3001/login
+23/04/29 20:51:28 643 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 20:51:28 644 [info]:  >> Connection 임대됨 [threaId=2080]
+23/04/29 20:51:28 644 [debug]: SELECT loginId, pwd, userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE loginId='sengtaek'
+23/04/29 20:51:28 645 [info]:  >> Connection 반납됨 [threaId=2080]
+23/04/29 20:51:28 845 [debug]: --------------------------------------------------
+23/04/29 20:51:28 845 [debug]: |         2번 유저가 로그인 하였습니다.
+23/04/29 20:51:28 845 [debug]: --------------------------------------------------
+23/04/29 20:51:28 846 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 204ms
+23/04/29 20:51:28 846 [debug]: --------------------------------------------------
+23/04/29 20:51:29 292 [debug]: 클라이언트가 접속했습니다.
+23/04/29 20:51:29 293 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 20:51:29 293 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 20:51:29 295 [info]:  >> Connection 임대됨 [threaId=2080]
+23/04/29 20:51:29 296 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 20:51:29 297 [info]:  >> Connection 반납됨 [threaId=2080]
+23/04/29 20:51:29 298 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/04/29 20:51:29 298 [debug]: --------------------------------------------------
+23/04/29 20:51:29 332 [debug]: 클라이언트가 접속했습니다.
+23/04/29 20:51:29 333 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 20:51:29 333 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 20:51:29 335 [info]:  >> Connection 임대됨 [threaId=2080]
+23/04/29 20:51:29 336 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 20:51:29 336 [info]:  >> Connection 반납됨 [threaId=2080]
+23/04/29 20:51:29 337 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 20:51:29 337 [debug]: --------------------------------------------------
+23/04/29 21:05:27 089 [debug]: --------------------------------------------------
+23/04/29 21:05:27 091 [debug]: |              Start Express Server              |
+23/04/29 21:05:27 092 [debug]: --------------------------------------------------
+23/04/29 21:05:27 092 [debug]: server address => http://211.222.164.181:3001
+23/04/29 21:05:27 093 [debug]: --------------------------------------------------

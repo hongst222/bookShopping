@@ -26,7 +26,11 @@ const PROTOTYPE_LOGIN = memo(() => {
                 console.log("로그인 실패");
             }
         } catch (err) {
+            console.log("access token 유효기간 검증 실패");
             console.log(err);
+            dispatch(setIslogin(false));
+            dispatch(setUser(null));
+            dispatch(setUserNo(null));
         }
     }
     const logout = async () => {
@@ -49,8 +53,8 @@ const PROTOTYPE_LOGIN = memo(() => {
 
     useEffect(() => {
         LoginSuccess();
-       
-    }, []);
+
+    }, [islogin]);
 
     // 로그인 시도 시 사용되는 이벤트.
     const handleSubmit = (e) => {

@@ -15,3 +15,11 @@ yarn add react-router-dom react-helmet-async sass styled-reset styled-components
 yarn add http-proxy-middleware
 ```
 
+### 4) 로그인 관련
+``` shell
+    jwt 토큰 방식을 사용하였다.
+    
+    jwt 토큰 accessToken, refreshToken 두가지를 발급받음
+    그리고 accessToken이 만료될 때 axios.interceptor을 사용하여 refreshToken을 이용하여 accessToken을 재발급함.
+    
+```

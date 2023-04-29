@@ -169,6 +169,7 @@ module.exports = (() => {
             }
             res.status(200).json(userData);
         } catch (error) {
+            res.clearCookie("ac_tk");
             res.status(500).json(error);
         }
     });

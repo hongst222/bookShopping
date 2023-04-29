@@ -14,12 +14,19 @@ import AppRouter from './routes';
 
 import { HambugerContext } from './context/HamburgerContext';
 import { useEffect } from 'react';
+import StateSlice from './slices/StateSlice';
+import { useSelector } from 'react-redux';
+import { refreshToken } from './LoginFunc';
 // page
 
 const App = () => {
+    const {islogin: islogin} = useSelector((state) => state.StateSlice);
     useEffect(() => {
-
-    }, []);
+        if(islogin){
+            refreshToken();
+            console.log("반가워요 마운팅중")
+        }
+    }, [islogin]);
 
     const [isHambuger, setIsHambuger] = useState(false);
     return (
