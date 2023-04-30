@@ -16,17 +16,23 @@ import { HambugerContext } from './context/HamburgerContext';
 import { useEffect } from 'react';
 import StateSlice from './slices/StateSlice';
 import { useSelector } from 'react-redux';
-import { refreshToken } from './LoginFunc';
+import { accessToken, refreshToken } from './LoginFunc';
 // page
 
 const App = () => {
     const {islogin: islogin} = useSelector((state) => state.StateSlice);
     useEffect(() => {
-        if(islogin){
-            refreshToken();
-            console.log("반가워요 마운팅중")
-        }
-    }, [islogin]);
+        // const intervalId = setInterval( async () => {
+        //     const response = await accessToken();
+
+        //     if(response.status != 200){
+        //         await refreshToken();
+        //     }
+        // }, 1 * 60 * 100);
+        // return() => {
+        //     clearInterval(intervalId);
+        // }
+    }, []);
 
     const [isHambuger, setIsHambuger] = useState(false);
     return (

@@ -1,7 +1,11 @@
 
 import axios from 'axios';
-
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { setIslogin, setUser, setUserNo } from './slices/LoginSlice';
+import React from 'react';
 const URL = "http://localhost:3001";
+
 
 export const login = async (payload) => {
     try {
@@ -38,6 +42,7 @@ export const accessToken = async () => {
         });
     } catch (err) {
         console.log(err);
+        return {status: err.response.status};
     }
 }
 
@@ -51,8 +56,48 @@ export const refreshToken = async () => {
         console.log(err);
     }
 }
-/** 로그인 성공 기능은 src/page/login.js의 useEffect안에 넣어 처리했음. */
+// /** 로그인 성공 기능은 src/page/login.js의 useEffect안에 넣어 처리했음. */
+// export const LoginSuccess = async () => {
+//     const dispatch = useDispatch();
+//     try {
+//         const result = await axios.get(`http://localhost:3001/login/success`, {
+//             withCredentials: true,
+//         })
+//         if (result.data) {
+//             dispatch(setIslogin(true));
+//             dispatch(setUser(result.data.userName));
+//             dispatch(setUserNo(result.data.userNo));
+//             console.log("sda");
+//         } else {
+//             console.log("로그인 실패");
+//         }
+//     } catch (err) {
+//         console.log("access token 유효기간 검증 실패");
+//         console.log(err);
+//         dispatch(setIslogin(false));
+//         dispatch(setUser(null));
+//         dispatch(setUserNo(null));
+//     }
+// }
 
-// 로그아웃
+// // 로그아웃
+// export const Logout = async () => {
+//     const navigate = useNavigate();
+//     const dispatch = useDispatch();
+//     try {
+//         console.log("log out");
+//         const response = await axios.post(`http://localhost:3001/logout`, {}, {
+//             withCredentials: true
+//         });
+//         if (response.status == 200) {
+//             dispatch(setIslogin(false));
+//             dispatch(setUser(null));
+//             dispatch(setUserNo(null));
+//             navigate('/');
+//         }
 
+//     } catch (err) {
+//         console.log(err);
+//     }
+// }
 

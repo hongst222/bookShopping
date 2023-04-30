@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { accessToken, login, refreshToken } from '../LoginFunc';
+import { accessToken, login, refreshToken} from '../LoginFunc';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -33,7 +33,7 @@ const PROTOTYPE_LOGIN = memo(() => {
             dispatch(setUserNo(null));
         }
     }
-    const logout = async () => {
+    const Logout = async () => {
         try {
             console.log("log out");
             const response = await axios.post(`http://localhost:3001/logout`, {}, {
@@ -53,7 +53,6 @@ const PROTOTYPE_LOGIN = memo(() => {
 
     useEffect(() => {
         LoginSuccess();
-
     }, [islogin]);
 
     // 로그인 시도 시 사용되는 이벤트.
@@ -66,7 +65,7 @@ const PROTOTYPE_LOGIN = memo(() => {
 
     const test1 = (e) => {
         e.preventDefault();
-        accessToken();
+        console.log(accessToken().status);;
     }
 
     const test2 = (e) => {
@@ -77,7 +76,7 @@ const PROTOTYPE_LOGIN = memo(() => {
 
     const handleLogout = (e) => {
         e.preventDefault();
-        logout();
+        Logout();
     }
 
     return (

@@ -179,6 +179,7 @@ module.exports = (() => {
     router.post('/logout', (req, res) => {
         try {
             res.clearCookie('ac_tk', {path: "/"});
+            res.clearCookie("rf_tk");
             res.status(200).json("Logout Success!");
         } catch (error) {
             res.status(500).json(error);

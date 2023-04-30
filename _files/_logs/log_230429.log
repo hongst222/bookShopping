@@ -964,3 +964,290 @@
 23/04/29 21:05:27 092 [debug]: --------------------------------------------------
 23/04/29 21:05:27 092 [debug]: server address => http://211.222.164.181:3001
 23/04/29 21:05:27 093 [debug]: --------------------------------------------------
+23/04/29 21:59:23 958 [debug]: --------------------------------------------------
+23/04/29 21:59:23 961 [debug]: |              Start Express Server              |
+23/04/29 21:59:23 961 [debug]: --------------------------------------------------
+23/04/29 21:59:23 961 [debug]: server address => http://211.222.164.181:3001
+23/04/29 21:59:23 962 [debug]: --------------------------------------------------
+23/04/29 21:59:36 505 [debug]: 클라이언트가 접속했습니다.
+23/04/29 21:59:36 507 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 21:59:36 507 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 21:59:36 517 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/04/29 21:59:36 517 [debug]: --------------------------------------------------
+23/04/29 21:59:41 707 [debug]: 클라이언트가 접속했습니다.
+23/04/29 21:59:41 708 [debug]: [OPTIONS] http://localhost:3001/login
+23/04/29 21:59:41 708 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 21:59:41 709 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/04/29 21:59:41 710 [debug]: --------------------------------------------------
+23/04/29 21:59:41 711 [debug]: 클라이언트가 접속했습니다.
+23/04/29 21:59:41 712 [debug]: [POST] http://localhost:3001/login
+23/04/29 21:59:41 712 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 21:59:41 783 [info]:  >> DATABASE 접속됨 [threaId=2089]
+23/04/29 21:59:41 784 [info]:  >> Connection 임대됨 [threaId=2089]
+23/04/29 21:59:41 785 [debug]: SELECT loginId, pwd, userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE loginId='sengtaek'
+23/04/29 21:59:41 788 [info]:  >> Connection 반납됨 [threaId=2089]
+23/04/29 21:59:41 989 [debug]: --------------------------------------------------
+23/04/29 21:59:41 989 [debug]: |         2번 유저가 로그인 하였습니다.
+23/04/29 21:59:41 989 [debug]: --------------------------------------------------
+23/04/29 21:59:41 990 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 278ms
+23/04/29 21:59:41 991 [debug]: --------------------------------------------------
+23/04/29 21:59:42 425 [debug]: 클라이언트가 접속했습니다.
+23/04/29 21:59:42 425 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 21:59:42 425 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 21:59:42 428 [info]:  >> Connection 임대됨 [threaId=2089]
+23/04/29 21:59:42 429 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 21:59:42 430 [info]:  >> Connection 반납됨 [threaId=2089]
+23/04/29 21:59:42 431 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/04/29 21:59:42 431 [debug]: --------------------------------------------------
+23/04/29 21:59:42 451 [debug]: 클라이언트가 접속했습니다.
+23/04/29 21:59:42 452 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 21:59:42 452 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 21:59:42 455 [info]:  >> Connection 임대됨 [threaId=2089]
+23/04/29 21:59:42 456 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 21:59:42 456 [info]:  >> Connection 반납됨 [threaId=2089]
+23/04/29 21:59:42 457 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/04/29 21:59:42 457 [debug]: --------------------------------------------------
+23/04/29 21:59:46 581 [debug]: 클라이언트가 접속했습니다.
+23/04/29 21:59:46 581 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 21:59:46 582 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 21:59:46 583 [info]:  >> Connection 임대됨 [threaId=2089]
+23/04/29 21:59:46 584 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 21:59:46 584 [info]:  >> Connection 반납됨 [threaId=2089]
+23/04/29 21:59:46 585 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 21:59:46 585 [debug]: --------------------------------------------------
+23/04/29 21:59:47 172 [debug]: 클라이언트가 접속했습니다.
+23/04/29 21:59:47 173 [debug]: [GET] http://localhost:3001/refreshtoken
+23/04/29 21:59:47 173 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 21:59:47 175 [info]:  >> Connection 임대됨 [threaId=2089]
+23/04/29 21:59:47 176 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 21:59:47 176 [info]:  >> Connection 반납됨 [threaId=2089]
+23/04/29 21:59:47 177 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 21:59:47 177 [debug]: --------------------------------------------------
+23/04/29 22:01:23 575 [debug]: --------------------------------------------------
+23/04/29 22:01:23 578 [debug]: |              Start Express Server              |
+23/04/29 22:01:23 578 [debug]: --------------------------------------------------
+23/04/29 22:01:23 578 [debug]: server address => http://211.222.164.181:3001
+23/04/29 22:01:23 579 [debug]: --------------------------------------------------
+23/04/29 22:01:23 887 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:01:23 888 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:01:23 888 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:01:23 899 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/04/29 22:01:23 900 [debug]: --------------------------------------------------
+23/04/29 22:01:23 909 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:01:23 910 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:01:23 910 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:01:23 914 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 22:01:23 914 [debug]: --------------------------------------------------
+23/04/29 22:01:30 255 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:01:30 255 [debug]: [OPTIONS] http://localhost:3001/login
+23/04/29 22:01:30 255 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:01:30 256 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/04/29 22:01:30 256 [debug]: --------------------------------------------------
+23/04/29 22:01:30 258 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:01:30 258 [debug]: [POST] http://localhost:3001/login
+23/04/29 22:01:30 258 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:01:30 282 [info]:  >> DATABASE 접속됨 [threaId=2091]
+23/04/29 22:01:30 283 [info]:  >> Connection 임대됨 [threaId=2091]
+23/04/29 22:01:30 284 [debug]: SELECT loginId, pwd, userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE loginId='sengtaek'
+23/04/29 22:01:30 287 [info]:  >> Connection 반납됨 [threaId=2091]
+23/04/29 22:01:30 488 [debug]: --------------------------------------------------
+23/04/29 22:01:30 488 [debug]: |         2번 유저가 로그인 하였습니다.
+23/04/29 22:01:30 489 [debug]: --------------------------------------------------
+23/04/29 22:01:30 489 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 231ms
+23/04/29 22:01:30 489 [debug]: --------------------------------------------------
+23/04/29 22:01:30 969 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:01:30 969 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:01:30 970 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:01:30 972 [info]:  >> Connection 임대됨 [threaId=2091]
+23/04/29 22:01:30 973 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 22:01:30 974 [info]:  >> Connection 반납됨 [threaId=2091]
+23/04/29 22:01:30 975 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/04/29 22:01:30 975 [debug]: --------------------------------------------------
+23/04/29 22:01:30 998 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:01:30 999 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:01:30 999 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:01:31 002 [info]:  >> Connection 임대됨 [threaId=2091]
+23/04/29 22:01:31 003 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 22:01:31 004 [info]:  >> Connection 반납됨 [threaId=2091]
+23/04/29 22:01:31 005 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/04/29 22:01:31 005 [debug]: --------------------------------------------------
+23/04/29 22:01:34 616 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:01:34 617 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:01:34 617 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:01:34 619 [info]:  >> Connection 임대됨 [threaId=2091]
+23/04/29 22:01:34 620 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 22:01:34 621 [info]:  >> Connection 반납됨 [threaId=2091]
+23/04/29 22:01:34 621 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 22:01:34 621 [debug]: --------------------------------------------------
+23/04/29 22:01:36 127 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:01:36 128 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:01:36 128 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:01:36 130 [info]:  >> Connection 임대됨 [threaId=2091]
+23/04/29 22:01:36 131 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 22:01:36 132 [info]:  >> Connection 반납됨 [threaId=2091]
+23/04/29 22:01:36 132 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 22:01:36 132 [debug]: --------------------------------------------------
+23/04/29 22:07:32 105 [debug]: --------------------------------------------------
+23/04/29 22:07:32 107 [debug]: |              Start Express Server              |
+23/04/29 22:07:32 107 [debug]: --------------------------------------------------
+23/04/29 22:07:32 108 [debug]: server address => http://211.222.164.181:3001
+23/04/29 22:07:32 108 [debug]: --------------------------------------------------
+23/04/29 22:08:19 711 [debug]: --------------------------------------------------
+23/04/29 22:08:19 714 [debug]: |              Start Express Server              |
+23/04/29 22:08:19 714 [debug]: --------------------------------------------------
+23/04/29 22:08:19 714 [debug]: server address => http://211.222.164.181:3001
+23/04/29 22:08:19 715 [debug]: --------------------------------------------------
+23/04/29 22:11:51 941 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:11:51 942 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 22:11:51 943 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:11:51 953 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+23/04/29 22:11:51 953 [debug]: --------------------------------------------------
+23/04/29 22:11:54 302 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:11:54 303 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 22:11:54 304 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:11:54 307 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 22:11:54 308 [debug]: --------------------------------------------------
+23/04/29 22:12:25 557 [debug]: --------------------------------------------------
+23/04/29 22:12:25 559 [debug]: |              Start Express Server              |
+23/04/29 22:12:25 559 [debug]: --------------------------------------------------
+23/04/29 22:12:25 560 [debug]: server address => http://211.222.164.181:3001
+23/04/29 22:12:25 560 [debug]: --------------------------------------------------
+23/04/29 22:12:26 538 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:26 539 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 22:12:26 540 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:26 551 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+23/04/29 22:12:26 552 [debug]: --------------------------------------------------
+23/04/29 22:12:27 604 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:27 605 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 22:12:27 605 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:27 608 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 22:12:27 609 [debug]: --------------------------------------------------
+23/04/29 22:12:28 995 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:28 995 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:12:28 996 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:28 998 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 22:12:28 998 [debug]: --------------------------------------------------
+23/04/29 22:12:29 006 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:29 007 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:12:29 007 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:29 009 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 22:12:29 009 [debug]: --------------------------------------------------
+23/04/29 22:12:32 651 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:32 651 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 22:12:32 652 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:32 653 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 22:12:32 654 [debug]: --------------------------------------------------
+23/04/29 22:12:33 498 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:33 499 [debug]: [GET] http://localhost:3001/refreshtoken
+23/04/29 22:12:33 499 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:33 500 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/04/29 22:12:33 501 [debug]: --------------------------------------------------
+23/04/29 22:12:35 512 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:35 513 [debug]: [GET] http://localhost:3001/refreshtoken
+23/04/29 22:12:35 513 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:35 515 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 22:12:35 515 [debug]: --------------------------------------------------
+23/04/29 22:12:46 453 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:46 453 [debug]: [OPTIONS] http://localhost:3001/login
+23/04/29 22:12:46 454 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:46 454 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/04/29 22:12:46 455 [debug]: --------------------------------------------------
+23/04/29 22:12:46 456 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:46 456 [debug]: [POST] http://localhost:3001/login
+23/04/29 22:12:46 457 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:46 482 [info]:  >> DATABASE 접속됨 [threaId=2095]
+23/04/29 22:12:46 482 [info]:  >> Connection 임대됨 [threaId=2095]
+23/04/29 22:12:46 484 [debug]: SELECT loginId, pwd, userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE loginId='sengtaek'
+23/04/29 22:12:46 486 [info]:  >> Connection 반납됨 [threaId=2095]
+23/04/29 22:12:46 687 [debug]: --------------------------------------------------
+23/04/29 22:12:46 687 [debug]: |         2번 유저가 로그인 하였습니다.
+23/04/29 22:12:46 687 [debug]: --------------------------------------------------
+23/04/29 22:12:46 688 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 232ms
+23/04/29 22:12:46 689 [debug]: --------------------------------------------------
+23/04/29 22:12:47 272 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:47 272 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:12:47 273 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:47 275 [info]:  >> Connection 임대됨 [threaId=2095]
+23/04/29 22:12:47 276 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 22:12:47 278 [info]:  >> Connection 반납됨 [threaId=2095]
+23/04/29 22:12:47 279 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/04/29 22:12:47 279 [debug]: --------------------------------------------------
+23/04/29 22:12:47 300 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:47 301 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:12:47 301 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:47 303 [info]:  >> Connection 임대됨 [threaId=2095]
+23/04/29 22:12:47 304 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 22:12:47 305 [info]:  >> Connection 반납됨 [threaId=2095]
+23/04/29 22:12:47 306 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/04/29 22:12:47 307 [debug]: --------------------------------------------------
+23/04/29 22:12:58 537 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:12:58 538 [debug]: [GET] http://localhost:3001/accesstoken
+23/04/29 22:12:58 538 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:12:58 540 [info]:  >> Connection 임대됨 [threaId=2095]
+23/04/29 22:12:58 540 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 22:12:58 541 [info]:  >> Connection 반납됨 [threaId=2095]
+23/04/29 22:12:58 541 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+23/04/29 22:12:58 542 [debug]: --------------------------------------------------
+23/04/29 22:13:28 240 [debug]: --------------------------------------------------
+23/04/29 22:13:28 242 [debug]: |              Start Express Server              |
+23/04/29 22:13:28 243 [debug]: --------------------------------------------------
+23/04/29 22:13:28 243 [debug]: server address => http://211.222.164.181:3001
+23/04/29 22:13:28 243 [debug]: --------------------------------------------------
+23/04/29 22:13:34 802 [debug]: --------------------------------------------------
+23/04/29 22:13:34 805 [debug]: |              Start Express Server              |
+23/04/29 22:13:34 805 [debug]: --------------------------------------------------
+23/04/29 22:13:34 805 [debug]: server address => http://211.222.164.181:3001
+23/04/29 22:13:34 806 [debug]: --------------------------------------------------
+23/04/29 22:13:37 068 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:13:37 069 [debug]: [OPTIONS] http://localhost:3001/logout
+23/04/29 22:13:37 069 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:13:37 072 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+23/04/29 22:13:37 072 [debug]: --------------------------------------------------
+23/04/29 22:13:37 075 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:13:37 075 [debug]: [POST] http://localhost:3001/logout
+23/04/29 22:13:37 076 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:13:37 090 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 15ms
+23/04/29 22:13:37 091 [debug]: --------------------------------------------------
+23/04/29 22:13:37 105 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:13:37 105 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:13:37 106 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:13:37 110 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+23/04/29 22:13:37 111 [debug]: --------------------------------------------------
+23/04/29 22:13:41 475 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:13:41 476 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:13:41 476 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:13:41 478 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+23/04/29 22:13:41 478 [debug]: --------------------------------------------------
+23/04/29 22:13:44 685 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:13:44 686 [debug]: [OPTIONS] http://localhost:3001/login
+23/04/29 22:13:44 686 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:13:44 687 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+23/04/29 22:13:44 687 [debug]: --------------------------------------------------
+23/04/29 22:13:44 689 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:13:44 690 [debug]: [POST] http://localhost:3001/login
+23/04/29 22:13:44 690 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:13:44 706 [info]:  >> DATABASE 접속됨 [threaId=2098]
+23/04/29 22:13:44 706 [info]:  >> Connection 임대됨 [threaId=2098]
+23/04/29 22:13:44 707 [debug]: SELECT loginId, pwd, userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE loginId='sengtaek'
+23/04/29 22:13:44 710 [info]:  >> Connection 반납됨 [threaId=2098]
+23/04/29 22:13:44 913 [debug]: --------------------------------------------------
+23/04/29 22:13:44 913 [debug]: |         2번 유저가 로그인 하였습니다.
+23/04/29 22:13:44 913 [debug]: --------------------------------------------------
+23/04/29 22:13:44 914 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 225ms
+23/04/29 22:13:44 914 [debug]: --------------------------------------------------
+23/04/29 22:13:45 356 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:13:45 357 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:13:45 357 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:13:45 360 [info]:  >> Connection 임대됨 [threaId=2098]
+23/04/29 22:13:45 361 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 22:13:45 363 [info]:  >> Connection 반납됨 [threaId=2098]
+23/04/29 22:13:45 364 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+23/04/29 22:13:45 364 [debug]: --------------------------------------------------
+23/04/29 22:13:45 387 [debug]: 클라이언트가 접속했습니다.
+23/04/29 22:13:45 388 [debug]: [GET] http://localhost:3001/login/success
+23/04/29 22:13:45 389 [debug]: [client] ::1 / Windows 10.0 / Chrome (112.0.0.0) / Microsoft Windows
+23/04/29 22:13:45 391 [info]:  >> Connection 임대됨 [threaId=2098]
+23/04/29 22:13:45 392 [debug]: SELECT userNo, userName, email, DATE_FORMAT(bthDate,'%Y-%m-%d') as bthDate FROM user WHERE userNo='2'
+23/04/29 22:13:45 393 [info]:  >> Connection 반납됨 [threaId=2098]
+23/04/29 22:13:45 394 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+23/04/29 22:13:45 394 [debug]: --------------------------------------------------
