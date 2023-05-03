@@ -15,23 +15,38 @@ import AppRouter from './routes';
 import { HambugerContext } from './context/HamburgerContext';
 import { useEffect } from 'react';
 import StateSlice from './slices/StateSlice';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { setIslogin, setUser, setUserNo } from './slices/LoginSlice';
 import { accessToken, refreshToken } from './LoginFunc';
 // page
 
 const App = () => {
-    const {islogin: islogin} = useSelector((state) => state.StateSlice);
+    const { islogin: islogin } = useSelector((state) => state.StateSlice);
+    const dispatch = useDispatch();
     useEffect(() => {
-        // const intervalId = setInterval( async () => {
-        //     const response = await accessToken();
 
-        //     if(response.status != 200){
-        //         await refreshToken();
-        //     }
-        // }, 1 * 60 * 100);
-        // return() => {
-        //     clearInterval(intervalId);
-        // }
+        const intervalId = setInterval(async () => {
+            const refresh = await refreshToken();
+            if (refresh.status != 200) {
+                console.log("res 인증 실패")
+                dispatch(setIslogin(false));
+                dispatch(setUser(null));
+                dispatch(setUserNo(null));
+            } else {
+                const response = await accessToken();
+                if (response.status != 200) {
+                    console.log("accessToken 인증 실패");
+                }
+                else if (response.status == 200) {
+                    console.log("access tk 인증 성공");
+                }
+            }
+            console.log("Aa");
+        }, 1 * 10 * 1000);
+        return () => {
+            clearInterval(intervalId);
+        }
+
     }, []);
 
     const [isHambuger, setIsHambuger] = useState(false);
@@ -40,7 +55,7 @@ const App = () => {
 
             <Reset />
             <GlobalStyle />
-            
+
             <br />
             <nav style={{
                 "width": "1200px",
@@ -52,7 +67,7 @@ const App = () => {
             </nav>
 
             <HambugerContext.Provider value={{ isHambuger, setIsHambuger }}>
-                <Header/>
+                <Header />
                 <AppRouter />
             </HambugerContext.Provider>
         </>

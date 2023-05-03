@@ -50,7 +50,7 @@ module.exports = (() => {
                         email: email,
                         bthDate: bthDate
                     }, process.env.ACCESS_SECRET_KEY, {
-                        expiresIn: '1m',
+                        expiresIn: '10s',
                         issuer: 'Seungtaek',
 
                     });
@@ -61,7 +61,7 @@ module.exports = (() => {
                         email: email,
                         bthDate: bthDate
                     }, process.env.REFRESH_SECRET_KEY, {
-                        expiresIn: '24h',
+                        expiresIn: '20s',
                         issuer: 'Seungtaek',
                     });
 
@@ -111,6 +111,7 @@ module.exports = (() => {
             }
             res.status(200).json(userData);
         } catch (error) {
+            res.clearCookie('ac_tk', {path: "/"});
             res.status(401).json(error);
         }
     });
@@ -137,7 +138,7 @@ module.exports = (() => {
                 email: userData.email,
                 bthDate: userData.bthDate
             }, process.env.ACCESS_SECRET_KEY, {
-                expiresIn: '1m',
+                expiresIn: '10s',
                 issuer: 'Seungtaek',
             });
             res.cookie("ac_tk", accessToken, {
@@ -149,6 +150,8 @@ module.exports = (() => {
             
             res.status(200).json(userData);
         } catch (error) {
+            res.clearCookie('ac_tk', {path: "/"});
+            res.clearCookie("rf_tk");
             res.status(401).json(error);
         }
     });

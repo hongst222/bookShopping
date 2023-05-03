@@ -92,7 +92,7 @@ module.exports = (() => {
             regexHelper.value(params.comment, "내용이 없습니다.");
             regexHelper.value(params.sp, "별점이 없습니다.");
             regexHelper.value(params.userNo, "작성자가 없습니다.");
-            regexHelper.value(params.bookNo, "책 번호가 없습니다.");
+            
         } catch (err) {
             return next(err);
         }

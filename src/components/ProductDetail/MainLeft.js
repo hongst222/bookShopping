@@ -562,9 +562,7 @@ const MainLeft = memo(({ book, params, navRef, rvCount, pointCnt, reviewDT }) =>
         dispatch(setRv(e.currentTarget.value));
     }, []);
 
-
-
-
+    
     return (
         <Left>
             {/* 스크롤 이동을 위한 위치 참조 */}
@@ -678,7 +676,7 @@ const MainLeft = memo(({ book, params, navRef, rvCount, pointCnt, reviewDT }) =>
                     <div className="left">책 리뷰</div>
                     <div className="right">
                         <span>* 구매 후 작성 시 300P 적립</span>
-                        <ReviewModal book={book}/>
+                        <ReviewModal book={{...book}}/>
                     </div>
                 </div>
                 <div className="review_box">

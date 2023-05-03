@@ -65,7 +65,8 @@ const PROTOTYPE_LOGIN = memo(() => {
 
     const test1 = (e) => {
         e.preventDefault();
-        console.log(accessToken().status);;
+        accessToken();
+
     }
 
     const test2 = (e) => {
